@@ -1,0 +1,137 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "feather-icons",
+        "scope": null,
+        "escapedName": "feather-icons",
+        "name": "feather-icons",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Applications/MAMP/htdocs/camden"
+    ]
+  ],
+  "_from": "feather-icons@latest",
+  "_hasShrinkwrap": false,
+  "_id": "feather-icons@4.17.0",
+  "_inCache": true,
+  "_location": "/feather-icons",
+  "_nodeVersion": "8.15.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/feather-icons_4.17.0_1549339410119_0.8230263562748414"
+  },
+  "_npmUser": {
+    "name": "colebemis",
+    "email": "cole@colebemis.com"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "feather-icons",
+    "scope": null,
+    "escapedName": "feather-icons",
+    "name": "feather-icons",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/feather-icons/-/feather-icons-4.17.0.tgz",
+  "_shasum": "45bd49d05134c6db1f8161c0fe648eb5fb7c4aea",
+  "_shrinkwrap": null,
+  "_spec": "feather-icons",
+  "_where": "/Applications/MAMP/htdocs/camden",
+  "author": {
+    "name": "Cole Bemis",
+    "email": "cole@colebemis.com",
+    "url": "http://colebemis.com"
+  },
+  "bugs": {
+    "url": "https://github.com/feathericons/feather/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "core-js": "^2.5.3"
+  },
+  "description": "Simply beautiful open source icons",
+  "devDependencies": {
+    "@commitlint/cli": "^5.2.5",
+    "@commitlint/config-conventional": "^6.1.3",
+    "algoliasearch": "^3.27.1",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cheerio": "^1.0.0-rc.2",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.5.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "html-minifier": "^3.5.8",
+    "husky": "^0.14.3",
+    "jest": "^22.4.4",
+    "lint-staged": "^6.0.0",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.8.2",
+    "semantic-release": "^12.2.2",
+    "svgo": "^0.7.2",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-eAQCGeI9Dn57JRuzb7SfWYSj/v/PLoa7cZ1nqY3m0V8i+Q3pqJu6sXiKBRFTufT7s+7o6ZZkDsffh7dsnStSOg==",
+    "shasum": "45bd49d05134c6db1f8161c0fe648eb5fb7c4aea",
+    "tarball": "https://registry.npmjs.org/feather-icons/-/feather-icons-4.17.0.tgz",
+    "fileCount": 283,
+    "unpackedSize": 521768,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcWQsTCRA9TVsSAnZWagAAm8oP/3kTOZx/oMSvaD0Is2T5\nRDnEP7+UO7AeTpudfShjobGFQ9ggLkqybKsjnu6HHX0Yp8Dp0AsPQOjyiyPP\n+tSokEtTU1gerppyPY0t5Gp/wKgQtvBffgNXd/I2wqVxs9SrFhHg13tfXssg\nsTnDdQH8By4Lgh1r+6HmJSecbTwc/bzJZhEb8lO4n/P+hAvmji85JWAZ767Z\nkw6LkiN6xbuMDm3cQxJnbPwKh3Au59h2jWVPHJAdrzyDqbqpzo1BJp7m0Uuj\nsM4oUaAds2acqhD3oPVVjJk3lEQioxZWglEBStVsAvHoSdNPx4FnF8gR+ZlY\nuoyR5kJjBTTVebiOVBJwVD8c64Oj8l2Njhe7h62ZVehcVQ1gVtaQp3OnvQtC\nAm8VnShNP8KAyUjlGLB8RMPrcUNYjPGsa4ZHZIGeoYWkv1clYBbHKpkSrWIS\na3WE/I4cxCD+0MCwy3izc4YrZMg4iRyoyMzPcXNbNtKIDzivjhZyudUojm8x\nX7YzeFZ7nw6Tkj8Klgg1lfksYin5JcznJqePvobPSjVv8VdsztZMv1+xtOOC\nf/2AV2AVD7sTFet6fR8rFbvHdHfpL/xSJp0aEaPNg8MOtS1O/IVineALy+LP\nHmisaEMKaaFy7gqTvv5dBx6ID/9rjHFlmDZBy4ISV0oLKzGVcZJ/7Zi27mTV\nNYgW\r\n=xLFJ\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "3e4918be7438e44c124ec3dd02c70e11ad3eee5e",
+  "homepage": "https://github.com/feathericons/feather#readme",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "license": "MIT",
+  "main": "dist/feather.js",
+  "maintainers": [
+    {
+      "name": "colebemis",
+      "email": "cole@colebemis.com"
+    }
+  ],
+  "name": "feather-icons",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feathericons/feather.git"
+  },
+  "scripts": {
+    "all": "npm-run-all --sequential build lint test:coverage",
+    "build": "./bin/build.sh",
+    "cm": "git-cz",
+    "commitmsg": "commitlint --edit",
+    "lint": "eslint .",
+    "precommit": "lint-staged",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "unpkg": "dist/feather.min.js",
+  "version": "4.17.0"
+}

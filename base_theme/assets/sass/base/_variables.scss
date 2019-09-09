@@ -1,0 +1,47 @@
+//Measurements
+$base_height: 6px;
+
+
+//Colors
+$base_color:#D90C38;
+$base_dark: #333333;
+$base_gray: #F8F8FB;
+
+$text_light_gray: #626262;
+$text_gray:#444444;
+
+
+//Fonts
+$heading_font:'Arial';
+$body_font:'Arial';
+
+
+//Responsive Grid BP's
+$container:                                     100% !default;
+$container-mobile-s:							320px !default;
+$container-mobile:								480px !default;
+$container-xs:									690px !default;
+$container-s:									768px !default;
+$container-dz:									860px !default;
+$container-m:                                   1024px !default;
+$container-l:                                   1120px !default;
+$container-xl:                                  1240px !default;
+$container-xxl:                                 1440px !default;
+
+// Grid Gutters
+$grid-margin:                                   12px !default;
+$grid-margin-m:                                 12px !default;
+$grid-margin-s:									12px !default;
+
+$container_pad: 								90px !default;
+
+// Responsive Breakpoints
+$breakpoint-mobile-s:                           ($container-mobile-s + $container_pad) !default;
+$breakpoint-mobile:                             ($container-mobile + $container_pad) !default;
+$breakpoint-xs:                                 ($container-xs + $container_pad) !default;
+$breakpoint-s:                                  ($container-s + $container_pad) !default;
+$breakpoint-m:                                  ($container-m + $container_pad) !default;
+$breakpoint-dz:                                 ($container-dz + $container_pad) !default;
+$breakpoint-l:                                  ($container-l + $container_pad) !default;
+$breakpoint-xl:                                 ($container-xl + $container_pad) !default;
+$breakpoint-xxl:                                ($container-xxl + $container_pad) !default;

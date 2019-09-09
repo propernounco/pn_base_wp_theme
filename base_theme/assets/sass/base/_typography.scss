@@ -1,0 +1,87 @@
+//Font Sizing
+body {
+  font-family: $body_font; 
+  color: $text_gray;
+  @include font-size(1.8);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading_font;  
+  color: $text_gray;
+  font-weight:bold;
+}
+
+.body-text{
+	@include font-size(1.5);
+	color:$text_gray;
+	display: block;
+	padding: 0;
+	margin:0;
+}
+
+h1{
+  @include font-size(4.2);
+}
+
+h2{
+  @include font-size(3.0);
+}
+
+h3{
+  @include font-size(1.8);
+}
+
+a{
+	text-decoration:none;
+}
+
+p{
+	@extend .body-text;
+	margin:0 0 18px 0;
+	a{
+		text-decoration:underline;
+	}
+}
+
+span{
+	@extend .body-text;
+}
+
+address { 
+  @extend .body-text;
+}  
+
+
+// Bold and Strong
+b, strong, .strong { font-weight: 700; }
+
+// Italics
+em, .em { font-style: italic; }
+
+
+
+// Font Weights
+.font-100 { font-weight: 100; }
+.font-200 { font-weight: 200; }
+.font-300 { font-weight: 300; }
+.font-400 { font-weight: 400; }
+.font-500 { font-weight: 500; }
+.font-600 { font-weight: 600; }
+.font-700 { font-weight: 700; }
+.font-800 { font-weight: 800; }
+.font-900 { font-weight: 900; }
+
+// Font Styles
+.font-normal { font-style: normal; }
+.font-italic { font-style: italic; }
+
+// Text Modifications
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+// Text Alignments
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }

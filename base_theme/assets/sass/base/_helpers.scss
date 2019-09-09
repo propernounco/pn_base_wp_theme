@@ -1,0 +1,156 @@
+//Image Helpers
+img{
+  max-width:100%;
+  height:auto;
+}
+
+iframe{
+  max-width: 100%;
+}
+
+.responsive-img{
+	width:100%;
+	height:auto;
+}
+
+.image-cover{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	max-width:1000%;
+}
+
+.image-auto{
+	width:auto;
+	max-width:100%;
+	height:auto;
+}
+
+.image-contain{
+	width:100%;
+	height:100%;
+	object-fit: contain;
+}
+
+//Display Helpers
+.none { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+
+
+//Show and Hide Helpers
+.opaque{ opacity:0; }
+.hide{ display:none; }
+.show{ display:block; }
+
+//Flex Box
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-space-around { justify-content: space-around; }
+.flex-space-between { justify-content: space-between; }
+.flex-start { justify-content: flex-start; }
+.flex-center { justify-content: center; }
+.flex-end { justify-content: flex-end; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+.flex-eq-col{
+  width:auto;
+  flex-grow:1;
+  max-width:100%;
+}
+
+.items-center{
+  align-items:center;
+}
+
+
+//Margin Helpers
+$spaceCount: 20;
+
+//VERTICAL RHYTHM MARGIN TOP HELPERS (6PX INCREMENTS). Margin Top from 0 - 15 * Base Height
+@mixin vr-topmargin{
+  @for $i from 0 through $spaceCount {    
+    $size: $i;
+      .topmargin-#{$size} {         
+          margin-top: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .topmargin-#{$size}-t {         
+          margin-top: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .topmargin-#{$size}-m {         
+          margin-top: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-topmargin;
+
+@mixin vr-bottommargin {
+  @for $i from 0 through $spaceCount {
+    $size: $i;
+      .bottommargin-#{$size} {         
+          margin-bottom: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .bottommargin-#{$size}-t {         
+          margin-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .bottommargin-#{$size}-m {         
+          margin-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-bottommargin;
+
+@mixin vr-toppad {
+  @for $i from 0 through $spaceCount {
+    $size: $i;
+      .toppad-#{$size} {         
+          padding-top: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .toppad-#{$size}-t {         
+          padding-top: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .toppad-#{$size}-m {         
+          padding-top: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-toppad;
+
+@mixin vr-bottompad {
+  @for $i from 0 through $spaceCount {
+    $size: $i;
+      .bottompad-#{$size} {         
+          padding-bottom: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .bottompad-#{$size}-t {         
+          padding-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .bottompad-#{$size}-m {         
+          padding-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-bottompad;
