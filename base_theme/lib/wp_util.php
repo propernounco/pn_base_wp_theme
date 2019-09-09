@@ -76,7 +76,7 @@ function page_nav($menu_name){
 
 function get_asset_url($file){
 	// $url = get_template_directory_uri() . '/assets/' . $file;
-	$url = root_url() . 'assets/' . $file;
+	$url = get_template_directory_uri() . '/assets/' . $file;
 	return $url;
 }
 
