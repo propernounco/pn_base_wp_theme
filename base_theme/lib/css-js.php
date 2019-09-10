@@ -1,8 +1,19 @@
 <?php 
-function pn_enqueue_style() {          
-        wp_enqueue_style('theme-styles', get_template_directory_uri() . '/assets/css/lontv-styles.css', array(), null, false);    
-        // wp_enqueue_style('fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), null, false);
+
+
+function pn_enqueue_style() {         
+    
+        
+        wp_enqueue_style('theme-styles', get_template_directory_uri() . '/assets/css/lontv-styles.css', array(), null, false);            
         wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css');
+
+        //load some dynamic css if it exists for the template
+        $template_slug = strtolower(pn_get_template_name());        
+        $css_filename = getcwd() . '/wp-content/themes/lonwp/assets/css/'. $template_slug .'.css';
+
+        if(file_exists($css_filename)){
+            wp_enqueue_style($template_slug . '-dynamic-style', get_template_directory_uri() . '/assets/css/'. $template_slug .'.css', array(), null, false);                        
+        }    
 }
 
 function pn_enqueue_script(){

@@ -57,7 +57,10 @@ gulp.task('build', ['clean'], function() {
 
 // Styles task
 gulp.task('styles', function() {
-    return gulp.src(['./assets/sass/lontv-styles.scss'])
+    return gulp.src([
+            // './assets/sass/lontv-styles.scss'
+            './assets/sass/*.scss'
+        ])
         .pipe(sourcemaps.init())
         .pipe(compass({
             config_file: './assets/sass/config.rb',
@@ -128,7 +131,7 @@ gulp.task('clean', function() {
  *
  * @since 0.1.0
  */
-gulp.task('watch', function() {
+gulp.task('watch', function() {    
     gulp.watch('./assets/sass/**/*.scss', ['styles']);
     gulp.watch('./assets/js/*.js', ['scripts']);
     gulp.watch('./assets/images/*', ['images']);
