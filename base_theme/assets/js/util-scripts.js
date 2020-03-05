@@ -124,45 +124,242 @@ function checkAncientBrowser(){
 	}		
 }
 
-var ancientBrowser = checkAncientBrowser()
+window.onload = function(){
 
-//var ancientBrowser = false;
+	var ancientBrowser = checkAncientBrowser()
 
-if(ancientBrowser){
-	var body = document.getElementsByTagName('body')[0]
-	body.classList.add(ancientBrowser)
-	var grid = document.getElementsByClassName('grid')
-	for(var a = 0; a < grid.length; a++){
-		grid[a].classList.add(ancientBrowser)
-	}		
-}
+	//var ancientBrowser = false;
 
-var bgBlocks = document.getElementsByClassName('bg-block')
-if(bgBlocks.length > 0){
-	for(var b = 0; b < bgBlocks.length; b++){		
-		if(bgBlocks[b].hasAttribute('data-bg-img')){
-			var bg = bgBlocks[b].getAttribute('data-bg-img')			
-			bgBlocks[b].setAttribute('style', 'background-image: url("'+ bg +'")');
+	if(ancientBrowser){
+
+		var body = document.getElementsByTagName('body')[0]	
+
+		body.classList.add(ancientBrowser)
+		var grid = document.getElementsByClassName('grid')
+		for(var a = 0; a < grid.length; a++){
+			grid[a].classList.add(ancientBrowser)
 		}		
+	}
+
+	var bgBlocks = document.getElementsByClassName('bg-block')
+	if(bgBlocks.length > 0){
+		for(var b = 0; b < bgBlocks.length; b++){		
+			if(bgBlocks[b].hasAttribute('data-bg-img')){
+				var bg = bgBlocks[b].getAttribute('data-bg-img')			
+				bgBlocks[b].setAttribute('style', 'background-image: url("'+ bg +'")');
+			}		
+		}	
+	}
+
+	if(document.getElementById('mobile-toggle-menu')){
+		var mobile_toggle = document.getElementById('mobile-toggle-menu');
+
+		mobile_toggle.onclick = function() {
+		  mobile_toggle.classList.toggle('on');
+		}
+	}
+
+	var toggle_contain = document.querySelectorAll('.toggle-switch')
+
+	if(toggle_contain){	
+		for(var tc = 0; tc < toggle_contain.length; tc++){		
+			toggle_contain[tc].addEventListener('click', function(e){ //say this is an anchor
+		         //do something
+		        e.preventDefault();
+		        this.classList.toggle('on');	        
+		    })
+		}
+	}
+
+}
+
+
+
+jQuery(function(){
+
+	$('.sub-sub-links').each(function(){
+		$(this).parent().parent().addClass('flex')
+	})
+
+	$('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+
+       $('html, body').stop().animate({
+         'scrollTop': $target.offset().top - 300
+        }, 500, 'swing', function () {
+         // window.location.hash = target;
+        });
+    });
+
+    function check_width_overflow(elem){
+	    return element.scrollWidth > element.clientWidth;
+	}
+
+	$('.modal').iziModal()
+	feather.replace()		 
+
+	//Fade in animation events
+	if(document.getElementsByClassName('fade-in-content').length > 0){	
+		$.each(['fade-in-content'], function(i, classname) {
+			
+		  var elements = $('.' + classname)		  	
+		  elements.each(function() {
+		    new Waypoint({
+		      element: this,
+		      handler: function(direction) {
+		        var previousWaypoint = this.previous()
+		        var nextWaypoint = this.next()
+		        var the_content = $(this)[0].element;
+		        if(direction == 'down'){		        	
+		        	$(the_content).addClass('animation fade-in-up');
+		        }
+		        
+		      },
+		      offset: '80%',
+		      group: classname
+		    })
+		  })
+		})
 	}	
-}
 
-if(document.getElementById('mobile-toggle-menu')){
-	var mobile_toggle = document.getElementById('mobile-toggle-menu');
+	if(document.getElementsByClassName('fade-in-content-left').length > 0){	
+		$.each(['fade-in-content-left'], function(i, classname) {
+			
+		  var elements = $('.' + classname)		  	
+		  elements.each(function() {
+		    new Waypoint({
+		      element: this,
+		      handler: function(direction) {
+		        var previousWaypoint = this.previous()
+		        var nextWaypoint = this.next()
+		        var the_content = $(this)[0].element;
+		        if(direction == 'down'){		        	
+		        	$(the_content).addClass('animation fade-in-left');
+		        }
+		        
+		      },
+		      offset: '80%',
+		      group: classname
+		    })
+		  })
+		})
+	}	
 
-	mobile_toggle.onclick = function() {
-	  mobile_toggle.classList.toggle('on');
+	if(document.getElementsByClassName('fade-in-content-right').length > 0){	
+		$.each(['fade-in-content-right'], function(i, classname) {
+			
+		  var elements = $('.' + classname)		  	
+		  elements.each(function() {
+		    new Waypoint({
+		      element: this,
+		      handler: function(direction) {
+		        var previousWaypoint = this.previous()
+		        var nextWaypoint = this.next()
+		        var the_content = $(this)[0].element;
+		        if(direction == 'down'){		        	
+		        	$(the_content).addClass('animation fade-in-right');
+		        }
+		        
+		      },
+		      offset: '80%',
+		      group: classname
+		    })
+		  })
+		})
+	}	
+
+
+	//Slick Slider Example
+	if($('.testimonials-slider').length > 0){
+		console.log('aiusdhasd')
+		$('.testimonials-slider').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			slidesToScroll: 1
+		})
 	}
-}
+	
+	//jQuery Waypoints Example. If Header scrolled to waypoint, fire event
+	var headerScrolled = new Waypoint({
+	  element: $('#header-trigger'),
+	  handler: function(direction) {		  
+	    if(direction == 'down'){		    			    	
+	    	$('.header').addClass('scrolled')		
+	    	if($(window).width() < 768){	    	
+				$('.mobile-call').addClass('active')
+	    	}	
+	    		
+	    }		
+	    if(direction == 'up'){		    	
+	    	$('.header').removeClass('scrolled')	  		
+	    	if($(window).width() < 768){
+				$('.mobile-call').removeClass('active')
+	    	}	
+	    }		   		    
+	  },
+	  offset: '-6%'
+	})
+	//jQuery Waypoints Example. If Header scrolled to waypoint, fire event
+	
+	$('.nav-item.top-level').hover(function(){
+		if($(window).width() > 768){
+			console.log('asds')
+			$(this).addClass('active')
+			$(this).find('.sub-links').addClass('active')
+		}		
+	}, function(){
+		if($(window).width() > 768){
+			$(this).removeClass('active')
+			$(this).find('.sub-links').removeClass('active')
+		}
+	})
 
-var toggle_contain = document.querySelectorAll('.toggle-switch')
+	$('.mobile-list-switch .toggle').on('change', function(){
+		if($(this).is(':checked')){
+			$('.list-split .list-right').addClass('active')
+			$('.list-split .list-left').removeClass('active') 
+			
+			$('.comparison-table .list-item.sfl').removeClass('active')
+			$('.comparison-table .list-item.agent').addClass('active') 
 
-if(toggle_contain){	
-	for(var tc = 0; tc < toggle_contain.length; tc++){		
-		toggle_contain[tc].addEventListener('click', function(e){ //say this is an anchor
-	         //do something
-	        e.preventDefault();
-	        this.classList.toggle('on');	        
-	    })
-	}
-}
+		}
+		else{
+			$('.list-split .list-right').removeClass('active')
+			$('.list-split .list-left').addClass('active') 
+
+			$('.comparison-table .list-item.sfl').addClass('active')
+			$('.comparison-table .list-item.agent').removeClass('active') 
+		}
+	})
+	
+	$('.mobile-nav-trigger').on('click', function(e){
+		e.preventDefault()
+		$('.nav').toggleClass('active')
+		$(this).toggleClass('active')	
+	})
+
+	$('.nav-item.top-level a').on('click', function(e){
+		
+		if($(window).width() < 768){
+			if($(this).parent().find('.sub-links').length > 0 ){			
+				
+				if(!$(this).hasClass('can-click')){
+					e.preventDefault();	
+					$(this).parent().find('.sub-links').slideDown()
+					$(this).addClass('can-click')
+				}
+				else{
+					$(this).parent().find('.sub-links').slideUp(250)
+				}
+
+			}
+		}
+
+		
+	})
+
+})

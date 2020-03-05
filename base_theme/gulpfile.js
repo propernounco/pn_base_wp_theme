@@ -77,17 +77,19 @@ gulp.task('styles', function() {
 // Scripts task
 gulp.task('scripts', function() {
     return gulp.src([            
-            './assets/vendors/jquery/jquery.1.11.3.min.js',                        
+            // './assets/vendors/jquery/jquery.1.11.3.min.js',                        
             './assets/js/util-scripts.js', 
             './assets/vendors/izmodal/js/izmodal.min.js', 
+            './assets/vendors/feather-icons/dist/feather.min.js',                        
             './assets/vendors/waypoints/lib/jquery.waypoints.js',                        
             './assets/vendors/slick/slick.js',                   
-            './assets/js/lontv-js.js'                            
+            './assets/js/core-js.js',                            
+            './assets/js/theme-js.js'                            
         ])
-        .pipe(sourcemaps.init())
-        .pipe(concat('lontv-js.dist.js'))
+        // .pipe(sourcemaps.init())
+        .pipe(concat('theme-js.dist.js'))
         .pipe(uglify())
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest('./assets/dist/js/'))
         .pipe(browserSync.reload({stream:true}));
 });
@@ -115,7 +117,7 @@ gulp.task('images', function() {
 gulp.task('clean', function() {
     del([
         './assets/css/*.css',
-		'!./assets/css/font-awesome.min.css',
+        '!./assets/css/font-awesome.min.css',
         './assets/js/*.dist.js'
     ]);
 });

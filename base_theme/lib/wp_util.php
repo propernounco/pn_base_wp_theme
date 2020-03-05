@@ -65,19 +65,47 @@ function page_nav($menu_name){
 		$nav_block = '';
 
 		$items = buildTree($menu_items, 0);
-	
-		foreach($items as $item){
 
+		foreach($items as $item){
+			$itemclass = $item->classes[0];
 			if($item->wpse_children){
-				$nav_block .= "<li class='nav-item top-level'><a href='". $item->url ."'>". $item->title ."</a>";
+				$nav_block .= "<li class='nav-item top-level children'><a class='$itemclass' href='". $item->url ."'>". $item->title ."</a>";
+
 				$nav_block .= "<ul class='sub-links'>";
-				foreach($item->wpse_children as $child){					
-					$nav_block .= "<li><a href='". $child->url ."'>".$child->title."</a></li>";						
+				$a = 0;
+				
+				foreach($item->wpse_children as $child){							
+
+					if(is_array($child->wpse_children)){
+
+						if(count($child->wpse_children) > 0){
+							// var_dump($a);
+							// var_dump($child->wpse_children);
+
+							$nav_block .= "<li class='split-items'><a class='$itemclass' href='". $child->url ."'>".$child->title . "</a>";
+
+							$nav_block .= "<ul class='sub-sub-links'>";
+							
+							foreach($child->wpse_children as $gchild){					
+								$nav_block .= "<li><a class='$classes' href='". $gchild->url ."'>".$gchild->title . "</a></li>";	
+							}
+							$nav_block .= "</ul></li>";
+							
+						}	
+						else{
+							$nav_block .= "<li><a class='$itemclass' href='". $child->url ."'>".$child->title."</a></li>";			
+						}
+
+
+					}
+					
+					$a++;
+				
 				}
 				$nav_block .= "</ul></li>";
 			}
 			else{
-				$nav_block .= "<li class='nav-item top-level'><a href='". $item->url ."'>". $item->title ."</a></li>";
+				$nav_block .= "<li class='nav-item top-level no-children'><a class='$itemclass' href='". $item->url ."'>". $item->title ."</a></li>";
 			}
 		}
 		
