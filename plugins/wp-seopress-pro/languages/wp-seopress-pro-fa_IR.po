@@ -1,0 +1,3568 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SEOPress\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-cloudy\n"
+"POT-Creation-Date: 2019-04-19 19:24+0200\n"
+"PO-Revision-Date: 2019-05-06 18:14+0430\n"
+"Last-Translator: \n"
+"Language-Team: frashmi <frashminet@gmail.com>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_attr_e;esc_attr__;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: inc/functions/google-analytics\n"
+
+#: inc/admin/admin-columns/ac-column-sp_desc.php:10
+msgid "Meta description"
+msgstr "توضیحات متا"
+
+#: inc/admin/admin-columns/ac-column-sp_nofollow.php:10
+msgid "nofollow?"
+msgstr "nofollow؟"
+
+#: inc/admin/admin-columns/ac-column-sp_noindex.php:10
+msgid "noindex?"
+msgstr "noindex"
+
+#: inc/admin/admin-columns/ac-column-sp_title.php:12
+msgid "Meta title"
+msgstr "عنوان متا"
+
+#: inc/admin/admin-metaboxes.php:39
+msgid "Structured Data Types"
+msgstr "انواع داده های ساختاری"
+
+#: inc/admin/admin-metaboxes.php:171
+msgid "Select your data type"
+msgstr "نوع داده خود را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:173 inc/admin/admin.php:2708
+msgid "None"
+msgstr "هیچ یک"
+
+#: inc/admin/admin-metaboxes.php:174
+msgid "Article"
+msgstr "مقاله"
+
+#: inc/admin/admin-metaboxes.php:175 inc/admin/admin.php:113
+msgid "Local Business"
+msgstr "تجارت محلی"
+
+#: inc/admin/admin-metaboxes.php:176
+msgid "FAQ"
+msgstr "سوالات متداول"
+
+#: inc/admin/admin-metaboxes.php:177
+msgid "Course"
+msgstr "دوره"
+
+#: inc/admin/admin-metaboxes.php:178
+msgid "Recipe"
+msgstr "دستور آشپزی"
+
+#: inc/admin/admin-metaboxes.php:179
+msgid "Video"
+msgstr "ویدئو"
+
+#: inc/admin/admin-metaboxes.php:180
+msgid "Event"
+msgstr "رویداد"
+
+#: inc/admin/admin-metaboxes.php:181
+msgid "Product"
+msgstr "محصول "
+
+#: inc/admin/admin-metaboxes.php:182
+msgid "Review"
+msgstr "بررسی"
+
+#: inc/admin/admin-metaboxes.php:187
+msgid "WARNING"
+msgstr "هشدار"
+
+#: inc/admin/admin-metaboxes.php:188
+msgid "Be sure to select the right structure data type for your content."
+msgstr ""
+"اطمینان حاصل کنید که نوع داده ساختاری مناسب برای محتوای خود را انتخاب کنید."
+
+#: inc/admin/admin-metaboxes.php:189
+msgid "When you choose one, fill all fields with the right format."
+msgstr "وقتی یکی را انتخاب می کنید، تمام زمینه ها را با فرمت مناسب پر کنید."
+
+#: inc/admin/admin-metaboxes.php:190
+msgid ""
+"Make sure you don't have already include structure data type with a theme or "
+"plugin (eg: the default WooCommerce Theme, Storefront, already implement "
+"this for single page products."
+msgstr ""
+"اطمینان حاصل کنید که شما قبلا شامل نوع ساختار داده ها با یک تم یا افزونه "
+"نشده اید (به عنوان مثال: پیش فرض WooCommerce Theme، Storefront، این کار را "
+"برای محصولات تک صفحه ای انجام می دهد."
+
+#: inc/admin/admin-metaboxes.php:191
+msgid "You can test your page with Google Data Structure Test tool."
+msgstr "شما می توانید صفحه خود را با ابزار تست Google Structure Test تست کنید."
+
+#: inc/admin/admin-metaboxes.php:191
+msgid "Make a test"
+msgstr "تست کنید"
+
+#: inc/admin/admin-metaboxes.php:197
+msgid ""
+"Proper structured data in your news, blog, and sports article page can "
+"enhance your appearance in Google Search results."
+msgstr ""
+"داده های مناسب ساختاری در اخبار، وبلاگ ها و صفحه مقاله های ورزشی شما می "
+"تواند ظاهر خود را در نتایج جستجوی Google افزایش دهد."
+
+#: inc/admin/admin-metaboxes.php:200
+msgid "You have set a publisher logo. Good!"
+msgstr "شما یک لوگوی ناشر تنظیم کرده‌اید. خوب!"
+
+#: inc/admin/admin-metaboxes.php:202
+msgid ""
+"You don't have set a publisher logo. It's required for Article content types."
+msgstr ""
+"شما یک لوگو ناشر را تنظیم نکردید این مورد برای انواع محتوای مقاله مورد نیاز "
+"است."
+
+#: inc/admin/admin-metaboxes.php:207
+msgid "Select your article type"
+msgstr "نوع مقاله خود را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:209
+msgid "News Article"
+msgstr "مقاله خبری"
+
+#: inc/admin/admin-metaboxes.php:210
+msgid "Report"
+msgstr "گزارش"
+
+#: inc/admin/admin-metaboxes.php:211
+msgid "Scholarly Article"
+msgstr "مقاله علمی"
+
+#: inc/admin/admin-metaboxes.php:212
+msgid "Social Media Posting"
+msgstr "ارسال رسانه های اجتماعی"
+
+#: inc/admin/admin-metaboxes.php:213
+msgid "TechArticle"
+msgstr "مقاله تکنولوژی"
+
+#: inc/admin/admin-metaboxes.php:218 inc/admin/admin-metaboxes.php:219
+msgid "Headline <em>(max limit: 110)</em>"
+msgstr "عنوان <em> (حداکثر محدودیت: 110) </ em>"
+
+#: inc/admin/admin-metaboxes.php:219
+msgid "The headline of the article"
+msgstr "عنوان مقاله"
+
+#: inc/admin/admin-metaboxes.php:222 inc/admin/admin-metaboxes.php:707
+msgid "(maximum limit)"
+msgstr "(حداکثر حد مجاز)"
+
+#: inc/admin/admin-metaboxes.php:226 inc/admin/admin-metaboxes.php:229
+#: inc/admin/admin-metaboxes.php:378 inc/admin/admin-metaboxes.php:385
+#: inc/admin/admin-metaboxes.php:743 inc/admin/admin-metaboxes.php:745
+msgid "Image"
+msgstr "تصویر"
+
+#: inc/admin/admin-metaboxes.php:227
+msgid ""
+"The representative image of the article. Only a marked-up image that "
+"directly belongs to the article should be specified. "
+msgstr ""
+"تصویر نماد مقاله. فقط یک تصویر مشخص شده که مستقیما به مقاله تعلق دارد باید "
+"مشخص شود. "
+
+#: inc/admin/admin-metaboxes.php:228
+msgid ""
+"Minimum size: 696px wide, JPG, PNG or GIF, crawlable and indexable (default: "
+"post thumbnail if available)"
+msgstr ""
+"حداقل اندازه: 696 پیکسل عرض، JPG، PNG یا GIF، قابل crawlable و indexable (به "
+"طور پیش فرض: ارسال تصویر کوچک در صورت موجود بودن)"
+
+#: inc/admin/admin-metaboxes.php:229 inc/admin/admin-metaboxes.php:385
+#: inc/admin/admin-metaboxes.php:745 inc/admin/admin-metaboxes.php:785
+#: inc/admin/admin-metaboxes.php:854 inc/admin/admin-metaboxes.php:997
+#: inc/admin/admin-metaboxes.php:1079
+msgid "Select your image"
+msgstr "تصویر خود را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:232 inc/admin/admin-metaboxes.php:388
+#: inc/admin/admin-metaboxes.php:746 inc/admin/admin-metaboxes.php:788
+#: inc/admin/admin-metaboxes.php:855 inc/admin/admin-metaboxes.php:998
+#: inc/admin/admin-metaboxes.php:1080 inc/admin/admin.php:2303
+msgid "Upload an Image"
+msgstr "بارگذاری یک تصویر"
+
+#: inc/admin/admin-metaboxes.php:237
+msgid ""
+"When users search for businesses on Google Search or Maps, Search results "
+"may display a prominent Knowledge Graph card with details about a business "
+"that matched the query. "
+msgstr ""
+"هنگامی که کاربران برای کسب و کار در جستجوی Google یا Maps جستجو می کنند، "
+"نتایج جستجو ممکن است یک کارت گرافیکی دانش برجسته با جزئیات در مورد یک کسب و "
+"کار که با پرس و جو مطابقت دارد نمایش دهد. "
+
+#: inc/admin/admin-metaboxes.php:241 inc/admin/admin-metaboxes.php:242
+msgid "Name of your business"
+msgstr "نام کسب و کار شما"
+
+#: inc/admin/admin-metaboxes.php:242
+msgid "eg: SEOPress"
+msgstr "به عنوان مثال: سئو پرس"
+
+#: inc/admin/admin-metaboxes.php:245
+msgid "Select a business type"
+msgstr "یک نوع کسب و کار را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:379
+msgid "An image of the business."
+msgstr "یک تصویر از کسب و کار."
+
+#: inc/admin/admin-metaboxes.php:380
+msgid ""
+"Every page must contain at least one image (whether or not you include "
+"markup). Google will pick the best image to display in Search results based "
+"on the aspect ratio and resolution.<br>\n"
+"Image URLs must be crawlable and indexable.<br>\n"
+"Images must represent the marked up content.<br>\n"
+"Images must be in .jpg, .png, or. gif format.<br>\n"
+"For best results, provide multiple high-resolution images (minimum of 50K "
+"pixels when multiplying width and height) with the following aspect ratios: "
+"16x9, 4x3, and 1x1."
+msgstr ""
+"هر صفحه باید حداقل یک تصویر داشته باشد (یا نشانه گذاری را شامل می شود). گوگل "
+"بهترین تصویر را برای نمایش در نتایج جستجو بر اساس نسبت ابعاد و رزولوشن "
+"انتخاب می کند. <br> \\ n URL های تصویر باید قابل crawlable و indexable "
+"باشند. <br> \\ n تصاویر باید محتوای مشخص شده را نشان دهند. <br> \\ n تصاویر "
+"باید در .jpg، .png، یا فرمت GIF. \\ n برای بهترین نتایج، تصاویری با رزولوشن "
+"با وضوح بالا (حداقل 50K پیکسل در هنگام ضرب کردن عرض و ارتفاع) را با نسبت های "
+"ذیل نسبت دهید: 16x9، 4x3 و 1x1."
+
+#: inc/admin/admin-metaboxes.php:392 inc/admin/admin-metaboxes.php:393
+#: inc/admin/admin.php:381 inc/admin/admin.php:1884
+msgid "Street Address"
+msgstr "آدرس خیابان"
+
+#: inc/admin/admin-metaboxes.php:393 inc/admin/admin.php:1884
+msgid "eg: Place Bellevue"
+msgstr "به عنوان مثال: بلوار مرزداران"
+
+#: inc/admin/admin-metaboxes.php:397 inc/admin/admin-metaboxes.php:398
+#: inc/admin/admin.php:389 inc/admin/admin.php:1895
+msgid "City"
+msgstr "شهر"
+
+#: inc/admin/admin-metaboxes.php:398 inc/admin/admin.php:1895
+msgid "eg: Biarritz"
+msgstr "به عنوان مثال: تهران"
+
+#: inc/admin/admin-metaboxes.php:402 inc/admin/admin-metaboxes.php:403
+#: inc/admin/admin.php:397 inc/admin/admin.php:1906
+msgid "State"
+msgstr "استان"
+
+#: inc/admin/admin-metaboxes.php:403 inc/admin/admin.php:1906
+msgid "eg: Pyrenees Atlantiques"
+msgstr "به عنوان مثال: البرز"
+
+#: inc/admin/admin-metaboxes.php:407 inc/admin/admin-metaboxes.php:408
+#: inc/admin/admin.php:405 inc/admin/admin.php:1917
+msgid "Postal code"
+msgstr "کد پستی"
+
+#: inc/admin/admin-metaboxes.php:408 inc/admin/admin.php:1917
+msgid "eg: 64200"
+msgstr "مثال. ۴۷۱۳۸۹۷۴۳۰"
+
+#: inc/admin/admin-metaboxes.php:412 inc/admin/admin-metaboxes.php:413
+#: inc/admin/admin.php:413 inc/admin/admin.php:1928
+#: inc/admin/dashboard-google-analytics.php:141
+msgid "Country"
+msgstr "کشور"
+
+#: inc/admin/admin-metaboxes.php:413 inc/admin/admin.php:1928
+msgid "eg: France"
+msgstr "به عنوان مثال: ایران"
+
+#: inc/admin/admin-metaboxes.php:417 inc/admin/admin-metaboxes.php:418
+#: inc/admin/admin.php:421 inc/admin/admin.php:1939
+msgid "Latitude"
+msgstr "عرض جغرافیایی"
+
+#: inc/admin/admin-metaboxes.php:418 inc/admin/admin.php:1939
+msgid "eg: 43.4831389"
+msgstr "به عنوان مثال: 43.4831389"
+
+#: inc/admin/admin-metaboxes.php:422 inc/admin/admin-metaboxes.php:423
+#: inc/admin/admin.php:429 inc/admin/admin.php:1950
+msgid "Longitude"
+msgstr "عرض جغرافیایی"
+
+#: inc/admin/admin-metaboxes.php:423 inc/admin/admin.php:1950
+msgid "eg: -1.5630987"
+msgstr "به عنوان مثال: -1.5630987"
+
+#: inc/admin/admin-metaboxes.php:427 inc/admin/admin-metaboxes.php:428
+#: inc/admin/admin.php:437 inc/admin/admin.php:1961 inc/admin/backlinks.php:164
+#: inc/admin/report-page-speed.php:235
+msgid "URL"
+msgstr "نشانی اینترنتی"
+
+#: inc/admin/admin-metaboxes.php:432 inc/admin/admin-metaboxes.php:433
+#: inc/admin/admin.php:445 inc/admin/admin.php:1972
+msgid "Telephone"
+msgstr "تلفن"
+
+#: inc/admin/admin-metaboxes.php:433 inc/admin/admin.php:1972
+msgid "eg: +33559240138"
+msgstr "به عنوان مثال: +۹۸۴۴۸۱۲۵۶۶"
+
+#: inc/admin/admin-metaboxes.php:437 inc/admin/admin.php:453
+#: inc/admin/admin.php:1983
+msgid "Price range"
+msgstr "حدود قیمت"
+
+#: inc/admin/admin-metaboxes.php:438 inc/admin/admin.php:1983
+msgid "eg: $$, €€€, or ££££..."
+msgstr "مثلا: $$، € €، یا ££££ ..."
+
+#: inc/admin/admin-metaboxes.php:438 inc/admin/admin-metaboxes.php:908
+#: inc/admin/admin-metaboxes.php:910
+msgid "Price"
+msgstr "قیمت"
+
+#: inc/admin/admin-metaboxes.php:442 inc/admin/admin.php:461
+msgid "Opening hours"
+msgstr "ساعات کار"
+
+#: inc/admin/admin-metaboxes.php:447 inc/admin/admin.php:1993
+msgid "Monday"
+msgstr "دوشنبه"
+
+#: inc/admin/admin-metaboxes.php:447 inc/admin/admin.php:1993
+msgid "Tuesday"
+msgstr "سه شنبه"
+
+#: inc/admin/admin-metaboxes.php:447 inc/admin/admin.php:1993
+msgid "Wednesday"
+msgstr "چهار شنبه"
+
+#: inc/admin/admin-metaboxes.php:447 inc/admin/admin.php:1993
+msgid "Thursday"
+msgstr "پنج شنبه"
+
+#: inc/admin/admin-metaboxes.php:447 inc/admin/admin.php:1993
+msgid "Friday"
+msgstr "جمعه"
+
+#: inc/admin/admin-metaboxes.php:447 inc/admin/admin.php:1993
+msgid "Saturday"
+msgstr "شنبه"
+
+#: inc/admin/admin-metaboxes.php:447 inc/admin/admin.php:1993
+msgid "Sunday"
+msgstr "یکشنبه"
+
+#: inc/admin/admin-metaboxes.php:479
+msgid "Closed all the day?"
+msgstr "تمام روز بسته؟"
+
+#: inc/admin/admin-metaboxes.php:492
+msgid "Open in the morning?"
+msgstr "صبح باز؟"
+
+#: inc/admin/admin-metaboxes.php:567
+msgid "Open in the afternoon?"
+msgstr "بعد از ظهر باز؟"
+
+#: inc/admin/admin-metaboxes.php:649
+msgid ""
+"Mark up your Frequently Asked Questions page with JSON/LD to try to get the "
+"position 0 in search results. "
+msgstr ""
+"صفحه سؤالات متداول شما را با JSON / LD علامت بزنید تا موقعیت 0 را در نتایج "
+"جستجو بدست آورید. "
+
+#: inc/admin/admin-metaboxes.php:667
+msgid "Question "
+msgstr "سوال "
+
+#: inc/admin/admin-metaboxes.php:671
+msgid "Question (required)"
+msgstr "سوال (مورد نیاز)"
+
+#: inc/admin/admin-metaboxes.php:672
+msgid "Enter your question"
+msgstr "سوال خود را وارد کنید"
+
+#: inc/admin/admin-metaboxes.php:672
+msgid "Question"
+msgstr "سوال"
+
+#: inc/admin/admin-metaboxes.php:675
+msgid "Answer (required)"
+msgstr "پاسخ (مورد نیاز)"
+
+#: inc/admin/admin-metaboxes.php:676
+msgid "Enter your answer"
+msgstr "پاسخ خود را وارد کنید"
+
+#: inc/admin/admin-metaboxes.php:676
+msgid "Answer"
+msgstr "پاسخ"
+
+#: inc/admin/admin-metaboxes.php:679
+msgid "Remove question"
+msgstr "سوال را حذف کنید"
+
+#: inc/admin/admin-metaboxes.php:686
+msgid "Add question"
+msgstr "اضافه کردن سوال"
+
+#: inc/admin/admin-metaboxes.php:690
+msgid ""
+"Mark up your course lists with structured data so prospective students find "
+"you through Google Search. "
+msgstr ""
+"لیست دوره های خود را با داده های ساختاری برجسته کنید تا دانش آموزان آینده "
+"نگر شما را از طریق جستجوی گوگل پیدا کنند. "
+
+#: inc/admin/admin-metaboxes.php:693
+msgid ""
+"Only use course markup for educational content that fits the following "
+"definition of a course: A series or unit of curriculum that contains "
+"lectures, lessons, or modules in a particular subject and/or topic."
+msgstr ""
+"فقط از نشانه گذاری دوره برای محتوای آموزشی استفاده کنید که متناسب با تعریف "
+"زیر از یک دوره است: یک سری یا واحد برنامه درسی که حاوی سخنرانی ها، درس ها یا "
+"ماژول ها در یک موضوع خاص و یا موضوع است."
+
+#: inc/admin/admin-metaboxes.php:694
+msgid ""
+"A course must have an explicit educational outcome of knowledge and/or skill "
+"in a particular subject and/or topic, and be led by one or more instructors "
+"with a roster of students."
+msgstr ""
+"یک دوره باید یک نتیجه آموزش صریح دانش و / یا مهارت در یک موضوع خاص و / یا "
+"موضوع داشته باشد و باید توسط یک یا چند مدرس با فهرست دانش آموزان رهبری شود."
+
+#: inc/admin/admin-metaboxes.php:695
+msgid ""
+"A general public event such as \"Astronomy Day\" is not a course, and a "
+"single 2-minute \"How to make a Sandwich Video\" is not a course."
+msgstr ""
+"یک رویداد عمومی عمومی مانند \\ \"روز نجوم \" یک دوره نیست و یک دقیقه 2 دقیقه "
+"\"نحوه ساخت فیلم ساندویچ\" یک دوره نیست."
+
+#: inc/admin/admin-metaboxes.php:699 inc/admin/admin-metaboxes.php:700
+msgid "Title"
+msgstr "عنوان"
+
+#: inc/admin/admin-metaboxes.php:700
+msgid "The title of your lesson, course..."
+msgstr "عنوان درس، دوره ..."
+
+#: inc/admin/admin-metaboxes.php:703 inc/admin/admin-metaboxes.php:704
+msgid "Course description"
+msgstr "شرح دوره"
+
+#: inc/admin/admin-metaboxes.php:704
+msgid "Enter your course/lesson description"
+msgstr "توصیف دوره / درس خود را وارد کنید"
+
+#: inc/admin/admin-metaboxes.php:712 inc/admin/admin-metaboxes.php:713
+msgid "School/Organization"
+msgstr "مدرسه / سازمان"
+
+#: inc/admin/admin-metaboxes.php:713
+msgid "Name of university, organization..."
+msgstr "نام دانشگاه، سازمان ..."
+
+#: inc/admin/admin-metaboxes.php:717 inc/admin/admin-metaboxes.php:718
+msgid "School/Organization Website"
+msgstr "وب سایت مدرسه / سازمان"
+
+#: inc/admin/admin-metaboxes.php:718
+msgid "Enter the URL like https://example.com/"
+msgstr "URL را مانند https://example.com/ وارد کنید"
+
+#: inc/admin/admin-metaboxes.php:723
+msgid ""
+"Mark up your recipe content with structured data to provide rich cards and "
+"host-specific lists for your recipes, such as cooking and preparation times, "
+"nutrition information..."
+msgstr ""
+"علامت گذاری مطالب خود را با داده های ساخت یافته برای ارائه کارت های غنی و "
+"لیست های خاص میزبان برای دستور العمل های خود را، مانند پخت و پز و زمان آماده "
+"سازی، اطلاعات تغذیه را ..."
+
+#: inc/admin/admin-metaboxes.php:726
+msgid ""
+"Use recipe markup for content about preparing a particular dish. For "
+"example, \"facial scrub\" or \"party ideas\" are not valid names for a dish."
+msgstr ""
+"استفاده از نشانه گذاری دستورالعمل برای محتوای در مورد تهیه یک ظرف خاص. به "
+"عنوان مثال، \\ \"اسکراب صورت \" و یا \\ \"ایده های حزبی \" نام های معتبر "
+"برای یک ظرف نیست."
+
+#: inc/admin/admin-metaboxes.php:730 inc/admin/admin-metaboxes.php:731
+msgid "Recipe name"
+msgstr "نام دستور العمل"
+
+#: inc/admin/admin-metaboxes.php:731
+msgid "The name of your dish"
+msgstr "نام ظرف شما"
+
+#: inc/admin/admin-metaboxes.php:734 inc/admin/admin-metaboxes.php:735
+msgid "Short recipe description"
+msgstr "توضیحات دستورالعمل کوتاه"
+
+#: inc/admin/admin-metaboxes.php:735
+msgid "A short summary describing the dish."
+msgstr "یک خلاصه خلاصه توصیف ظرف."
+
+#: inc/admin/admin-metaboxes.php:739 inc/admin/admin-metaboxes.php:740
+msgid "Recipe category"
+msgstr "دسته دستور العمل"
+
+#: inc/admin/admin-metaboxes.php:740
+msgid "Eg: appetizer, entree, or dessert"
+msgstr "مثلا: اشتها آور، غذا یا دسر"
+
+#: inc/admin/admin-metaboxes.php:744
+msgid "Minimum size: 185px by 185px, aspect ratio 1:1"
+msgstr "حداقل اندازه: 185px به 185px، نسبت ابعاد 1: 1"
+
+#: inc/admin/admin-metaboxes.php:750 inc/admin/admin-metaboxes.php:751
+msgid "Preparation time (in minutes)"
+msgstr "زمان آماده سازی (در دقیقه)"
+
+#: inc/admin/admin-metaboxes.php:751
+msgid "Eg: 30 min"
+msgstr "مثلا: 30 دقیقه"
+
+#: inc/admin/admin-metaboxes.php:755 inc/admin/admin-metaboxes.php:756
+msgid "Cooking time (in minutes)"
+msgstr "زمان پخت (در دقیقه)"
+
+#: inc/admin/admin-metaboxes.php:756
+msgid "Eg: 45 min"
+msgstr "مثلا: 45 دقیقه"
+
+#: inc/admin/admin-metaboxes.php:760 inc/admin/admin-metaboxes.php:761
+msgid "Calories"
+msgstr "کالری"
+
+#: inc/admin/admin-metaboxes.php:761
+msgid "Number of calories"
+msgstr "تعداد کالری"
+
+#: inc/admin/admin-metaboxes.php:765 inc/admin/admin-metaboxes.php:766
+msgid "Recipe yield"
+msgstr "عملکرد دستور العمل"
+
+#: inc/admin/admin-metaboxes.php:766
+msgid "Eg: number of people served, or number of servings"
+msgstr "مثلا: تعداد افرادی که خدمت کرده اند، یا تعداد سرویس ها"
+
+#: inc/admin/admin-metaboxes.php:771
+msgid ""
+"Mark up your video content with structured data to make Google Search an "
+"entry point for discovering and watching videos. "
+msgstr ""
+"محتوای ویدئوی خود را با داده های ساختاری علامت بزنید تا جستجوی گوگل را به "
+"عنوان نقطه ورود برای کشف و تماشای فیلم ها تبدیل کنید. "
+
+#: inc/admin/admin-metaboxes.php:775 inc/admin/admin-metaboxes.php:776
+msgid "Video name"
+msgstr "نام ویدیو"
+
+#: inc/admin/admin-metaboxes.php:776
+msgid "The title of your video"
+msgstr "عنوان ویدئو شما"
+
+#: inc/admin/admin-metaboxes.php:779 inc/admin/admin-metaboxes.php:780
+msgid "Video description"
+msgstr "توضیحات ویدیو"
+
+#: inc/admin/admin-metaboxes.php:780
+msgid "The description of the video"
+msgstr "شرح ویدئو"
+
+#: inc/admin/admin-metaboxes.php:783 inc/admin/admin-metaboxes.php:785
+msgid "Video thumbnail"
+msgstr "ریز عکس"
+
+#: inc/admin/admin-metaboxes.php:784
+msgid ""
+"Minimum size: 160px by 90px - Max size: 1920x1080px - crawlable and indexable"
+msgstr ""
+"حداقل اندازه: 160 پیکسل تا 90 پیکسل - حداکثر اندازه: 1920x1080px - قابل "
+"خواندن و قابل مرتب شدن"
+
+#: inc/admin/admin-metaboxes.php:792 inc/admin/admin-metaboxes.php:793
+msgid "Duration of your video (in minutes)"
+msgstr "مدت زمان ویدئو شما (در عرض چند دقیقه)"
+
+#: inc/admin/admin-metaboxes.php:793
+msgid "eg: 120 min"
+msgstr "به عنوان مثال: 120 دقیقه"
+
+#: inc/admin/admin-metaboxes.php:797 inc/admin/admin-metaboxes.php:798
+msgid "Video URL"
+msgstr "نشانی اینترنتی ویدیو"
+
+#: inc/admin/admin-metaboxes.php:798
+msgid "Eg: https://example.com/video.mp4"
+msgstr "مثلا: https://example.com/video.mp4"
+
+#: inc/admin/admin-metaboxes.php:803
+msgid ""
+"Event markup describes the details of organized events. When you use it in "
+"your content, that event becomes relevant for enhanced search results for "
+"relevant queries."
+msgstr ""
+"نشانه گذاری رویداد جزئیات رویدادهای سازمان یافته را توصیف می کند. هنگامی که "
+"از محتوای آن استفاده می کنید، این رویداد برای نتایج جستجوی پیشرفته برای "
+"درخواست های مربوطه مرتبط می شود."
+
+#: inc/admin/admin-metaboxes.php:806
+msgid ""
+"<strong>Expired events.</strong> Events data for any feature will never be "
+"shown for expired events. However, you do not have to remove markup for "
+"expired events."
+msgstr ""
+"<strong> حوادث منقضی شده. </ strong> دادههای رویداد برای هر ویژگی هرگز برای "
+"رویدادهای منقضی نشان داده نخواهد شد. با این حال، لازم نیست که نشانه گذاری "
+"رویدادهای منقضی را حذف کنید."
+
+#: inc/admin/admin-metaboxes.php:807
+msgid ""
+"<strong>Indicate the performer.</strong> Each event item must specify a "
+"performer property corresponding to the event's performer; that is, a "
+"musician, musical group, presenter, actor, and so on."
+msgstr ""
+"<strong> نمایشگر را مشخص کنید. </ strong> هر مورد مورد باید یک مشخصه "
+"performer مربوط به عملکرد رویداد را مشخص کند؛ یعنی موسیقیدان، گروه موسیقی، "
+"خواننده، بازیگر و غیره."
+
+#: inc/admin/admin-metaboxes.php:808
+msgid "<strong>Do not include promotional elements in the name.</strong>"
+msgstr "<strong> عناصر تبلیغاتی را در نام کنید. </ strong>"
+
+#: inc/admin/admin-metaboxes.php:810
+msgid ""
+"Promoting non-event products or services: \"Trip package: San Diego/LA, 7 "
+"nights\""
+msgstr ""
+"تبلیغ محصولات یا خدمات غیر رویدادی: \\ \"بسته سفر: سن دیگو / لا، 7 شب\""
+
+#: inc/admin/admin-metaboxes.php:811
+msgid ""
+"Prices in event titles: \"Music festival - only $10!\" Instead, highlight "
+"ticket prices using the tickets property in your markup."
+msgstr ""
+"قیمت ها در عناوین رویداد: \\ \"جشنواره موسیقی - فقط 10 دلار! \" در عوض، قیمت "
+"بلیط را با استفاده از املاک بلیط در علامت گذاری خود برجسته کنید."
+
+#: inc/admin/admin-metaboxes.php:812
+msgid "Using a non-event for a title, such as: \"Sale on dresses!\""
+msgstr "با استفاده از غیر رویدادی برای یک عنوان، مانند: \\ \"فروش در لباس \""
+
+#: inc/admin/admin-metaboxes.php:813
+msgid ""
+"Discounts or purchase opportunties, such as: \"Concert - buy your tickets "
+"now,\" or \"Concert - 50 pourcent off until Saturday!\""
+msgstr ""
+"تخفیف و یا فرصت های خرید، از جمله: \\ \"کنسرت - خرید بلیط خود را در حال "
+"حاضر، \" یا \\ \"کنسرت - 50٪ تخفیف تا شنبه!\""
+
+#: inc/admin/admin-metaboxes.php:815
+msgid ""
+"<strong>Multi-day events.</strong> If your event/ticket info is for the "
+"festival itself, specify both the start and end date of the festival. If "
+"your event/ticket info is for a specific performance that is part of the "
+"festival, specify the specific date of the performance. If the specific date "
+"is unavailable, specify both the start and end date of the festival."
+msgstr ""
+"<strong> رویدادهای چند روزه </ strong> اگر رویداد / اطلاعات بلیط شما برای "
+"خود جشنواره باشد، تاریخ و تاریخ پایان جشنواره را مشخص کنید. اگر اطلاعات "
+"رویداد / بلیط شما برای یک عملکرد خاص است که بخشی از جشنواره است، تاریخ مشخصی "
+"از عملکرد را مشخص کنید. اگر تاریخ خاص در دسترس نیست، تاریخ و تاریخ پایان "
+"جشنواره را مشخص کنید."
+
+#: inc/admin/admin-metaboxes.php:818
+msgid "Select your event type"
+msgstr "نوع رویداد خود را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:820
+msgid "Business Event"
+msgstr "رویداد کسب و کار"
+
+#: inc/admin/admin-metaboxes.php:821
+msgid "Children's Event"
+msgstr "رویداد کودکان"
+
+#: inc/admin/admin-metaboxes.php:822
+msgid "Comedy Event"
+msgstr "رویداد کمدی"
+
+#: inc/admin/admin-metaboxes.php:823
+msgid "Course Instance"
+msgstr "دوره درس"
+
+#: inc/admin/admin-metaboxes.php:824
+msgid "Dance Event"
+msgstr "رویداد رقص"
+
+#: inc/admin/admin-metaboxes.php:825
+msgid "Delivery Event"
+msgstr "رویداد تحویل"
+
+#: inc/admin/admin-metaboxes.php:826
+msgid "Education Event"
+msgstr "رویداد آموزش"
+
+#: inc/admin/admin-metaboxes.php:827
+msgid "Exhibition Event"
+msgstr "رویداد نمایشگاه"
+
+#: inc/admin/admin-metaboxes.php:828
+msgid "Festival"
+msgstr "جشنواره"
+
+#: inc/admin/admin-metaboxes.php:829
+msgid "Food Event"
+msgstr "رویداد غذا"
+
+#: inc/admin/admin-metaboxes.php:830
+msgid "Literary Event"
+msgstr "رویداد ادبی"
+
+#: inc/admin/admin-metaboxes.php:831
+msgid "Music Event"
+msgstr "رویداد موسیقی"
+
+#: inc/admin/admin-metaboxes.php:832
+msgid "Publication Event"
+msgstr "رویداد انتشار"
+
+#: inc/admin/admin-metaboxes.php:833
+msgid "Sale Event"
+msgstr "رویداد فروش"
+
+#: inc/admin/admin-metaboxes.php:834
+msgid "Screening Event"
+msgstr "نمایش رویداد"
+
+#: inc/admin/admin-metaboxes.php:835
+msgid "Social Event"
+msgstr "رویداد اجتماعی"
+
+#: inc/admin/admin-metaboxes.php:836
+msgid "Sports Event"
+msgstr "رویداد ورزشی"
+
+#: inc/admin/admin-metaboxes.php:837
+msgid "Theater Event"
+msgstr "رویداد تئاتر"
+
+#: inc/admin/admin-metaboxes.php:838
+msgid "Visual Arts Event"
+msgstr "هنرهای تجسمی"
+
+#: inc/admin/admin-metaboxes.php:843 inc/admin/admin-metaboxes.php:844
+msgid "Event name"
+msgstr "نام رویداد، مناسبت"
+
+#: inc/admin/admin-metaboxes.php:844
+msgid "The name of your event"
+msgstr "نام رویداد شما"
+
+#: inc/admin/admin-metaboxes.php:848
+msgid "Event description (default excerpt, or beginning of the content)"
+msgstr "شرح رویداد (به طور پیش فرض گزیده یا شروع محتوای)"
+
+#: inc/admin/admin-metaboxes.php:849
+msgid "Enter your event description"
+msgstr "توصیف رویداد خود را وارد کنید"
+
+#: inc/admin/admin-metaboxes.php:849
+msgid "Event description"
+msgstr "شرح رویداد"
+
+#: inc/admin/admin-metaboxes.php:852 inc/admin/admin-metaboxes.php:854
+msgid "Image thumbnail"
+msgstr "تصویر بند انگشتی تصویر"
+
+#: inc/admin/admin-metaboxes.php:853
+msgid ""
+"Minimum width: 720px - Recommended size: 1920px -  .jpg, .png, or. gif "
+"format - crawlable and indexable"
+msgstr ""
+"حداقل عرض: 720 پیکسل - اندازه توصیه شده: 1920px - .jpg، .png، یا. فرمت gif - "
+"قابل crawlable و indexable"
+
+#: inc/admin/admin-metaboxes.php:859 inc/admin/admin-metaboxes.php:860
+msgid "Start date"
+msgstr "تاریخ شروع"
+
+#: inc/admin/admin-metaboxes.php:860 inc/admin/admin-metaboxes.php:870
+msgid "Eg: YYYY-MM-DD"
+msgstr "مثلا: YYYY-MM-DD"
+
+#: inc/admin/admin-metaboxes.php:864 inc/admin/admin-metaboxes.php:865
+msgid "Start time"
+msgstr "زمان شروع"
+
+#: inc/admin/admin-metaboxes.php:865 inc/admin/admin-metaboxes.php:875
+msgid "Eg: HH:MM"
+msgstr "مثلا: HH: MM"
+
+#: inc/admin/admin-metaboxes.php:869 inc/admin/admin-metaboxes.php:870
+msgid "End date"
+msgstr "تاریخ پایان"
+
+#: inc/admin/admin-metaboxes.php:874 inc/admin/admin-metaboxes.php:875
+msgid "End time"
+msgstr "زمان پایان"
+
+#: inc/admin/admin-metaboxes.php:879 inc/admin/admin-metaboxes.php:880
+msgid "Location name"
+msgstr "نام مکان"
+
+#: inc/admin/admin-metaboxes.php:880
+msgid "Eg: Hotel du Palais"
+msgstr "به عنوان مثال: هتل دو پالای"
+
+#: inc/admin/admin-metaboxes.php:884 inc/admin/admin-metaboxes.php:885
+msgid "Location Website"
+msgstr "وب سایت محل سکونت"
+
+#: inc/admin/admin-metaboxes.php:885
+msgid "Eg: http://www.hotel-du-palais.com/"
+msgstr "مثلا: http://www.hotel-du-palais.com/"
+
+#: inc/admin/admin-metaboxes.php:889 inc/admin/admin-metaboxes.php:890
+msgid "Location Address"
+msgstr "آدرس محل سکونت"
+
+#: inc/admin/admin-metaboxes.php:890
+msgid "Eg: 1 Avenue de l'Imperatrice, 64200 Biarritz"
+msgstr "مثلا: 1 Avenue de l'Imperatrice، 64200 Biarritz"
+
+#: inc/admin/admin-metaboxes.php:894 inc/admin/admin-metaboxes.php:895
+msgid "Offer name"
+msgstr "نام ارائه کنید"
+
+#: inc/admin/admin-metaboxes.php:895
+msgid "Eg: General admission"
+msgstr "مثلا: پذیرش عمومی"
+
+#: inc/admin/admin-metaboxes.php:898
+msgid "Select your offer category"
+msgstr "دسته پیشنهاد خود را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:900
+msgid "Primary"
+msgstr "اولیه"
+
+#: inc/admin/admin-metaboxes.php:901
+msgid "Secondary"
+msgstr "ثانوی"
+
+#: inc/admin/admin-metaboxes.php:902
+msgid "Presale"
+msgstr "پیش فروش"
+
+#: inc/admin/admin-metaboxes.php:903
+msgid "Premium"
+msgstr "پولی"
+
+#: inc/admin/admin-metaboxes.php:909
+msgid ""
+"The lowest available price, including service charges and fees, of this type "
+"of ticket."
+msgstr "پایین ترین قیمت موجود، از جمله هزینه خدمات و هزینه های این نوع بلیط."
+
+#: inc/admin/admin-metaboxes.php:910
+msgid "Eg: 10"
+msgstr "مثلا: 10"
+
+#: inc/admin/admin-metaboxes.php:913
+msgid "Select your currency"
+msgstr "ارز خود را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:915 inc/admin/admin-metaboxes.php:1009
+msgid "Select a Currency"
+msgstr "یک ارز را انتخاب کنید"
+
+#: inc/admin/admin-metaboxes.php:916 inc/admin/admin-metaboxes.php:1010
+msgid "U.S. Dollar"
+msgstr "دلار آمریکا"
+
+#: inc/admin/admin-metaboxes.php:917 inc/admin/admin-metaboxes.php:1011
+msgid "Pound Sterling"
+msgstr "پوند استرلینگ"
+
+#: inc/admin/admin-metaboxes.php:918 inc/admin/admin-metaboxes.php:1012
+msgid "Euro"
+msgstr "یورو"
+
+#: inc/admin/admin-metaboxes.php:919 inc/admin/admin-metaboxes.php:1013
+msgid "Argentina Peso"
+msgstr "پزوی آرژانتینن"
+
+#: inc/admin/admin-metaboxes.php:920 inc/admin/admin-metaboxes.php:1014
+msgid "Australian Dollar"
+msgstr "دلار استرالیا"
+
+#: inc/admin/admin-metaboxes.php:921 inc/admin/admin-metaboxes.php:1015
+msgid "Brazilian Real"
+msgstr "رئال برزیل"
+
+#: inc/admin/admin-metaboxes.php:922 inc/admin/admin-metaboxes.php:1016
+msgid "Bulgarian lev"
+msgstr "لوگو بلغاری"
+
+#: inc/admin/admin-metaboxes.php:923 inc/admin/admin-metaboxes.php:1017
+msgid "Canadian Dollar"
+msgstr "دلار کانادایی"
+
+#: inc/admin/admin-metaboxes.php:924 inc/admin/admin-metaboxes.php:1018
+msgid "Chilean Peso"
+msgstr "پزوی شیلی"
+
+#: inc/admin/admin-metaboxes.php:925 inc/admin/admin-metaboxes.php:1019
+msgid "Czech Koruna"
+msgstr "کرونا چک"
+
+#: inc/admin/admin-metaboxes.php:926 inc/admin/admin-metaboxes.php:1020
+msgid "Danish Krone"
+msgstr "کرون دانمارکی"
+
+#: inc/admin/admin-metaboxes.php:927 inc/admin/admin-metaboxes.php:1021
+msgid "Hong Kong Dollar"
+msgstr "دلار هنگ کنگ"
+
+#: inc/admin/admin-metaboxes.php:928 inc/admin/admin-metaboxes.php:1022
+msgid "Hungarian Forint"
+msgstr "فورینت مجارستان"
+
+#: inc/admin/admin-metaboxes.php:929 inc/admin/admin-metaboxes.php:1023
+msgid "Indian rupee"
+msgstr "روپیه هند"
+
+#: inc/admin/admin-metaboxes.php:930 inc/admin/admin-metaboxes.php:1024
+msgid "Israeli New Sheqel"
+msgstr "اسرائیل جدید شقل"
+
+#: inc/admin/admin-metaboxes.php:931 inc/admin/admin-metaboxes.php:1025
+msgid "Japanese Yen"
+msgstr "ین ژاپن"
+
+#: inc/admin/admin-metaboxes.php:932 inc/admin/admin-metaboxes.php:1026
+msgid "Malaysian Ringgit"
+msgstr "Ringgit مالزی"
+
+#: inc/admin/admin-metaboxes.php:933 inc/admin/admin-metaboxes.php:1027
+msgid "Mexican Peso"
+msgstr "پزوی مکزیکی"
+
+#: inc/admin/admin-metaboxes.php:934 inc/admin/admin-metaboxes.php:1028
+msgid "Norwegian Krone"
+msgstr "نروژی کرون"
+
+#: inc/admin/admin-metaboxes.php:935 inc/admin/admin-metaboxes.php:1029
+msgid "New Zealand Dollar"
+msgstr "دلار نیوزیلند"
+
+#: inc/admin/admin-metaboxes.php:936 inc/admin/admin-metaboxes.php:1030
+msgid "Philippine Peso"
+msgstr "پزوی فیلیپین"
+
+#: inc/admin/admin-metaboxes.php:937 inc/admin/admin-metaboxes.php:1031
+msgid "Polish Zloty"
+msgstr "لهستان لهستان"
+
+#: inc/admin/admin-metaboxes.php:938 inc/admin/admin-metaboxes.php:1032
+msgid "Indonesian rupiah"
+msgstr "روپایی اندونزیایی"
+
+#: inc/admin/admin-metaboxes.php:939 inc/admin/admin-metaboxes.php:1033
+msgid "Russian Ruble"
+msgstr "روبل روسیه"
+
+#: inc/admin/admin-metaboxes.php:940 inc/admin/admin-metaboxes.php:1034
+msgid "Singapore Dollar"
+msgstr "دلار سنگاپور"
+
+#: inc/admin/admin-metaboxes.php:941 inc/admin/admin-metaboxes.php:1035
+msgid "South African Rand"
+msgstr "آفریقای جنوبی رند"
+
+#: inc/admin/admin-metaboxes.php:942 inc/admin/admin-metaboxes.php:1036
+msgid "Swedish Krona"
+msgstr "کرون سوئد"
+
+#: inc/admin/admin-metaboxes.php:943 inc/admin/admin-metaboxes.php:1037
+msgid "Swiss Franc"
+msgstr "فرانک سوئیس"
+
+#: inc/admin/admin-metaboxes.php:944 inc/admin/admin-metaboxes.php:1038
+msgid "Taiwan New Dollar"
+msgstr "تایوان دلار جدید"
+
+#: inc/admin/admin-metaboxes.php:945 inc/admin/admin-metaboxes.php:1039
+msgid "Thai Baht"
+msgstr "تایلندی بات"
+
+#: inc/admin/admin-metaboxes.php:946 inc/admin/admin-metaboxes.php:1040
+msgid "Ukrainian hryvnia"
+msgstr "Ukrainian hryvnia"
+
+#: inc/admin/admin-metaboxes.php:947 inc/admin/admin-metaboxes.php:1041
+msgid "Vietnamese đồng"
+msgstr "ویتنامی Đồng"
+
+#: inc/admin/admin-metaboxes.php:951
+msgid "Availability"
+msgstr "دسترسی"
+
+#: inc/admin/admin-metaboxes.php:953 inc/admin/admin-metaboxes.php:1056
+msgid "In Stock"
+msgstr "موجود"
+
+#: inc/admin/admin-metaboxes.php:954 inc/admin/admin-metaboxes.php:1060
+msgid "Sold Out"
+msgstr "فروخته شده"
+
+#: inc/admin/admin-metaboxes.php:955 inc/admin/admin-metaboxes.php:1063
+msgid "Pre Order"
+msgstr "پیش سفارش"
+
+#: inc/admin/admin-metaboxes.php:959
+msgid "Valid From"
+msgstr "معتبر از"
+
+#: inc/admin/admin-metaboxes.php:960 inc/admin/admin-metaboxes.php:961
+msgid "The date when tickets go on sale"
+msgstr "تاریخی که بلیط ها به فروش می رسند"
+
+#: inc/admin/admin-metaboxes.php:962
+msgid "Time"
+msgstr "زمان"
+
+#: inc/admin/admin-metaboxes.php:963 inc/admin/admin-metaboxes.php:964
+msgid "The time when tickets go on sale"
+msgstr "زمانی که بلیط ها به فروش می رسند"
+
+#: inc/admin/admin-metaboxes.php:968 inc/admin/admin-metaboxes.php:969
+msgid "Website to buy tickets"
+msgstr "وب سایت برای خرید بلیط"
+
+#: inc/admin/admin-metaboxes.php:969
+msgid "Eg: https://fnac.com/"
+msgstr "مثلا: https://fnac.com/"
+
+#: inc/admin/admin-metaboxes.php:973 inc/admin/admin-metaboxes.php:974
+msgid "Performer name"
+msgstr "نام هنرمند"
+
+#: inc/admin/admin-metaboxes.php:974
+msgid "Eg: Lana Del Rey"
+msgstr "مثلا: لانا دل ری"
+
+#: inc/admin/admin-metaboxes.php:979
+msgid ""
+"Add markup to your product pages so Google can provide detailed product "
+"information in rich Search results - including Image Search. Users can see "
+"price, availability... right on Search results."
+msgstr ""
+"علامت گذاری به صفحات محصول خود را اضافه کنید تا گوگل بتواند اطلاعات محصول "
+"دقیق را در نتایج جستجوی غنی از جمله جستجوی تصویر ارائه دهد. کاربران می "
+"توانند قیمت، در دسترس بودن ... درست در نتایج جستجو را ببینید."
+
+#: inc/admin/admin-metaboxes.php:982
+msgid ""
+"<strong>Use markup for a specific product, not a category or list of "
+"products.</strong> For example, \"shoes in our shop\" is not a specific "
+"product."
+msgstr ""
+"<strong> استفاده از نشانه گذاری برای یک محصول خاص، نه یک دسته یا لیست "
+"محصولات. </ strong> به عنوان مثال، \\ \"کفش در فروشگاه ما \" یک محصول خاص "
+"نیست."
+
+#: inc/admin/admin-metaboxes.php:983
+msgid "<strong>Adult-related products are not supported.</strong>"
+msgstr "<strong> محصولات مرتبط با بزرگسالان پشتیبانی نمی شوند. </ strong>"
+
+#: inc/admin/admin-metaboxes.php:987 inc/admin/admin-metaboxes.php:988
+msgid "Product name"
+msgstr "نام محصول"
+
+#: inc/admin/admin-metaboxes.php:988
+msgid "The name of your product"
+msgstr "نام محصول شما"
+
+#: inc/admin/admin-metaboxes.php:991 inc/admin/admin-metaboxes.php:992
+msgid "Product description"
+msgstr "توضیحات محصول"
+
+#: inc/admin/admin-metaboxes.php:992
+msgid "The description of the product"
+msgstr "توضیحات محصول"
+
+#: inc/admin/admin-metaboxes.php:995 inc/admin/admin-metaboxes.php:997
+msgid "Thumbnail"
+msgstr "بند انگشتی"
+
+#: inc/admin/admin-metaboxes.php:996
+msgid ""
+"Pictures clearly showing the product, e.g. against a white background, are "
+"preferred."
+msgstr ""
+"تصاویر به وضوح نشان دادن محصول، به عنوان مثال در برابر یک زمینه سفید، ترجیح "
+"داده می شود."
+
+#: inc/admin/admin-metaboxes.php:1002 inc/admin/admin-metaboxes.php:1003
+msgid "Product price"
+msgstr "قیمت کالا"
+
+#: inc/admin/admin-metaboxes.php:1003
+msgid "Eg: 30"
+msgstr "مثلا: 30"
+
+#: inc/admin/admin-metaboxes.php:1007
+msgid "Product currency"
+msgstr "ارز محصول"
+
+#: inc/admin/admin-metaboxes.php:1045
+msgid "Product Condition"
+msgstr "وضعیت محصول"
+
+#: inc/admin/admin-metaboxes.php:1047
+msgid "New"
+msgstr "جدید"
+
+#: inc/admin/admin-metaboxes.php:1048
+msgid "Used"
+msgstr "استفاده شده"
+
+#: inc/admin/admin-metaboxes.php:1049
+msgid "Damaged"
+msgstr "آسیب دیده"
+
+#: inc/admin/admin-metaboxes.php:1050
+msgid "Refurbished"
+msgstr "مرمت شده"
+
+#: inc/admin/admin-metaboxes.php:1054
+msgid "Product Availability"
+msgstr "در دسترس بودن محصول"
+
+#: inc/admin/admin-metaboxes.php:1057
+msgid "In Store Only"
+msgstr "فقط در فروشگاه"
+
+#: inc/admin/admin-metaboxes.php:1058
+msgid "Online Only"
+msgstr "فقط آنلاین"
+
+#: inc/admin/admin-metaboxes.php:1059
+msgid "Limited Availability"
+msgstr "دسترسی محدود"
+
+#: inc/admin/admin-metaboxes.php:1061
+msgid "Out Of Stock"
+msgstr "تمام شده"
+
+#: inc/admin/admin-metaboxes.php:1062
+msgid "Discontinued"
+msgstr "متوقف شد"
+
+#: inc/admin/admin-metaboxes.php:1064
+msgid "Pre Sale"
+msgstr "پیش فروش"
+
+#: inc/admin/admin-metaboxes.php:1070
+msgid ""
+"A simple review about something. When Google finds valid reviews or ratings "
+"markup, they may show a rich snippet that includes stars and other summary "
+"info from reviews or ratings."
+msgstr ""
+"یک بررسی ساده درباره هر چیز. وقتی که گوگل بررسی‌ها و امتیازات دقیق درباره "
+"آیتم‌ها را می‌یابد٬ ممکن است یک محتوای غنی شده شامل ستاره ها و دیگر اطلاعات "
+"خلاصه از نقدها و امتیازات را در صفحه نتایج نمایش دهد. "
+
+#: inc/admin/admin-metaboxes.php:1074 inc/admin/admin-metaboxes.php:1075
+#: inc/admin/admin-metaboxes.php:1079
+msgid "Review item name"
+msgstr "نام آیتم نقد و بررسی"
+
+#: inc/admin/admin-metaboxes.php:1075
+msgid "The item name reviewed"
+msgstr "نام آیتم نقد و بررسی"
+
+#: inc/admin/admin-metaboxes.php:1078
+msgid "Review item image"
+msgstr "تصویر آیتم نقد و بررسی"
+
+#: inc/admin/admin-metaboxes.php:1084 inc/admin/admin-metaboxes.php:1085
+msgid "Your rating"
+msgstr "امتیاز شما"
+
+#: inc/admin/admin-metaboxes.php:1085
+msgid "The item rating"
+msgstr "امتیاز آیتم"
+
+#: inc/admin/admin-metaboxes.php:1088
+msgid "Validate my schema"
+msgstr "اعتبارسنجی شمای من"
+
+#: inc/admin/admin.php:67
+msgid "SEOPress Network settings"
+msgstr "تنظیمات شبکه سئو پرس"
+
+#: inc/admin/admin.php:73
+msgid "SEOPress PRO"
+msgstr "نسخه پرو سئو پرس"
+
+#: inc/admin/admin.php:73 inc/admin/admin.php:3077
+msgid "PRO"
+msgstr "قابلیت‌های حرفه‌ای"
+
+#: inc/admin/admin.php:75 inc/admin/admin.php:3078
+msgid "Redirections"
+msgstr "تغییر مسیرها"
+
+#: inc/admin/admin.php:77 inc/admin/admin.php:3079 inc/admin/bot.php:13
+#: inc/admin/bot.php:14 inc/admin/bot.php:15 inc/admin/bot.php:16
+#: inc/admin/bot.php:40
+msgid "Broken links"
+msgstr "لینک های شکسته"
+
+#: inc/admin/admin.php:78 inc/admin/admin.php:125 inc/admin/admin.php:3080
+#: inc/admin/backlinks.php:13 inc/admin/backlinks.php:14
+#: inc/admin/backlinks.php:15 inc/admin/backlinks.php:16
+#: inc/admin/backlinks.php:40
+msgid "Backlinks"
+msgstr "پیوندها"
+
+#: inc/admin/admin.php:114
+msgid "Dublin Core"
+msgstr "هسته دوبلین"
+
+#: inc/admin/admin.php:115
+msgid "Structured Data Types (schema.org)"
+msgstr "انواع داده های ساختاری (schema.org)"
+
+#: inc/admin/admin.php:116
+msgid "Breadcrumbs"
+msgstr "مسیر راهنما"
+
+#: inc/admin/admin.php:117
+msgid "WooCommerce"
+msgstr "ووکامرس"
+
+#: inc/admin/admin.php:118
+msgid "Easy Digital Downloads"
+msgstr "دانلود آسان دیجیتال یا edd"
+
+#: inc/admin/admin.php:119
+msgid "Page Speed"
+msgstr "سرعت صفحه"
+
+#: inc/admin/admin.php:120 inc/admin/admin.php:247
+msgid "robots.txt"
+msgstr "robots.txt"
+
+#: inc/admin/admin.php:121
+msgid "Google News"
+msgstr "اخبار گوگل"
+
+#: inc/admin/admin.php:122 inc/admin/redirections.php:39
+#: inc/admin/redirections.php:451
+msgid "404"
+msgstr "404"
+
+#: inc/admin/admin.php:123 inc/admin/admin.php:248
+msgid ".htaccess"
+msgstr ".htaccess"
+
+#: inc/admin/admin.php:124
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/admin/admin.php:126
+msgid "URL Rewriting"
+msgstr "بازنویسی نشانی اینترنتی "
+
+#: inc/admin/admin.php:127 inc/admin/admin.php:249
+msgid "White Label"
+msgstr "برچسب سفید"
+
+#: inc/admin/admin.php:149
+msgid "You need to enable WooCommerce in order to view these settings."
+msgstr "برای مشاهده این تنظیمات باید ووکامرس را فعال کنید."
+
+#: inc/admin/admin.php:158
+msgid ""
+"You need to enable Easy Digital Downloads in order to view these settings."
+msgstr ""
+"برای مشاهده این تنظیمات نیاز به فعال کردن Easy Digital Downloads دارید."
+
+#: inc/admin/admin.php:185
+msgid ""
+"You need to enable XML Sitemap feature, in order to use Google News Sitemap."
+msgstr ""
+"برای استفاده از Sitemap Google News باید ویژگی XML Sitemap را فعال کنید."
+
+#: inc/admin/admin.php:186
+msgid "Change this settings"
+msgstr "این تنظیمات را تغییر دهید"
+
+#: inc/admin/admin.php:316
+msgid "Post types to scan"
+msgstr "انواع پست برای اسکن"
+
+#: inc/admin/admin.php:324
+msgid "Number of posts / pages / post types to scan"
+msgstr "تعداد پست ها / صفحات / انواع پست ها برای اسکن"
+
+#: inc/admin/admin.php:332
+msgid "Scan link type (slow down the bot)"
+msgstr "نوع لینک اسکن (کاهش سرعت ربات)"
+
+#: inc/admin/admin.php:340
+msgid "Scan 404 only"
+msgstr "اسکن 404 تنها"
+
+#: inc/admin/admin.php:348
+msgid "Request Timeout (default 5 sec)"
+msgstr "درخواست تاخیر (به طور پیش فرض 5 ثانیه)"
+
+#: inc/admin/admin.php:356
+msgid "Clean broken links list when requesting a new scan"
+msgstr "پاک کردن لیست لینک های شکسته هنگام درخواست یک اسکن جدید"
+
+#: inc/admin/admin.php:373
+msgid "Business type"
+msgstr "نوع کسب و کار"
+
+#: inc/admin/admin.php:478
+msgid "Cart page"
+msgstr "صفحه سبد خرید"
+
+#: inc/admin/admin.php:486
+msgid "Checkout page"
+msgstr "صفحه پرداخت"
+
+#: inc/admin/admin.php:494
+msgid "Customer account pages"
+msgstr "صفحات حساب مشتری"
+
+#: inc/admin/admin.php:502 inc/admin/admin.php:535
+msgid "OG Price"
+msgstr "OG قیمت"
+
+#: inc/admin/admin.php:510 inc/admin/admin.php:543
+msgid "OG Currency"
+msgstr "ارز OG"
+
+#: inc/admin/admin.php:518
+msgid "Remove WooCommerce generator tag in your head"
+msgstr "حذف تگ تولیدکننده ووکامرس در سربرگ شما"
+
+#: inc/admin/admin.php:551
+msgid "Remove Easy Digital Downloads generator tag in your head"
+msgstr "حذف تگ مولد Easy Digital Downloads در سر خود"
+
+#: inc/admin/admin.php:568
+msgid "Enable Dublin Core"
+msgstr "دوبلین را فعال کنید"
+
+#: inc/admin/admin.php:585
+msgid "Enable Structured Data Types"
+msgstr "نوع داده ساختاری را فعال کنید"
+
+#: inc/admin/admin.php:593 inc/admin/admin.php:2297
+msgid "Upload your publisher logo"
+msgstr "لوگوی ناشر خود را آپلود کنید"
+
+#: inc/admin/admin.php:610 inc/admin/admin.php:2365
+msgid "Enable Breadcrumbs"
+msgstr "پخت و پز را فعال کنید"
+
+#: inc/admin/admin.php:618 inc/admin/admin.php:2382
+msgid "Enable JSON/LD Breadcrumbs"
+msgstr "JSON / LD Breadcrumbs را فعال کنید"
+
+#: inc/admin/admin.php:626 inc/admin/admin.php:2394
+msgid "Breadcrumbs Separator"
+msgstr "جداساز مسیریاب"
+
+#: inc/admin/admin.php:634
+msgid "Translation for homepage"
+msgstr "ترجمه برای صفحه اصلی"
+
+#: inc/admin/admin.php:642
+msgid "Translation for \"Error 404\""
+msgstr "ترجمه برای «خطا 404»"
+
+#: inc/admin/admin.php:650
+msgid "Translation for \"Search results for\""
+msgstr "ترجمه برای \\ \"نتایج جستجو برای \""
+
+#: inc/admin/admin.php:658
+msgid "Translation for \"No results\""
+msgstr "ترجمه \\ \"بدون نتیجه \""
+
+#: inc/admin/admin.php:666
+msgid "Remove Posts page"
+msgstr "حذف برگه‌ی پست ها"
+
+#: inc/admin/admin.php:674
+msgid "Disable default breadcrumbs separator"
+msgstr "جداسازی پودرهای خردهفروشی را غیرفعال کنید"
+
+#: inc/admin/admin.php:700 inc/admin/admin.php:722
+msgid "Enable Robots"
+msgstr "فعال کردن روبات ها"
+
+#: inc/admin/admin.php:707 inc/admin/admin.php:729 inc/admin/admin.php:2542
+#: inc/admin/admin.php:2551
+msgid "Virtual Robots.txt file"
+msgstr "فایل Robots.txt مجازی"
+
+#: inc/admin/admin.php:747 inc/admin/admin.php:2602
+msgid "Enable Google News Sitemap"
+msgstr "Google Sitemap را فعال کنید"
+
+#: inc/admin/admin.php:755 inc/admin/admin.php:2614
+msgid "Publication Name (must be the same as used in Google News)"
+msgstr "نام انتشار (باید مشابه آنچه در اخبار Google استفاده می شود)"
+
+#: inc/admin/admin.php:763
+msgid "Select your Custom Post Type to INCLUDE in your Google News Sitemap"
+msgstr ""
+"نوع پست سفارشی خود را انتخاب کنید تا در نقشه سایت گوگل اخبار خود وارد شوید"
+
+#: inc/admin/admin.php:780
+msgid "404 log"
+msgstr "مانیتور 404"
+
+#: inc/admin/admin.php:788
+msgid "404 cleaning"
+msgstr "404 تمیز کردن"
+
+#: inc/admin/admin.php:796
+msgid "Redirect 404 to"
+msgstr "تغییر مسیر 404 به"
+
+#: inc/admin/admin.php:804 inc/admin/admin.php:2727
+msgid "Redirect to specific URL"
+msgstr "تغییر مسیر به URL خاص"
+
+#: inc/admin/admin.php:812
+msgid "Status code of redirections"
+msgstr "کد وضعیت تغییر مسیر"
+
+#: inc/admin/admin.php:820
+msgid "Email notifications"
+msgstr "اعلان های ایمیل"
+
+#: inc/admin/admin.php:828 inc/admin/admin.php:2778
+msgid "Send emails to"
+msgstr "ارسال ایمیل به"
+
+#: inc/admin/admin.php:845 inc/admin/admin.php:2801
+msgid "Edit your htaccess file"
+msgstr "فایل htaccess خود را ویرایش کنید"
+
+#: inc/admin/admin.php:862 inc/admin/admin.php:2840
+msgid "Display content before each post"
+msgstr "محتوا را قبل از هر پست نمایش دهید"
+
+#: inc/admin/admin.php:870 inc/admin/admin.php:2855
+msgid "Display content after each post"
+msgstr "محتوای نمایش پس از هر پست"
+
+#: inc/admin/admin.php:878
+msgid "Disable comments RSS feed"
+msgstr "RSS خوراک نظرات را غیرفعال کنید"
+
+#: inc/admin/admin.php:886
+msgid "Disable posts RSS feed"
+msgstr "غیرفعال کردن پست های خوراک RSS"
+
+#: inc/admin/admin.php:894
+msgid "Disable extra RSS feed"
+msgstr "RSS اضافی را غیرفعال کنید"
+
+#: inc/admin/admin.php:902
+msgid "Disable all RSS feeds"
+msgstr "همه RSS ها را غیرفعال کنید"
+
+#: inc/admin/admin.php:918
+msgid "Connect with Google Analytics API"
+msgstr "با Google Analytics API ارتباط برقرار کنید"
+
+#: inc/admin/admin.php:925 inc/admin/admin.php:3302
+msgid "Google Console Client ID"
+msgstr "شناسه مشتری کنسول گوگل Google Console Client ID"
+
+#: inc/admin/admin.php:932 inc/admin/admin.php:3316
+msgid "Google Console Secret ID"
+msgstr "شناسه مخفی Google Console"
+
+#: inc/admin/admin.php:957
+msgid "Block Structured Data Types metabox to user roles"
+msgstr ""
+"بلوک داده های ساختاری داده ها را به عنوان متابوکو به نقش های کاربر متصل می "
+"کند"
+
+#: inc/admin/admin.php:974 inc/admin/admin.php:2937
+msgid "Enter your Majestic API key"
+msgstr "کلید Majestic API خود را وارد کنید"
+
+#: inc/admin/admin.php:991
+msgid "Custom URL for search results"
+msgstr "URL دلخواه برای نتایج جستجو"
+
+#: inc/admin/admin.php:1008 inc/admin/admin.php:1063
+msgid "Remove SEOPress admin header"
+msgstr "حذف سربرگ ادمین سئوپرس"
+
+#: inc/admin/admin.php:1016 inc/admin/admin.php:1071
+msgid "Filter SEO admin menu dashicons"
+msgstr "دشیکون های منوی ادمین فیلتر سئو"
+
+#: inc/admin/admin.php:1024 inc/admin/admin.php:1079
+msgid "Edit SEOPress item in admin bar"
+msgstr "ویراییش آیتم سئوپرس در نوار ادمین"
+
+#: inc/admin/admin.php:1032 inc/admin/admin.php:1087
+msgid "Add your custom logo in SEOPress admin header"
+msgstr "افزودن لوگوی سفارشی خود به سربرگ ادمین سئوپرس"
+
+#: inc/admin/admin.php:1040 inc/admin/admin.php:1095
+msgid "Remove SEOPress credits in footer admin pages"
+msgstr "حذف کردیت سئوپرس از فوتر برگه های ادمین"
+
+#: inc/admin/admin.php:1048
+msgid "Remove SEOPress menu/submenu pages"
+msgstr "حذف صفحات منو / زیر منو سئوپرس"
+
+#: inc/admin/admin.php:1142
+msgid ""
+"The SEOPress BOT scans links in you content to find errors (404...). We "
+"limit this search to the last 100 posts/pages/custom post types."
+msgstr ""
+"SEOPress BOT اسکن لینک ها در شما برای پیدا کردن خطا (404 ...). ما این جستجو "
+"را به 100 پست / صفحات / پست های پست سفارشی محدود می کنیم."
+
+#: inc/admin/admin.php:1144
+msgid "You can increase this value in the settings tab just above."
+msgstr "شما می توانید این مقدار را در برگه تنظیمات بالا در بالا افزایش دهید."
+
+#: inc/admin/admin.php:1154
+msgid "Check our guide"
+msgstr "راهنمای ما را بررسی کنید"
+
+#: inc/admin/admin.php:1155
+msgid "View scan results"
+msgstr "مشاهده نتایج اسکن"
+
+#: inc/admin/admin.php:1161
+msgid "<p>SEOPress BOT settings</p>"
+msgstr "<p> تنظیمات SEOPress BOT </ p>"
+
+#: inc/admin/admin.php:1178
+msgid "<p>Local Business data type for Google.</p>"
+msgstr "<p> نوع داده محلی کسب و کار برای Google. </ p>"
+
+#: inc/admin/admin.php:1182
+msgid ""
+"You have to set an image in Knowledge Graph settings, otherwise, your Google "
+"Local Business data will not be valid."
+msgstr ""
+"شما باید یک تصویر را در تنظیمات نمودار دانش تنظیم کنید، در غیر این صورت، "
+"دادههای کسب و کار Google Local Business شما معتبر نخواهند شد."
+
+#: inc/admin/admin.php:1183
+msgid "Fix this!"
+msgstr "این را ثابت کنید"
+
+#: inc/admin/admin.php:1201 inc/admin/admin.php:1205 inc/admin/admin.php:1231
+#: inc/admin/admin.php:1235 inc/admin/admin.php:1259 inc/admin/admin.php:1263
+#: inc/admin/admin.php:1287 inc/admin/admin.php:1291 inc/admin/admin.php:1314
+#: inc/admin/admin.php:1318 inc/admin/admin.php:1342 inc/admin/admin.php:1346
+#: inc/admin/admin.php:1399 inc/admin/admin.php:1403 inc/admin/admin.php:1448
+#: inc/admin/admin.php:1452 inc/admin/admin.php:1488 inc/admin/admin.php:1492
+#: inc/admin/admin.php:1545 inc/admin/admin.php:1549 inc/admin/admin.php:1573
+#: inc/admin/admin.php:1577
+msgid "Click to disable this feature"
+msgstr "برای غیرفعال کردن این ویژگی کلیک کنید"
+
+#: inc/admin/admin.php:1202 inc/admin/admin.php:1204 inc/admin/admin.php:1232
+#: inc/admin/admin.php:1234 inc/admin/admin.php:1260 inc/admin/admin.php:1262
+#: inc/admin/admin.php:1288 inc/admin/admin.php:1290 inc/admin/admin.php:1315
+#: inc/admin/admin.php:1317 inc/admin/admin.php:1343 inc/admin/admin.php:1345
+#: inc/admin/admin.php:1400 inc/admin/admin.php:1402 inc/admin/admin.php:1449
+#: inc/admin/admin.php:1451 inc/admin/admin.php:1489 inc/admin/admin.php:1491
+#: inc/admin/admin.php:1546 inc/admin/admin.php:1548 inc/admin/admin.php:1574
+#: inc/admin/admin.php:1576
+msgid "Click to enable this feature"
+msgstr "برای فعال کردن این ویژگی کلیک کنید"
+
+#: inc/admin/admin.php:1210
+msgid "To edit your business name, visit this page."
+msgstr "برای ویرایش نام کسب و کار خود، به این صفحه مراجعه کنید."
+
+#: inc/admin/admin.php:1215
+msgid "<p>Improve WooCommerce SEO</p>"
+msgstr "‫<p> بهبود سئوی ووکامرس </ p>"
+
+#: inc/admin/admin.php:1243
+msgid "<p>Improve Easy Digital Downloads SEO</p>"
+msgstr "<p> بهبود جستجوگرهای آسان دیجیتال </ p>"
+
+#: inc/admin/admin.php:1271
+msgid ""
+"<p>Dublin Core is a set of meta tags to describe your content.<br> These "
+"tags are automatically generated. Recognized by states / governements, they "
+"are used by directories, Bing, Baidu and Yandex.</p>"
+msgstr ""
+"<p> Dublin Core مجموعه ای از متا تگ ها برای توصیف محتوای شما است. <br> این "
+"برچسب ها به طور خودکار تولید می شوند. </ p> <p dir = \"rtl\"> </ p> <p>"
+
+#: inc/admin/admin.php:1299
+msgid ""
+"<p>Add Structured Data Types support, mark your content and get better "
+"Google Search Results appearance</p>"
+msgstr ""
+"<p> اضافه کردن انواع داده های ساخت یافته پشتیبانی، علامت گذاری مطالب خود و "
+"بهبود نتایج جستجوی Google Search </ p>"
+
+#: inc/admin/admin.php:1326
+msgid ""
+"Configure your breadcrumbs, using schema.org markup, allowing it to appear "
+"in Google's search results."
+msgstr ""
+"پخت و پز خود را با استفاده از نشانه schema.org، اجازه می دهد آن را در نتایج "
+"جستجوی گوگل نشان می دهد."
+
+#: inc/admin/admin.php:1326
+msgid "Google developers website (new window)"
+msgstr "وب سایت توسعه دهندگان Google (پنجره جدید)"
+
+#: inc/admin/admin.php:1326
+msgid "Lean more on Google developers website"
+msgstr "بیشتر در وب سایت توسعه دهندگان گوگل قرار دهید"
+
+#: inc/admin/admin.php:1351
+msgid ""
+"Copy and paste this function into your theme (eg: header.php) to enable your "
+"breadcrumbs:"
+msgstr ""
+"این تابع را به موضوع خود کپی کنید و بگذارید (به عنوان مثال: header.php) برای "
+"فعال کردن پودرهای سفالی:"
+
+#: inc/admin/admin.php:1353
+msgid ""
+"This function accepts 1 parameter: <strong>true / false</strong> for "
+"<strong>echo / return</strong>. Default: <strong>true</strong>."
+msgstr ""
+"این تابع 1 پارامتر را دریافت می کند: <strong> true / false </ strong> برای "
+"<strong> echo / return </ strong>. پیش فرض: <strong> درست </ strong>."
+
+#: inc/admin/admin.php:1354
+msgid ""
+"You can also use this shortcode in your content (post, page, post type...):"
+msgstr ""
+"همچنین میتوانید از این کد کوتاه در محتوا (پست، صفحه، پست نوع ...) استفاده "
+"کنید:"
+
+#: inc/admin/admin.php:1360
+msgid "Check your site performance with Google Page Speed (beta)."
+msgstr "عملکرد سایت خود را با سرعت صفحه Google (بتا) بررسی کنید."
+
+#: inc/admin/admin.php:1363
+msgid ""
+"We recommend WP Rocket caching plugin to quickly and easily optimize your "
+"WordPress site. Starting from just $49."
+msgstr ""
+"ما افزونه swift performance را برای بهینه سازی سایت شما پیشنهاد می‌کنیم."
+
+#: inc/admin/admin.php:1366
+msgid ""
+"Get an insightful audit of your website's quality for better performances "
+"with Dareboost."
+msgstr ""
+"برای انجام کارهای بهتر با Dareboost یک حسابرسی دقیق از کیفیت وب سایت خود "
+"دریافت کنید."
+
+#: inc/admin/admin.php:1368
+msgid "Analyse homepage with Page Speed"
+msgstr "صفحه خانگی را با سرعت صفحه٬ تجزیه و تحلیل کنید"
+
+#: inc/admin/admin.php:1370
+msgid "Remove last analysis"
+msgstr "حذف آخرین تجزیه و تحلیل"
+
+#: inc/admin/admin.php:1383
+msgid "Configure your virtual robots.txt file."
+msgstr "پیکربندی فایل robots.txt مجازی شما."
+
+#: inc/admin/admin.php:1408
+msgid ""
+"THIS VIRTUAL FILE WILL NOT BYPASS YOUR REAL ROBOTS.TXT FILE IF YOU HAVE ONE."
+msgstr ""
+"این فایل VIRTUAL از فایل ROBOTS.TXT واقعی خود خارج می شود اگر شما یک فایل "
+"داشته باشید."
+
+#: inc/admin/admin.php:1414
+msgid ""
+"Your server uses NGINX. If your robots.txt doesn't work properly, you need "
+"to add this rule to your configuration:"
+msgstr ""
+"سرور شما از NGINX استفاده می کند. اگر robots.txt شما به درستی کار نکند، باید "
+"این قاعده را به پیکربندی خود اضافه کنید:"
+
+#: inc/admin/admin.php:1424
+msgid "View your robots.txt"
+msgstr "robots.txt خود را مشاهده کنید"
+
+#: inc/admin/admin.php:1426 inc/admin/admin.php:1466
+msgid "Flush permalinks"
+msgstr "حذف پیوندهای یکتا"
+
+#: inc/admin/admin.php:1432
+msgid "<p>Enable your Google News Sitemap</p>"
+msgstr "<p>نقشه سایت اخبار گوگل را فعال کنید</p>"
+
+#: inc/admin/admin.php:1457
+msgid ""
+"To view your sitemap, enable permalinks (not default one), and save settings "
+"to flush them."
+msgstr ""
+"برای مشاهده نقشه سایت خود، پیوندهای یکتا را فعال کنید (به طور پیش فرض نیست) "
+"و تنظیمات را برای ذخیره آنها انجام دهید."
+
+#: inc/admin/admin.php:1459
+msgid ""
+"We respect the rules of Google News: Only articles published during the "
+"previous two days, and, to a limit of 1000 articles, are visible in the "
+"sitemap."
+msgstr ""
+"ما به قوانین اخبار گوگل احترام می گذاریم: فقط مقالات منتشر شده در دو روز "
+"گذشته و حداکثر 1000 مقاله در نقشه سایت قابل مشاهده است."
+
+#: inc/admin/admin.php:1462
+msgid "View your sitemap"
+msgstr "نقشه سایت خود را مشاهده کنید"
+
+#: inc/admin/admin.php:1464
+msgid "Ping Google manually"
+msgstr "پینگ گوگل به صورت دستی"
+
+#: inc/admin/admin.php:1472
+msgid ""
+"Monitor 404 urls in your Dashboard. Crawlers (robots/spiders) will be "
+"automatically exclude (eg: Google Bot, Yahoo, Bing...)."
+msgstr ""
+"404 URL را در داشبورد خود نظارت کنید. خزنده ها (ربات ها / عنکبوت ها) به طور "
+"خودکار حذف می شوند (مانند: Google Bot، Yahoo، Bing ...)."
+
+#: inc/admin/admin.php:1497
+msgid "404 URLS are bad for:"
+msgstr "404 URLS بد برای:"
+
+#: inc/admin/admin.php:1500
+msgid "User experience"
+msgstr "تجربه ی کاربر"
+
+#: inc/admin/admin.php:1501
+msgid "Performances"
+msgstr "عملکردها"
+
+#: inc/admin/admin.php:1502
+msgid "Crawl budget allocated by Google"
+msgstr "Crawl budget allocated by Google"
+
+#: inc/admin/admin.php:1505
+msgid "All these reasons degrade your SEO AND your conversion."
+msgstr "همه این دلایل باعث کاهش سئوی شما و نرخ تبدیل شما می شود."
+
+#: inc/admin/admin.php:1511
+msgid "Edit your htaccess file."
+msgstr "فایل htaccess خود را ویرایش کنید."
+
+#: inc/admin/admin.php:1513
+msgid "SAVE YOUR HTACCESS FILE BEFORE EDIT!"
+msgstr "قبل از ویرایش، فایل HACCESS خود را ذخیره کنید!"
+
+#: inc/admin/admin.php:1518
+msgid "Configure WordPress default feeds."
+msgstr "پیکربندی خوراک پیش فرض وردپرس."
+
+#: inc/admin/admin.php:1523
+msgid ""
+"Check your backlinks with Majestic. You need to enter your own Majestic API "
+"key to use this feature."
+msgstr ""
+"لینک های خود را با Majestic بررسی کنید. برای استفاده از این ویژگی باید کلید "
+"Key Majestic API خود را وارد کنید."
+
+#: inc/admin/admin.php:1524
+msgid "View your backlinks"
+msgstr "پیوندهای خود را مشاهده کنید"
+
+#: inc/admin/admin.php:1529
+msgid "Change the URL rewriting."
+msgstr "تغییر URL را بازنویسی کنید"
+
+#: inc/admin/admin.php:1557
+msgid "Enable White Label."
+msgstr "برچسب سفید را فعال کنید"
+
+#: inc/admin/admin.php:1585
+msgid ""
+"Connect your WordPress site with Google Analytics API and get statistics "
+"right in your Dashboard."
+msgstr ""
+"سایت WordPress خود را با API Google Analytics مرتبط کنید و آمار را در "
+"داشبورد خود ببرید."
+
+#: inc/admin/admin.php:1595
+msgid ""
+"Watch our video guide to connect your WordPress site with Google Analytics "
+"API."
+msgstr "راهنمای ویدئویی ما برای اتصال سایت وردپرس خود با Google Analytics API."
+
+#: inc/admin/admin.php:1600
+msgid "Track transactions in Google Analytics."
+msgstr "تراکنش ها را در گوگل آنالتیکز دنبال کنید."
+
+#: inc/admin/admin.php:1663
+msgid "The higher the value, the more time it will take."
+msgstr "هر چه مقدار آن بالاتر باشد، زمان بیشتری خواهد برد."
+
+#: inc/admin/admin.php:1676 inc/admin/admin.php:1693 inc/admin/admin.php:1727
+msgid "Yes"
+msgstr "بله"
+
+#: inc/admin/admin.php:1714
+msgid ""
+"If the request exceeds x seconds of delay, the link will be considered as "
+"down"
+msgstr ""
+"اگر درخواست بیش از x ثانیه تأخیر باشد، لینک به عنوان پایین در نظر گرفته می "
+"شود"
+
+#: inc/admin/admin.php:1961
+msgid "default:"
+msgstr "به طور پیش فرض:"
+
+#: inc/admin/admin.php:2017
+msgid "Closed?"
+msgstr "بسته شده؟"
+
+#: inc/admin/admin.php:2106 inc/admin/admin.php:2123 inc/admin/admin.php:2140
+msgid "noindex"
+msgstr "noindex"
+
+#: inc/admin/admin.php:2157 inc/admin/admin.php:2209
+msgid "Add OG:PRICE meta for product"
+msgstr "اضافه کردن OG: PRICE برای محصول"
+
+#: inc/admin/admin.php:2174 inc/admin/admin.php:2226
+msgid "Add OG:CURRENCY meta for product"
+msgstr "اضافه کردن OG: CURRENCY meta برای محصول"
+
+#: inc/admin/admin.php:2191
+msgid "Remove WooCommerce meta generator"
+msgstr "حذف تولیدکننده‌ی متای ووکامرس"
+
+#: inc/admin/admin.php:2243
+msgid "Remove EDD meta generator"
+msgstr "EDA Meta Generator را حذف کنید"
+
+#: inc/admin/admin.php:2261
+msgid ""
+"Enable Dublin Core meta tags (dc.title, dc.description, dc.source, dc."
+"language, dc.relation, dc.subject)"
+msgstr ""
+"فعال کردن متا تگ های Dublin Core (dc.title، dc.description، dc.source، dc."
+"language، dc.relation، dc.subject)"
+
+#: inc/admin/admin.php:2279
+msgid ""
+"Enable Structured Data Types metabox for your posts, pages and custom post "
+"types"
+msgstr ""
+"متاباکس انواع داده ساختاری را برای پست های خود، صفحات و انواع پست های سفارشی "
+"فعال کنید"
+
+#: inc/admin/admin.php:2297
+msgid "Select your logo"
+msgstr "لوگوی خود را انتخاب کنید"
+
+#: inc/admin/admin.php:2325
+msgid ""
+"Files must be raster, such as .jpg, .png, or .gif, not vector, such as .svg."
+msgstr ""
+"فایل ها باید شطرنجی باشند، مانند .jpg، .png، یا .gif، نه بردار، مانند .svg."
+
+#: inc/admin/admin.php:2328
+msgid "Animation is not allowed."
+msgstr "انیمیشن مجاز نیست"
+
+#: inc/admin/admin.php:2331
+msgid "Use full wordmark or full logo; not an icon."
+msgstr "استفاده از لغت کامل یا آرم کامل؛ یک آیکون نیست"
+
+#: inc/admin/admin.php:2334
+msgid "The graphic must be legible on a white or light background"
+msgstr "گرافیک باید در پس زمینه سفید یا نور قابل خواندن باشد"
+
+#: inc/admin/admin.php:2337
+msgid "The logo should be a rectangle, not a square."
+msgstr "لوگو باید یک مستطیل باشد، نه یک مربع."
+
+#: inc/admin/admin.php:2340
+msgid ""
+"The logo should fit in a 600x60px rectangle, and either be exactly 60px high "
+"(preferred), or exactly 600px wide. <br/>For example, 450x45px would not be "
+"acceptable, even though it fits in the 600x60px rectangle."
+msgstr ""
+"لوگو باید در یک مستطیل 600x60px قرار بگیرد و یا دقیقا 60px (preferred) یا "
+"دقیقا 600px عرض باشد. <br/> به عنوان مثال، 450x45px قابل قبول نخواهد بود، "
+"حتی اگر آن را در مستطیل 600x60px قرار دهید."
+
+#: inc/admin/admin.php:2343
+msgid ""
+"The text in word-based logos should be at most 48px tall and centered "
+"vertically against the 60px image height. Additional space should be added "
+"to pad the height to 60px."
+msgstr ""
+"متن در آرم های مبتنی بر کلمه باید حداکثر 48 پیکسل بلند و عمودی در برابر "
+"ارتفاع تصویر 60px باشد. فضای اضافی باید به پد ارتفاع تا 60px اضافه شود."
+
+#: inc/admin/admin.php:2346
+msgid ""
+"Logos with a solid background should include 6px minimum padding around the "
+"wordmark."
+msgstr "آرم ها با پس زمینه جامد باید حاوی حداقل 6 پیکسل در اطراف علامت."
+
+#: inc/admin/admin.php:2350 inc/admin/report-page-speed.php:187
+#: inc/admin/report-page-speed.php:231 inc/admin/report-page-speed.php:280
+msgid "Learn more"
+msgstr "بیشتر بدانید"
+
+#: inc/admin/admin.php:2394
+msgid "eg: \\ "
+msgstr "به عنوان مثال: \\ "
+
+#: inc/admin/admin.php:2400
+msgid "-"
+msgstr "-"
+
+#: inc/admin/admin.php:2401
+msgid "–"
+msgstr "-"
+
+#: inc/admin/admin.php:2402
+msgid ">"
+msgstr ">"
+
+#: inc/admin/admin.php:2403
+msgid "<"
+msgstr "<"
+
+#: inc/admin/admin.php:2404
+msgid "|"
+msgstr "|"
+
+#: inc/admin/admin.php:2415
+msgid "Customize breadcrumbs separator with a hook"
+msgstr "نمایش مسیر را با قلاب/هوک سفارشی کنید"
+
+#: inc/admin/admin.php:2423 inc/functions/options-breadcrumbs.php:103
+msgid "Home"
+msgstr "خانه"
+
+#: inc/admin/admin.php:2423
+msgid "default: Home"
+msgstr "به طور پیش فرض: صفحه اصلی"
+
+#: inc/admin/admin.php:2434 inc/functions/options-breadcrumbs.php:109
+msgid "404 error"
+msgstr "خطای 404"
+
+#: inc/admin/admin.php:2434
+msgid "default: 404 error"
+msgstr "به طور پیش فرض: خطای 404"
+
+#: inc/admin/admin.php:2445 inc/functions/options-breadcrumbs.php:115
+msgid "Search results for: "
+msgstr "نتایج جستجو برای: "
+
+#: inc/admin/admin.php:2445
+msgid "default: Search results for: "
+msgstr "به طور پیش فرض: نتایج جستجو برای: "
+
+#: inc/admin/admin.php:2456 inc/functions/options-breadcrumbs.php:121
+msgid "No results"
+msgstr "هیچ نتیجه ای"
+
+#: inc/admin/admin.php:2456
+msgid "default: No results"
+msgstr "به طور پیش فرض: هیچ نتیجه ای ندارد"
+
+#: inc/admin/admin.php:2472
+msgid "Remove static Posts page defined in WordPress Reading settings"
+msgstr "حذف صفحات پست استاتیک که در تنظیمات خواندن وردپرس تعریف شده است"
+
+#: inc/admin/admin.php:2489
+msgid ""
+"My theme / Bootstrap is already displaying a separator in my breadcrumbs"
+msgstr "قالب من / بوت استرپ در حال حاضر یک جداساز در مسیر سایت من نمایش می‌دهد"
+
+#: inc/admin/admin.php:2510 inc/admin/admin.php:2524
+msgid "Enable robots.txt virtual file"
+msgstr "فعال کردن فایل مجازی robots.txt"
+
+#: inc/admin/admin.php:2535 inc/admin/admin.php:2788
+msgid "Access not allowed."
+msgstr "دسترسی مجاز نیست."
+
+#: inc/admin/admin.php:2542 inc/admin/admin.php:2551
+msgid "This is your robots.txt file!"
+msgstr "این فایل robots.txt شما است!"
+
+#: inc/admin/admin.php:2561
+msgid "Block SemrushBot"
+msgstr "بلوک SemrushBot"
+
+#: inc/admin/admin.php:2564
+msgid "Block MajesticSEOBot"
+msgstr "بلوک MajesticSEOBot"
+
+#: inc/admin/admin.php:2566
+msgid "Link to your sitemap"
+msgstr "پیوند به نقشه سایت شما"
+
+#: inc/admin/admin.php:2569
+msgid "Allow Google AdSense bot"
+msgstr "به روبات گوگل ادسنس اجازه دهید"
+
+#: inc/admin/admin.php:2572
+msgid "Allow Google Image bot"
+msgstr "اجازه دهید به روبات تصاویر گوگل"
+
+#: inc/admin/admin.php:2576
+msgid "Default WP rules"
+msgstr "قوانین پیش فرض وردپرس"
+
+#: inc/admin/admin.php:2588
+msgid "Guide to edit your robots.txt file - new window"
+msgstr "راهنمای ویرایش فایل robots.txt شما - پنجره جدید"
+
+#: inc/admin/admin.php:2614
+msgid "Enter your Google News Publication Name"
+msgstr "نام انتشارات اخبار گوگل خود را وارد کنید"
+
+#: inc/admin/admin.php:2671
+msgid "Enable 404 monitoring"
+msgstr "مانیتور 404 را فعال کنید"
+
+#: inc/admin/admin.php:2673
+msgid "View your 404 / 301"
+msgstr "مشاهده 404/301 شما"
+
+#: inc/admin/admin.php:2690
+msgid ""
+"Automatically delete 404 after 30 days (useful if you have a lot of 404)"
+msgstr ""
+"به صورت خودکار 404 بعد از 30 روز حذف (مفید است اگر شما مقدار زیادی از 404)"
+
+#: inc/admin/admin.php:2692
+msgid ""
+"You must deactivate and reactivate SEOPress PRO to enable the scheduled task "
+"(CRON)"
+msgstr ""
+"شما باید SEOPress PRO را فعال کنید تا کار برنامه ریزی شده (CRON) را فعال "
+"کنید."
+
+#: inc/admin/admin.php:2711
+msgid "Homepage"
+msgstr "صفحه اصلی"
+
+#: inc/admin/admin.php:2714
+msgid "Custom URL"
+msgstr "URL سفارشی"
+
+#: inc/admin/admin.php:2727
+msgid "Enter your custom url"
+msgstr "آدرس دلخواه خود را وارد کنید"
+
+#: inc/admin/admin.php:2742
+msgid "301 redirect"
+msgstr "301 تغییر مسیر"
+
+#: inc/admin/admin.php:2745
+msgid "302 redirect"
+msgstr "302 تغییر مسیر"
+
+#: inc/admin/admin.php:2748
+msgid "307 redirect"
+msgstr "307 تغییر مسیر"
+
+#: inc/admin/admin.php:2766
+msgid "1 mail each time a new 404 is created"
+msgstr "1 بار در هر بار یک 404 جدید ایجاد می شود"
+
+#: inc/admin/admin.php:2778
+msgid "Enter your email"
+msgstr "ایمیل خود را وارد کنید"
+
+#: inc/admin/admin.php:2791
+msgid ""
+"Multisite is enabled, go to network SEO settings to manage your .htaccess "
+"file."
+msgstr ""
+"Multisite فعال است، برای تنظیم فایل .htaccess به تنظیمات SEO شبکه بروید."
+
+#: inc/admin/admin.php:2801
+msgid "This is your htaccess file!"
+msgstr "این فایل htaccess شماست!"
+
+#: inc/admin/admin.php:2809
+msgid "Block directory browsing"
+msgstr "مرور پوشه دایرکتوری"
+
+#: inc/admin/admin.php:2814
+msgid "Protect wp-config.php file"
+msgstr "از فایل wp-config.php محافظت کنید"
+
+#: inc/admin/admin.php:2816
+msgid "301 redirection"
+msgstr "301 تغییر مسیر"
+
+#: inc/admin/admin.php:2820
+msgid "Saves htaccess changes"
+msgstr "تغییرات htaccess را ذخیره می کند"
+
+#: inc/admin/admin.php:2823
+msgid "You don't have an htaccess file on your server."
+msgstr "شما یک فایل htaccess در سرور خود ندارید"
+
+#: inc/admin/admin.php:2826
+msgid "Your server is running Nginx, you don't have htaccess file."
+msgstr "سرور شما Nginx را اجرا می کند، شما فایل htaccess را ندارید."
+
+#: inc/admin/admin.php:2840 inc/admin/admin.php:2855
+msgid "Enter your HTML content"
+msgstr "محتوای HTML خود را وارد کنید"
+
+#: inc/admin/admin.php:2843 inc/admin/admin.php:2858
+msgid "HTML tags allowed: strong, em, br, a href"
+msgstr "برچسب های HTML مجاز: strong، em، br، href"
+
+#: inc/admin/admin.php:2845 inc/admin/admin.php:2859
+#, php-format
+msgid ""
+"Dynamic variables: %%sitetitle%%, %%tagline%%, %%post_author%%, "
+"%%post_permalink%%"
+msgstr ""
+"متغیرهای پویا: %% sitetitle %% ، %% tagline %% ، %% post_author %% ، %% "
+"post_permalink %%"
+
+#: inc/admin/admin.php:2872
+msgid "Remove feed link in source code"
+msgstr "لینک منبع را در کد منبع حذف کنید"
+
+#: inc/admin/admin.php:2889
+msgid "Remove feed link in source code (default WordPress RSS feed)"
+msgstr "حذف لینک خوراک در کد منبع (به طور پیش فرض خوراک RSS وردپرس)"
+
+#: inc/admin/admin.php:2906
+msgid ""
+"Remove feed link in source code (author, categories, custom taxonomies, "
+"custom post type, comments feed for a single post...)"
+msgstr ""
+"حذف لینک خوراک در کد منبع (نویسنده، دسته ها، طبقه بندی های سفارشی، نوع پست "
+"سفارشی، خوراک نظرات برای یک پست ...)"
+
+#: inc/admin/admin.php:2923
+msgid ""
+"Disable all WordPress RSS feeds (all feeds will no longer be accessible)"
+msgstr ""
+"غیرفعال کردن همه RSS های RSS Feed (همه فید ها دیگر قابل دسترسی نخواهند بود)"
+
+#: inc/admin/admin.php:2946
+msgid "Search results base"
+msgstr "پایه نتایج جستجو"
+
+#: inc/admin/admin.php:2946
+msgid "Search results base, eg: \"search-results\" without quotes"
+msgstr ""
+"پایگاه داده های جستجو، به عنوان مثال: \\ \"search-results \" بدون نقل قول"
+
+#: inc/admin/admin.php:2948
+msgid "Flush your permalinks each time you edit this setting."
+msgstr "هر زمانی که این تنظیم را ویرایش می کنید، به طور منظم فلاش بکشید."
+
+#: inc/admin/admin.php:2963 inc/admin/admin.php:2977
+msgid ""
+"Remove the SEOPress admin header including Notifications Center, SEO tools "
+"and Useful links"
+msgstr ""
+"سربرگ مدیریت سئوپرس از جمله مرکز اطلاع رسانی، ابزارهای SEO و لینک های مفید "
+"را حذف کنید"
+
+#: inc/admin/admin.php:2991 inc/admin/admin.php:2996
+msgid "Enter your dashicons CSS class name"
+msgstr "نام کلاس کلاس dashicons CSS را وارد کنید"
+
+#: inc/admin/admin.php:2991 inc/admin/admin.php:2996
+msgid "CSS Dashicons class name without quotes"
+msgstr "CSS Dashicons نام کلاس بدون نقل قول"
+
+#: inc/admin/admin.php:2998
+msgid "Find your Dashicons CSS class name on the official website (new window)"
+msgstr ""
+"نام کلاس کلاس Dashicons CSS خود را در وب سایت رسمی پیدا کنید (پنجره جدید)"
+
+#: inc/admin/admin.php:3007 inc/admin/admin.php:3012
+msgid ""
+"default value: <span class=\"ab-icon icon-seopress-seopress\"></span> SEO"
+msgstr ""
+"مقدار پیش فرض: <span class=\"ab-icon icon-seopress-seopress\"></span> سئو"
+
+#: inc/admin/admin.php:3007 inc/admin/admin.php:3012
+msgid "Enter the label of the link for admin bar"
+msgstr "برچسب لینک برای نوار مدیریت را وارد کنید"
+
+#: inc/admin/admin.php:3023 inc/admin/admin.php:3028
+msgid "eg: https://www.example.com/my-custom-image.png"
+msgstr "به عنوان مثال: https://www.example.com/my-custom-image.png"
+
+#: inc/admin/admin.php:3023 inc/admin/admin.php:3028
+msgid "Enter the absolute URL to your logo"
+msgstr "‫URL دقیق لوگوی خود وارد کنید"
+
+#: inc/admin/admin.php:3043 inc/admin/admin.php:3057
+msgid "Remove \"You like SEOPress? Don't forget to rate it 5 stars!\""
+msgstr ""
+"حذف عبارت «شما SEOPress را دوست دارید؟ فراموش نکنید که 5 ستاره را ارزیابی "
+"کنید!»"
+
+#: inc/admin/admin.php:3068
+msgid "SEO"
+msgstr "سئو"
+
+#: inc/admin/admin.php:3069
+msgid "Titles & Metas"
+msgstr "عنوان ها و متا"
+
+#: inc/admin/admin.php:3070
+msgid "XML / HTML Sitemap"
+msgstr "نقشه سایت XML / HTML"
+
+#: inc/admin/admin.php:3071 inc/admin/dashboard-google-analytics.php:157
+msgid "Social Networks"
+msgstr "شبکه های اجتماعی"
+
+#: inc/admin/admin.php:3072
+msgid "Google Analytics"
+msgstr "گوگل آنالتیکز"
+
+#: inc/admin/admin.php:3073
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: inc/admin/admin.php:3074
+msgid "Tools"
+msgstr "ابزارها"
+
+#: inc/admin/admin.php:3075 inc/functions/bot/seopress-bot.php:302
+msgid "BOT"
+msgstr "ربات"
+
+#: inc/admin/admin.php:3076 inc/admin/updater/plugin-licence.php:6
+#: seopress-pro.php:402
+msgid "License"
+msgstr "مجوز"
+
+#: inc/admin/admin.php:3106
+msgid "Users with the \"manage_options\" capacity will still see the menus."
+msgstr "کاربرانی با توانایی “manage_options” می‌توانند این منوها را ببینند."
+
+#: inc/admin/admin.php:3206
+msgid ""
+"To sign in with Google Analytics, you have to set a Client and Secret ID in "
+"the fields below:"
+msgstr ""
+"برای ورود به سیستم با Google Analytics، باید فیلد زیر را برای شناسه مشتری و "
+"راز تنظیم کنید:"
+
+#: inc/admin/admin.php:3240
+msgid "Connect with Google Analytics"
+msgstr "با Google Analytics ارتباط برقرار کنید"
+
+#: inc/admin/admin.php:3260
+msgid "Log out from Google"
+msgstr "خروج از گوگل"
+
+#: inc/admin/admin.php:3268
+msgid ""
+"Your Google Analytics view is locked. Log out from Google to unlocked it."
+msgstr ""
+"نمایه Google Analytics شما قفل شده است از Google خارج شوید تا آن را باز کنید"
+
+#: inc/admin/admin.php:3287
+msgid "Lock selection?"
+msgstr "انتخاب قفل"
+
+#: inc/admin/admin.php:3302
+msgid "Enter your client ID"
+msgstr "شناسه مشتری خود را وارد کنید"
+
+#: inc/admin/admin.php:3308
+msgid "Guide to connect your WordPress site with Google Analytics - new window"
+msgstr "راهنمای اتصال وردپرس خود را با Google Analytics - پنجره جدید"
+
+#: inc/admin/admin.php:3316
+msgid "Enter your secret ID"
+msgstr "شناسه مخفی خود را وارد کنید"
+
+#: inc/admin/admin.php:3372
+msgid ""
+"Hook to filter Structured data types metabox call by post type - new window"
+msgstr ""
+"هواک برای فیلتر کردن اطلاعات متشکل از داده های ساختاری متابوکس با نوع پست - "
+"پنجره جدید"
+
+#: inc/admin/ajax.php:88 inc/admin/ajax.php:115 inc/admin/ajax.php:596
+#: inc/admin/updater/plugin-licence.php:171
+#: inc/admin/updater/plugin-licence.php:217
+#: inc/admin/updater/plugin-licence.php:279
+msgid "An error occurred, please try again."
+msgstr "خطایی روی داد، لطفا دوباره امتحان کنید"
+
+#: inc/admin/ajax.php:442 inc/admin/ajax.php:470
+#: inc/admin/dashboard-google-analytics.php:90
+#: inc/admin/dashboard-google-analytics.php:271
+msgid "Sessions"
+msgstr "جلسات"
+
+#: inc/admin/ajax.php:446 inc/admin/dashboard-google-analytics.php:96
+#: inc/admin/dashboard-google-analytics.php:274
+msgid "Users"
+msgstr "کاربران"
+
+#: inc/admin/ajax.php:450 inc/admin/dashboard-google-analytics.php:102
+msgid "Page Views"
+msgstr "بازدید صفحه"
+
+#: inc/admin/ajax.php:454
+msgid "Page Views Per Session"
+msgstr "بازدید صفحات در جلسه"
+
+#: inc/admin/ajax.php:458
+msgid "Average Session Duration"
+msgstr "متوسط مدت زمان جلسه"
+
+#: inc/admin/ajax.php:462
+msgid "Bounce Rate"
+msgstr "نرخ پرش"
+
+#: inc/admin/ajax.php:466 inc/admin/dashboard-google-analytics.php:289
+msgid "New Sessions"
+msgstr "جلسات جدید"
+
+#: inc/admin/ajax.php:544
+msgid "Impossible to open file: "
+msgstr "غیر ممکن است برای باز کردن فایل: "
+
+#: inc/admin/ajax.php:549
+msgid "Impossible to write in file: "
+msgstr "امكان نوشتن در فايل وجود ندارد "
+
+#: inc/admin/ajax.php:553
+msgid "htaccess successfully updated!"
+msgstr "htaccess با موفقیت به روز شد!"
+
+#: inc/admin/ajax.php:558
+msgid "Your htaccess is not writable."
+msgstr "htaccess شما قابل نوشتن نیست"
+
+#: inc/admin/backlinks.php:17 inc/admin/bot.php:17
+msgid "Item Links"
+msgstr "لینک های آیتم"
+
+#: inc/admin/backlinks.php:18 inc/admin/bot.php:18
+msgid "Parent Link:"
+msgstr "لینک والد:"
+
+#: inc/admin/backlinks.php:19
+msgid "All Backlinks"
+msgstr "تمام پیوندها"
+
+#: inc/admin/backlinks.php:20
+msgid "Add New backlink"
+msgstr "اضافه کردن بک لینک جدید"
+
+#: inc/admin/backlinks.php:21
+msgid "Add backlink"
+msgstr "اضافه کردن بک لینک"
+
+#: inc/admin/backlinks.php:22
+msgid "New backlink"
+msgstr "بک لینک جدید"
+
+#: inc/admin/backlinks.php:23
+msgid "Edit backlink"
+msgstr "ویرایش بک لینک"
+
+#: inc/admin/backlinks.php:24
+msgid "Update backlink"
+msgstr "به روز رسانی بک لینک"
+
+#: inc/admin/backlinks.php:25
+msgid "View backlink"
+msgstr "مشاهده بک لینک"
+
+#: inc/admin/backlinks.php:26
+msgid "Search backlink"
+msgstr "جستجوی بک لینک"
+
+#: inc/admin/backlinks.php:27 inc/admin/bot.php:27
+#: inc/admin/redirections.php:26
+msgid "Not found"
+msgstr "پیدا نشد"
+
+#: inc/admin/backlinks.php:28 inc/admin/bot.php:28
+#: inc/admin/redirections.php:27
+msgid "Not found in Trash"
+msgstr "در زباله دان یافت نشد"
+
+#: inc/admin/backlinks.php:29 inc/admin/bot.php:29
+#: inc/admin/redirections.php:28
+msgid "Featured Image"
+msgstr "تصویر شاخص"
+
+#: inc/admin/backlinks.php:30 inc/admin/bot.php:30
+#: inc/admin/redirections.php:29
+msgid "Set featured image"
+msgstr "تنظیم تصویر برجسته"
+
+#: inc/admin/backlinks.php:31 inc/admin/bot.php:31
+#: inc/admin/redirections.php:30
+msgid "Remove featured image"
+msgstr "حذف تصویر برجسته"
+
+#: inc/admin/backlinks.php:32 inc/admin/bot.php:32
+#: inc/admin/redirections.php:31
+msgid "Use as featured image"
+msgstr "استفاده به عنوان تصویر برجسته"
+
+#: inc/admin/backlinks.php:33 inc/admin/bot.php:33
+#: inc/admin/redirections.php:32
+msgid "Insert into item"
+msgstr "قرار دادن در مورد"
+
+#: inc/admin/backlinks.php:34 inc/admin/bot.php:34
+#: inc/admin/redirections.php:33
+msgid "Uploaded to this item"
+msgstr "به این مورد بارگذاری شد"
+
+#: inc/admin/backlinks.php:35
+msgid "Backlinks list"
+msgstr "لیست بک لینک ها"
+
+#: inc/admin/backlinks.php:36
+msgid "Backlinks list navigation"
+msgstr "ناوبری فهرست بک لینک ها"
+
+#: inc/admin/backlinks.php:37
+msgid "Filter backlinks list"
+msgstr "لیست بک لینک ها را فیلتر کنید"
+
+#: inc/admin/backlinks.php:41
+msgid "List of backlinks"
+msgstr "فهرست بک لینک ها"
+
+#: inc/admin/backlinks.php:86
+msgid "Check your backlinks"
+msgstr "بک لینک های خود را بررسی کنید"
+
+#: inc/admin/backlinks.php:86 inc/functions/bot/seopress-bot.php:382
+msgid "Export CSV"
+msgstr "برون بری CSV"
+
+#: inc/admin/backlinks.php:92
+msgid "Enter your Majestic key"
+msgstr "کلید Majestic خود را وارد کنید"
+
+#: inc/admin/backlinks.php:106
+msgid "Enter an URL here"
+msgstr "یک URL را اینجا وارد کنید"
+
+#: inc/admin/backlinks.php:126 inc/admin/backlinks.php:129
+#: inc/admin/bot.php:106 inc/admin/bot.php:109
+msgid " updated."
+msgstr " به روز شد"
+
+#: inc/admin/backlinks.php:127 inc/admin/bot.php:107
+#: inc/admin/redirections.php:369
+msgid "Custom field updated."
+msgstr "زمینه سفارشی به روز شد."
+
+#: inc/admin/backlinks.php:128 inc/admin/bot.php:108
+#: inc/admin/redirections.php:370
+msgid "Custom field deleted."
+msgstr "فیلد سفارشی حذف شد"
+
+#: inc/admin/backlinks.php:130 inc/admin/bot.php:110
+#: inc/admin/redirections.php:372
+#, php-format
+msgid " restored to revision from %s"
+msgstr " بازبینی شده از %s"
+
+#: inc/admin/backlinks.php:131 inc/admin/bot.php:111
+msgid " published."
+msgstr " منتشر شده."
+
+#: inc/admin/backlinks.php:132 inc/admin/bot.php:112
+msgid "Page saved."
+msgstr "صفحه ذخیره شد."
+
+#: inc/admin/backlinks.php:133 inc/admin/bot.php:113
+#: inc/admin/redirections.php:375
+msgid " submitted."
+msgstr " ارسال شده."
+
+#: inc/admin/backlinks.php:134 inc/admin/bot.php:114
+#: inc/admin/redirections.php:376
+#, php-format
+msgid " scheduled for: <strong>%1$s</strong>. "
+msgstr " برنامه ریزی شده برای: <strong> %1$s </ strong>. "
+
+#: inc/admin/backlinks.php:134 inc/admin/bot.php:114
+#: inc/admin/redirections.php:376
+msgid "M j, Y @ G:i"
+msgstr "M j، Y @ G: من"
+
+#: inc/admin/backlinks.php:135 inc/admin/bot.php:115
+#: inc/admin/redirections.php:377
+msgid " draft updated."
+msgstr " پیش نویس به روز شد"
+
+#: inc/admin/backlinks.php:165
+msgid "Anchor Text"
+msgstr "متن لنگر"
+
+#: inc/admin/backlinks.php:166
+msgid "Domain CF"
+msgstr "دامنه CF"
+
+#: inc/admin/backlinks.php:167
+msgid "Domain TF"
+msgstr "دامنه TF"
+
+#: inc/admin/backlinks.php:168
+msgid "URL CF"
+msgstr "نشانی اینترنتی CF"
+
+#: inc/admin/backlinks.php:169
+msgid "URL TF"
+msgstr "URL TF"
+
+#: inc/admin/backlinks.php:170
+msgid "First indexed"
+msgstr "اول فهرست شده است"
+
+#: inc/admin/backlinks.php:171
+msgid "Last seen"
+msgstr "آخرین مشاهده"
+
+#: inc/admin/backlinks.php:179
+msgid "Source URL"
+msgstr "URL منبع"
+
+#: inc/admin/backlinks.php:179
+msgid "Open link in a new window"
+msgstr "لینک را در یک پنجره جدید باز کنید"
+
+#: inc/admin/backlinks.php:179
+msgid "Target URL"
+msgstr "URL هدف"
+
+#: inc/admin/bot.php:19
+msgid "All Broken links"
+msgstr "همه لینک های شکسته"
+
+#: inc/admin/bot.php:20
+msgid "Add New Link"
+msgstr "افزودن لینک جدید"
+
+#: inc/admin/bot.php:21
+msgid "Add link"
+msgstr "افزودن لینک"
+
+#: inc/admin/bot.php:22
+msgid "New link"
+msgstr "لینک جدید"
+
+#: inc/admin/bot.php:23
+msgid "Edit link"
+msgstr "ویرایش لینک"
+
+#: inc/admin/bot.php:24
+msgid "Update Link"
+msgstr "لینک به روز رسانی"
+
+#: inc/admin/bot.php:25
+msgid "View Link"
+msgstr "مشاهده لینک"
+
+#: inc/admin/bot.php:26
+msgid "Search Link"
+msgstr "پیوند جستجو"
+
+#: inc/admin/bot.php:35 inc/admin/redirections.php:34
+msgid "Redirections list"
+msgstr "فهرست تغییر مسیر"
+
+#: inc/admin/bot.php:36 inc/admin/redirections.php:35
+msgid "Redirections list navigation"
+msgstr "ناوبری فهرست تغییر مسیرها"
+
+#: inc/admin/bot.php:37 inc/admin/redirections.php:36
+msgid "Filter redirections list"
+msgstr "فیلتر redirects لیست"
+
+#: inc/admin/bot.php:41
+msgid "List of broken links"
+msgstr "فهرست لینک های خراب"
+
+#: inc/admin/bot.php:79
+msgid "Edit source to fix link"
+msgstr "ویرایش لینک را ویرایش کنید"
+
+#: inc/admin/bot.php:144
+msgid "Scan broken links"
+msgstr "اسکن لینک های خراب"
+
+#: inc/admin/bot.php:159
+msgid "Broken link"
+msgstr "لینک خراب"
+
+#: inc/admin/bot.php:160 inc/admin/redirections.php:410
+msgid "Count"
+msgstr "شمردن"
+
+#: inc/admin/bot.php:161
+msgid "Status"
+msgstr "وضعیت"
+
+#: inc/admin/bot.php:162 inc/admin/redirections.php:412
+msgid "Type"
+msgstr "نوع"
+
+#: inc/admin/bot.php:163
+msgid "Anchor text"
+msgstr "متن لنگر"
+
+#: inc/admin/bot.php:164 inc/admin/dashboard-google-analytics.php:166
+msgid "Source"
+msgstr "منبع"
+
+#: inc/admin/dashboard-google-analytics.php:77
+msgid "Main"
+msgstr "اصلی"
+
+#: inc/admin/dashboard-google-analytics.php:78
+msgid "Audience"
+msgstr "مخاطبین"
+
+#: inc/admin/dashboard-google-analytics.php:79
+msgid "Acquisition"
+msgstr "فراگیری"
+
+#: inc/admin/dashboard-google-analytics.php:80
+msgid "Behavior"
+msgstr "رفتار"
+
+#: inc/admin/dashboard-google-analytics.php:81
+msgid "Events"
+msgstr "رویدادها"
+
+#: inc/admin/dashboard-google-analytics.php:108
+msgid "Page view / session"
+msgstr "نمایش صفحه / جلسه"
+
+#: inc/admin/dashboard-google-analytics.php:114
+#: inc/admin/dashboard-google-analytics.php:283
+msgid "Average session duration"
+msgstr "میانگین مدت جلسه"
+
+#: inc/admin/dashboard-google-analytics.php:120
+#: inc/admin/dashboard-google-analytics.php:286
+msgid "Bounce rate"
+msgstr "میزان گشت و گذار"
+
+#: inc/admin/dashboard-google-analytics.php:126
+msgid "New sessions"
+msgstr "جلسات جدید"
+
+#: inc/admin/dashboard-google-analytics.php:135
+msgid "Device category"
+msgstr "دسته بندی دستگاه"
+
+#: inc/admin/dashboard-google-analytics.php:138
+msgid "Language"
+msgstr "زبان"
+
+#: inc/admin/dashboard-google-analytics.php:144
+msgid "Operating System"
+msgstr "سیستم عامل"
+
+#: inc/admin/dashboard-google-analytics.php:147
+msgid "Browser"
+msgstr "مرورگر"
+
+#: inc/admin/dashboard-google-analytics.php:150
+msgid "Screen resolution"
+msgstr "وضوح صفحه"
+
+#: inc/admin/dashboard-google-analytics.php:160
+msgid "Channels"
+msgstr "کانال ها"
+
+#: inc/admin/dashboard-google-analytics.php:163
+msgid "Keywords"
+msgstr "کلمات کلیدی"
+
+#: inc/admin/dashboard-google-analytics.php:169
+msgid "Referrals"
+msgstr "ارجاع‌ها"
+
+#: inc/admin/dashboard-google-analytics.php:172
+msgid "Medium"
+msgstr "متوسط"
+
+#: inc/admin/dashboard-google-analytics.php:181
+#: inc/admin/dashboard-google-analytics.php:277
+msgid "Page views"
+msgstr "بازدیدهای صفحه"
+
+#: inc/admin/dashboard-google-analytics.php:191
+msgid "Total events"
+msgstr "کل رویدادها"
+
+#: inc/admin/dashboard-google-analytics.php:197
+msgid "Total unique events"
+msgstr "مجموع رویدادهای منحصر به فرد"
+
+#: inc/admin/dashboard-google-analytics.php:202
+msgid "Event category"
+msgstr "دسته بندی رویداد"
+
+#: inc/admin/dashboard-google-analytics.php:205
+msgid "Event action"
+msgstr "اقدام رویداد"
+
+#: inc/admin/dashboard-google-analytics.php:208
+msgid "Event label"
+msgstr "برچسب رویداد"
+
+#: inc/admin/dashboard-google-analytics.php:215
+msgid "You need to login to Google Analytics"
+msgstr "شما باید به Google Analytics وارد شوید"
+
+#: inc/admin/dashboard-google-analytics.php:216
+msgid "Authenticate"
+msgstr "تصدیق کردن"
+
+#: inc/admin/dashboard-google-analytics.php:237
+msgid "Period"
+msgstr "دوره زمانی"
+
+#: inc/admin/dashboard-google-analytics.php:242
+msgid "Today"
+msgstr "امروز"
+
+#: inc/admin/dashboard-google-analytics.php:245
+msgid "Yesterday"
+msgstr "دیروز"
+
+#: inc/admin/dashboard-google-analytics.php:248
+msgid "7 days ago"
+msgstr "7 روز پیش"
+
+#: inc/admin/dashboard-google-analytics.php:251
+msgid "30 days ago"
+msgstr "30 روز پیش"
+
+#: inc/admin/dashboard-google-analytics.php:254
+msgid "90 days ago"
+msgstr "90 روز پیش"
+
+#: inc/admin/dashboard-google-analytics.php:257
+msgid "180 days ago"
+msgstr "180 روز پیش"
+
+#: inc/admin/dashboard-google-analytics.php:260
+msgid "360 days ago"
+msgstr "360 روز پیش"
+
+#: inc/admin/dashboard-google-analytics.php:266
+msgid "Stats"
+msgstr "آمار"
+
+#: inc/admin/dashboard-google-analytics.php:280
+msgid "Page views per session"
+msgstr "نمایش صفحات در هر جلسه"
+
+#: inc/admin/redirections.php:12 inc/admin/redirections.php:13
+#: inc/admin/redirections.php:14 inc/admin/redirections.php:15
+msgid "404 / 301"
+msgstr "404/301"
+
+#: inc/admin/redirections.php:16
+msgid "Item Archives"
+msgstr "بایگانی موارد"
+
+#: inc/admin/redirections.php:17
+msgid "Parent Item:"
+msgstr "مورد والدین:"
+
+#: inc/admin/redirections.php:18
+msgid "All 404 / 301"
+msgstr "همه 404/301"
+
+#: inc/admin/redirections.php:19
+msgid "Add New redirection"
+msgstr "اضافه کردن تغییر مسیر جدید"
+
+#: inc/admin/redirections.php:20
+msgid "Add redirection"
+msgstr "اضافه کردن تغییر مسیر"
+
+#: inc/admin/redirections.php:21
+msgid "New redirection"
+msgstr "تغییر مسیر جدید"
+
+#: inc/admin/redirections.php:22
+msgid "Edit redirection"
+msgstr "ویرایش تغییر مسیر"
+
+#: inc/admin/redirections.php:23
+msgid "Update redirection"
+msgstr "به روز رسانی تغییر مسیر"
+
+#: inc/admin/redirections.php:24
+msgid "View redirection"
+msgstr "مشاهده تغییر مسیر"
+
+#: inc/admin/redirections.php:25
+msgid "Search redirection"
+msgstr "جستجوی تغییر مسیر"
+
+#: inc/admin/redirections.php:40
+msgid "Monitoring 404"
+msgstr "404 نظارت"
+
+#: inc/admin/redirections.php:67 inc/admin/redirections.php:69
+msgid "Categories"
+msgstr "دسته بندی ها"
+
+#: inc/admin/redirections.php:68
+msgid "Category"
+msgstr "دسته بندی"
+
+#: inc/admin/redirections.php:70
+msgid "All Categories"
+msgstr "همه دسته بندی ها"
+
+#: inc/admin/redirections.php:71
+msgid "Parent Category"
+msgstr "دسته بندی والد"
+
+#: inc/admin/redirections.php:72
+msgid "Parent Category:"
+msgstr "دسته بندی والد:"
+
+#: inc/admin/redirections.php:73
+msgid "New Category Name"
+msgstr "نام دسته بندی جدید"
+
+#: inc/admin/redirections.php:74
+msgid "Add New Category"
+msgstr "افزودن دسته جدید"
+
+#: inc/admin/redirections.php:75
+msgid "Edit Category"
+msgstr "ویرایش دسته بندی"
+
+#: inc/admin/redirections.php:76
+msgid "Update Category"
+msgstr "بروزرسانی دسته بندی"
+
+#: inc/admin/redirections.php:77
+msgid "View Category"
+msgstr "مشاهده دسته بندی"
+
+#: inc/admin/redirections.php:78
+msgid "Separate categories with commas"
+msgstr "دسته بندی ها را با کاما جدا کنید"
+
+#: inc/admin/redirections.php:79
+msgid "Add or remove categories"
+msgstr "افزودن یا حذف دسته بندیها"
+
+#: inc/admin/redirections.php:80
+msgid "Choose from the most used"
+msgstr "از بیشترین استفاده شده ها انتخاب کنید"
+
+#: inc/admin/redirections.php:81
+msgid "Popular Categories"
+msgstr "موضوعات محبوب"
+
+#: inc/admin/redirections.php:82
+msgid "Search Categories"
+msgstr "جست‌وجوی دسته‌‌ها"
+
+#: inc/admin/redirections.php:83
+msgid "Not Found"
+msgstr "پیدا نشد"
+
+#: inc/admin/redirections.php:84
+msgid "No items"
+msgstr "بدون آیتم"
+
+#: inc/admin/redirections.php:85
+msgid "Categories list"
+msgstr "فهرست دسته بندی ها"
+
+#: inc/admin/redirections.php:86
+msgid "Categories list navigation"
+msgstr "ناوبری فهرست دسته بندی ها"
+
+#: inc/admin/redirections.php:111
+msgid "Manage categories redirects"
+msgstr "مدیریت تغییر مسیرهای دسته بندی ها"
+
+#: inc/admin/redirections.php:114
+msgid "Import your redirects"
+msgstr "تغییر مسیرهای خود را وارد کنید"
+
+#: inc/admin/redirections.php:117
+msgid "Export your redirects"
+msgstr "تغییر مسیرها را برون بری کنید"
+
+#: inc/admin/redirections.php:130 inc/admin/redirections.php:363
+msgid "Test redirection"
+msgstr "آزمایش تغییر مسیر"
+
+#: inc/admin/redirections.php:147
+msgid "All categories"
+msgstr "همه دسته بندی ها"
+
+#: inc/admin/redirections.php:175
+msgid "Show All"
+msgstr "نمایش همه"
+
+#: inc/admin/redirections.php:182
+msgid "All status"
+msgstr "تمام وضعیت"
+
+#: inc/admin/redirections.php:267
+msgid "Enable redirection"
+msgstr "تغییر مسیر را فعال کنید"
+
+#: inc/admin/redirections.php:303
+msgid "Disable redirection"
+msgstr "تغییر مسیر را غیرفعال کنید"
+
+#: inc/admin/redirections.php:342
+msgid "Enter the old URL here without domain name"
+msgstr "‫URL قدیمی را اینجا و بدون نام دامنه وارد کنید"
+
+#: inc/admin/redirections.php:368 inc/admin/redirections.php:371
+#, php-format
+msgid " updated. %s"
+msgstr " به روز شد %s"
+
+#: inc/admin/redirections.php:373
+#, php-format
+msgid " published. %s"
+msgstr " منتشر شده. %s"
+
+#: inc/admin/redirections.php:374
+msgid "Redirection saved."
+msgstr "تغییر مسیر ذخیره شد"
+
+#: inc/admin/redirections.php:411
+msgid "Enable?"
+msgstr "فعال کردن؟"
+
+#: inc/admin/redirections.php:413
+msgid "URL redirect"
+msgstr "نشانی اینترنتی تغییر مسیر"
+
+#: inc/admin/redirections.php:414
+msgid "User agent"
+msgstr "عامل کاربر"
+
+#: inc/admin/redirections.php:857
+msgid "404 alert"
+msgstr "هشدار 404"
+
+#: inc/admin/redirections.php:875
+msgid ""
+"You are receiving this email because a new 404 error has been logged on your "
+"site. See below:"
+msgstr ""
+"شما این ایمیل را دریافت می کنید زیرا یک خطای 404 جدید در سایت شما وارد شده "
+"است. زیر را ببینید:"
+
+#: inc/admin/report-page-speed.php:27
+msgid "Google Page Speed Score (Desktop)"
+msgstr "امتیاز سرعت صفحه گوگل (دسکتاپ)"
+
+#: inc/admin/report-page-speed.php:46
+msgid "URL: "
+msgstr "URL: "
+
+#: inc/admin/report-page-speed.php:47
+msgid "Title: "
+msgstr "عنوان: "
+
+#: inc/admin/report-page-speed.php:49
+msgid "The speed score is based on the lab data analyzed by Lighthouse."
+msgstr "نمره سرعت براساس اطلاعات آزمایشگاهی و تحليل فانوس دریایی است."
+
+#: inc/admin/report-page-speed.php:53
+msgid "Analysis time: "
+msgstr "زمان تجزیه و تحلیل:"
+
+#: inc/admin/report-page-speed.php:53
+msgid " at "
+msgstr "در"
+
+#: inc/admin/report-page-speed.php:56
+msgid ""
+"<strong>Scale:</strong> <span class=\"fast\"></span>90-100 (fast) <span "
+"class=\"average\"></span>50-89 (average) <span class=\"slow\"></span>0-49 "
+"(slow)"
+msgstr ""
+"<strong>مقیاس:</strong> <span class=\"fast\"> </span>90-100 (سریع) <span "
+"class=\"average\"> </span>50-89 (میانگین) <span class=\"slow\"> </span>0 49 "
+"(آهسته)"
+
+#: inc/admin/report-page-speed.php:68
+msgid "Screenshot"
+msgstr "تصویری"
+
+#: inc/admin/report-page-speed.php:84
+msgid "Field Data"
+msgstr "اطلاعات فیلد"
+
+#: inc/admin/report-page-speed.php:85
+#, php-format
+msgid ""
+"Over the last 30 days, the field data shows that this page has a <span>%s</"
+"span> speed compared to other pages in the Chrome User Experience Report. We "
+"are showing the 90th percentile of FCP and the 95th percentile of FID."
+msgstr ""
+"در طول 30 روز گذشته، داده های زمینه نشان می دهد که این صفحه دارای سرعت <span>"
+"٪ s</span> در مقایسه با سایر صفحات گزارش گزارش عملکرد Chrome است. ما نشان می "
+"دهیم 90 درصد از FCP و صدک 95 از FID."
+
+#: inc/admin/report-page-speed.php:87
+msgid "First Contentful Paint (FCP): "
+msgstr "اولین رنگ متضاد (FCP):"
+
+#: inc/admin/report-page-speed.php:87 inc/admin/report-page-speed.php:123
+#: inc/admin/report-page-speed.php:129 inc/admin/report-page-speed.php:135
+#: inc/admin/report-page-speed.php:141 inc/admin/report-page-speed.php:147
+#: inc/admin/report-page-speed.php:163
+msgid " s"
+msgstr "ثانیه"
+
+#: inc/admin/report-page-speed.php:100
+msgid "First Input Delay (FID): "
+msgstr "اولین تاخیر ورودی(FID):"
+
+#: inc/admin/report-page-speed.php:100 inc/admin/report-page-speed.php:152
+#: inc/admin/report-page-speed.php:200 inc/admin/report-page-speed.php:249
+#: inc/admin/report-page-speed.php:293
+msgid " ms"
+msgstr "میلی ثانیه"
+
+#: inc/admin/report-page-speed.php:116
+msgid "Lab Data"
+msgstr "داده آزمایشگاه"
+
+#: inc/admin/report-page-speed.php:117
+msgid ""
+"Lighthouse analysis of the current page on an emulated mobile network. "
+"Values are estimated and may vary."
+msgstr ""
+"تحلیل به روش فانوس دریایی از برگه فعلی بر روی یک شبکه موبایلی شبیه سازی شده. "
+"مقادیر تخمینی است و ممکن است تفاوت داشته باشد. "
+
+#: inc/admin/report-page-speed.php:123
+msgid "First Contentful Paint: "
+msgstr "اولین رنگ پرمحتوا: "
+
+#: inc/admin/report-page-speed.php:129
+msgid "First Meaningful Paint: "
+msgstr "اولین رنگ بی محتوا: "
+
+#: inc/admin/report-page-speed.php:135
+msgid "Speed Index: "
+msgstr "فهرست سرعت: "
+
+#: inc/admin/report-page-speed.php:141
+msgid "First CPU Idle: "
+msgstr "First CPU Idle: "
+
+#: inc/admin/report-page-speed.php:147
+msgid "Time to Interactive: "
+msgstr "زمان برای تعامل: "
+
+#: inc/admin/report-page-speed.php:152
+msgid "Estimated Input Latency: "
+msgstr "فاصله ورودری تخمینی: "
+
+#: inc/admin/report-page-speed.php:171
+msgid "Opportunities"
+msgstr "شانس‌ها"
+
+#: inc/admin/report-page-speed.php:172
+msgid "These optimizations can speed up your page load."
+msgstr "این شانس‌ها می‌تواند سرعت بارگذاری صفحه شما را افزایش دهد."
+
+#: inc/admin/report-page-speed.php:197 inc/admin/report-page-speed.php:203
+#: inc/admin/report-page-speed.php:246 inc/admin/report-page-speed.php:252
+#: inc/admin/report-page-speed.php:290 inc/admin/report-page-speed.php:296
+msgid " KB"
+msgstr " کلوبایت"
+
+#: inc/admin/report-page-speed.php:215
+msgid "Diagnostics"
+msgstr "خطایابی"
+
+#: inc/admin/report-page-speed.php:216
+msgid "More information about the performance of your application."
+msgstr "اطلاعات بیشتر درباره کیفیت عملکرد اپلیکیشن شما."
+
+#: inc/admin/report-page-speed.php:236
+msgid "Size/Time"
+msgstr "اندازه/زمان"
+
+#: inc/admin/report-page-speed.php:237
+msgid "Estimated Savings"
+msgstr "تخفیف تخمینی"
+
+#: inc/admin/report-page-speed.php:264
+msgid "Passed audits"
+msgstr "مخاطبین پاس شده"
+
+#: inc/admin/report-page-speed.php:310
+msgid ""
+"We can't retrieve your Google Page Speed. Make sure your site is accessible "
+"from everyone, and try again."
+msgstr ""
+"ما نمیتوانیم سرعت Google Page Speed خود را بازیابی کنیم. اطمینان حاصل کنید "
+"که سایت شما از همه قابل دسترسی است و دوباره امتحان کنید."
+
+#: inc/admin/updater/plugin-licence.php:12
+msgid ""
+"<strong>Steps to follow to activate your license:</strong> <ul><li>1/ Paste "
+"your license key</li> <li>2/ Save changes</li> <li>3/ Activate License.</li> "
+"<li>That's it! Do NOT save changes after that!</li></ul>"
+msgstr ""
+"‫<strong>مراحل فعالسازی لایسنس:</strong> <ul><li>1/ کد لایسنس خود را پیست "
+"کنید</li> <li>2/ تغییرات را ذخیره کنید</li> <li>3/ لایسنس را فعال کنید.</li> "
+"<li>تمام شد! بعد از آن تغییرات را دیگر ذخیره نکنید. فعال شده توسط فرشمی</"
+"li></ul>"
+
+#: inc/admin/updater/plugin-licence.php:16
+msgid "Enable your license"
+msgstr "مجوز خود را فعال کنید - دریافت لایسنس از فرشمی"
+
+#: inc/admin/updater/plugin-licence.php:24
+#: inc/admin/updater/plugin-licence.php:32
+msgid "Browse our guides"
+msgstr "راهنماهای ما را مرور کنید"
+
+#: inc/admin/updater/plugin-licence.php:25
+#: inc/admin/updater/plugin-licence.php:33
+msgid "Read our FAQ"
+msgstr "FAQ ما را بخوانید"
+
+#: inc/admin/updater/plugin-licence.php:26
+#: inc/admin/updater/plugin-licence.php:34
+msgid "Check our website"
+msgstr "وب سایت ما را بررسی کنید"
+
+#: inc/admin/updater/plugin-licence.php:58
+msgid "Plugin License Options"
+msgstr "گزینه های مجوز پلاگین"
+
+#: inc/admin/updater/plugin-licence.php:71
+msgid "The license key is used to access automatic updates and support."
+msgstr ""
+"کلید مجوز برای دسترسی به به روز رسانی خودکار و پشتیبانی استفاده می شود."
+
+#: inc/admin/updater/plugin-licence.php:73
+msgid ""
+"Trouble to activate your license key? Watch our video guide by clicking the "
+"<strong>Help tab button</strong> in the top right corner of this page."
+msgstr ""
+"مشکل برای فعال کردن کلید مجوز دارید؟ با کلیک بر روی دکمه زبانه راهنمایی در "
+"گوشه بالا سمت راست این صفحه، راهنمای ویدیو ما را تماشا کنید."
+
+#: inc/admin/updater/plugin-licence.php:74
+msgid "View my account"
+msgstr "مشاهده حساب من"
+
+#: inc/admin/updater/plugin-licence.php:75
+msgid "Reset your license"
+msgstr "بازنشانی مجوز شما"
+
+#: inc/admin/updater/plugin-licence.php:81
+msgid "License Key"
+msgstr "کلید مجوز"
+
+#: inc/admin/updater/plugin-licence.php:85
+msgid "Enter your license key"
+msgstr "کلید مجوز خود را وارد کنید"
+
+#: inc/admin/updater/plugin-licence.php:91
+#: inc/admin/updater/plugin-licence.php:101
+msgid "Activate License"
+msgstr "مجوز را فعال کنید"
+
+#: inc/admin/updater/plugin-licence.php:95
+msgid "active"
+msgstr "فعال"
+
+#: inc/admin/updater/plugin-licence.php:97
+msgid "Deactivate License"
+msgstr "مجوز را غیرفعال کنید"
+
+#: inc/admin/updater/plugin-licence.php:184
+#, php-format
+msgid "Your license key expired on %s."
+msgstr "کلید مجوز شما در %s منقضی شده است"
+
+#: inc/admin/updater/plugin-licence.php:191
+msgid "Your license key has been disabled."
+msgstr "کلید مجوز شما غیرفعال شده است"
+
+#: inc/admin/updater/plugin-licence.php:196
+msgid "Invalid license."
+msgstr "مجوز نامعتبر"
+
+#: inc/admin/updater/plugin-licence.php:202
+msgid "Your license is not active for this URL."
+msgstr "مجوز شما برای این نشانی اینترنتی فعال نیست."
+
+#: inc/admin/updater/plugin-licence.php:207
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr "این به نظر می رسد یک کلید مجوز نامعتبر برای %s ."
+
+#: inc/admin/updater/plugin-licence.php:212
+msgid "Your license key has reached its activation limit."
+msgstr "کلید مجوز شما به حد فعال شدن شما رسیده است."
+
+#: inc/admin/updater/plugin-updater.php:228
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "یک نسخه جدید از %1$s وجود دارد. %2$s نمایش جزئیات %4$s %3$s %4$s ."
+
+#: inc/admin/updater/plugin-updater.php:236
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+"یک نسخه جدید از %1$s وجود دارد. %2$s نمایش نسخه %3$s جزئیات %4$s یا %5$s در "
+"حال حاضر %6$s ."
+
+#: inc/admin/updater/plugin-updater.php:474
+msgid "You do not have permission to install plugin updates"
+msgstr "شما مجوز نصب افزونه را نصب نکردید"
+
+#: inc/admin/updater/plugin-updater.php:474
+msgid "Error"
+msgstr "خطا"
+
+#: inc/functions/bot/seopress-bot.php:302
+msgid "SEOPress BOT"
+msgstr "ربات سئوپرس"
+
+#: inc/functions/bot/seopress-bot.php:353
+msgid "Scan"
+msgstr "اسکن کردن"
+
+#: inc/functions/bot/seopress-bot.php:354 seopress-pro.php:396
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: inc/functions/bot/seopress-bot.php:372
+msgid "Latest scan: "
+msgstr "آخرین اسکن: "
+
+#: inc/functions/bot/seopress-bot.php:375
+msgid "Links found: "
+msgstr "لینک های یافت شده: "
+
+#: inc/functions/bot/seopress-bot.php:389
+msgid "No scan"
+msgstr "بدون اسکن"
+
+#: inc/functions/bot/seopress-bot.php:396
+msgid ""
+"Scan in progress. Please be patient as this may take several minutes to "
+"complete depending on the amount of content."
+msgstr ""
+"اسکن در حال پیشرفت است لطفا صبور باشید زیرا ممکن است بسته به مقدار محتوا، "
+"چند دقیقه طول بکشد."
+
+#: inc/functions/bot/seopress-bot.php:396
+msgid "Loading..."
+msgstr "در حال بارگذاری..."
+
+#: inc/functions/bot/seopress-bot.php:398
+#, php-format
+msgid "Currently on step %d of %d"
+msgstr "در حال حاضر در مرحله %d از %d"
+
+#: inc/functions/bot/seopress-bot.php:429
+msgid "Request the Bot"
+msgstr "درخواست ربات"
+
+#: inc/functions/bot/seopress-bot.php:460
+msgid "The Scan is complete"
+msgstr "اسکن کامل است"
+
+#: inc/functions/bot/seopress-bot.php:461
+msgid "Rescan?"
+msgstr "اسکن مجدد؟"
+
+#: inc/functions/bot/seopress-bot.php:461
+msgid "Rescan"
+msgstr "اسکن مجدد"
+
+#: inc/functions/options-breadcrumbs.php:164
+msgid "Attachments"
+msgstr "پیوست ها"
+
+#: inc/functions/options-breadcrumbs.php:439
+msgid "Author: "
+msgstr "نویسنده: "
+
+#: inc/functions/options-breadcrumbs.php:571
+msgid "Page "
+msgstr "صفحه "
+
+#: inc/functions/options-rss.php:62
+msgid "No feed available."
+msgstr "خوراک موجود نیست"
+
+#: seopress-pro.php:373
+msgid "Please enable <strong>SEOPress</strong> in order to use SEOPress PRO."
+msgstr ""
+"لطفا <strong> سئوپرس </ strong> را فعال کنید تا از SEOPress PRO استفاده کنید."
+
+#: seopress-pro.php:374
+msgid "Enable / Download now!"
+msgstr "فعال کردن / دانلود اکنون!"
+
+#: seopress-pro.php:397
+msgid "Support"
+msgstr "پشتیبانی"
+
+#: seopress-pro.php:400
+msgid "Activate your license"
+msgstr "فعالسازی لایسنس"
+
+#~ msgid "Local Business (default)"
+#~ msgstr "کسب و کار محلی (به طور پیش فرض)"
+
+#~ msgid "Animal Shelter"
+#~ msgstr "پناهگاه حیوانات"
+
+#~ msgid "Automotive Business"
+#~ msgstr "کسب و کار خودرو"
+
+#~ msgid "Child Care"
+#~ msgstr "مراقبت از کودک"
+
+#~ msgid "Dentist"
+#~ msgstr "دندانپزشک"
+
+#~ msgid "Dry Cleaning Or Laundry"
+#~ msgstr "خشک کردن یا تمیز کردن"
+
+#~ msgid "Emergency Service"
+#~ msgstr "خدمات اضطراری"
+
+#~ msgid "Employment Agency"
+#~ msgstr "آژانس کاریابی"
+
+#~ msgid "Entertainment Business"
+#~ msgstr "کسب و کار مرتبط با سرگرمی"
+
+#~ msgid "Financial Service"
+#~ msgstr "خدمات مالی"
+
+#~ msgid "Food Establishment"
+#~ msgstr "تأسیس غذا"
+
+#~ msgid "Government Office"
+#~ msgstr "اداره دولتی"
+
+#~ msgid "Health And Beauty Business"
+#~ msgstr "سلامت و زیبایی کسب و کار"
+
+#~ msgid "Home And Construction Business"
+#~ msgstr "خانه و ساخت و ساز کسب و کار"
+
+#~ msgid "Internet Cafe"
+#~ msgstr "کافی نت"
+
+#~ msgid "Legal Service"
+#~ msgstr "سرویس قانونی"
+
+#~ msgid "Library"
+#~ msgstr "کتابخانه"
+
+#~ msgid "Lodging Business"
+#~ msgstr "کسب و کار اسکان"
+
+#~ msgid "Professional Service"
+#~ msgstr "خدمات حرفه ای"
+
+#~ msgid "Radio Station"
+#~ msgstr "ایستگاه رادیویی"
+
+#~ msgid "Real Estate Agent"
+#~ msgstr "نمایندگی املاک و مستغلات"
+
+#~ msgid "Recycling Center"
+#~ msgstr "مرکز بازیافت"
+
+#~ msgid "Real Self Storage"
+#~ msgstr "ذخیره سازی واقعی خود"
+
+#~ msgid "Shopping Center"
+#~ msgstr "مرکز خرید"
+
+#~ msgid "Sports Activity Location"
+#~ msgstr "مکان فعالیت ورزشی"
+
+#~ msgid "Store"
+#~ msgstr "فروشگاه"
+
+#~ msgid "Television Station"
+#~ msgstr "ایستگاه تلویزیونی"
+
+#~ msgid "Tourist Information Center"
+#~ msgstr "مرکز اطلاعات گردشگری"
+
+#~ msgid "Travel Agency"
+#~ msgstr "آژانس مسافرتی"
+
+#~ msgid "Self Storage"
+#~ msgstr "ذخیره سازی خودکار"
+
+#~ msgid "TelevisionStation"
+#~ msgstr "ایستگاه تلویزیونی"
+
+#~ msgid "Send me this report by mail"
+#~ msgstr "این گزارش را از طریق پست به من ارسال کنید"
+
+#~ msgid "LocalBusiness (default)"
+#~ msgstr "LocalBusiness (به طور پیش فرض)"
+
+#~ msgid "Page Speed report"
+#~ msgstr "گزارش سرعت صفحه"
+
+#~ msgid "Your Google Page Speed Score"
+#~ msgstr "امتیاز سرعت گوگل شما"
+
+#~ msgid "Suggestions"
+#~ msgstr "پیشنهادات"
+
+#~ msgid "Ressources stats (beta)"
+#~ msgstr "آمار Ressources (بتا)"
+
+#~ msgid "Total (in Kbytes): "
+#~ msgstr "مجموع (در کیلوبایت): "
+
+#~ msgid "HTML (in Kbytes): "
+#~ msgstr "HTML (در کیلوبایت): "
+
+#~ msgid "CSS (in Kbytes): "
+#~ msgstr "CSS (در کیلوبایت): "
+
+#~ msgid "Images (in Kbytes): "
+#~ msgstr "تصاویر (در کیلوبایت): "
+
+#~ msgid "JS (in Kbytes): "
+#~ msgstr "JS (در کیلابایت): "
+
+#~ msgid "Others (in Kbytes): "
+#~ msgstr "دیگران (در کیلابایت): "
+
+#~ msgid "Types"
+#~ msgstr "انواع"
+
+#~ msgid "%"
+#~ msgstr "٪"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#~ msgid "CSS"
+#~ msgstr "CSS"
+
+#~ msgid "Images"
+#~ msgstr "تصاویر"
+
+#~ msgid "JS"
+#~ msgstr "JS"
+
+#~ msgid "Others"
+#~ msgstr "دیگران"
+
+#~ msgid "Activate manually"
+#~ msgstr "دستی فعال کنید"
+
+#~ msgid "SEOPress.org"
+#~ msgstr "‫https://frashmi.net"

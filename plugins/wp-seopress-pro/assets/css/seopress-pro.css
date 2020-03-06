@@ -1,0 +1,698 @@
+/*************************************************************************************************/
+/* SEOPRESS PRO                                                                                  */
+/*************************************************************************************************/
+.seopress-option .seopress-notice {
+  padding: 10px;
+  background: #fff;
+  border-left: 4px solid #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  margin: 5px 0 15px;
+  border-left-color: #dc3232;
+}
+
+/*Who is*/
+.seopress-whois-alert {
+  display: block;
+  margin: 10px 0 0 0;
+  color: red;
+  font-style: italic;
+}
+
+/*Page Speed*/
+#seopress-page-speed-results {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0;
+}
+.seopress-option .postbox-container {
+  width: 49.5%;
+  margin-bottom: 20px;
+}
+#seopress-page-speed-results #postbox-container-3 {
+  width: 100%;
+}
+#seopress-page-speed-results #postbox-container-3 * {
+  box-sizing: border-box;
+}
+#seopress-page-speed-results #postbox-container-3 h2 {
+  padding: 10px 0;
+    border-bottom: 2px solid #DDD;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+#seopress-page-speed-results #postbox-container-3 h2 .dashicons {
+    vertical-align: middle;
+    font-size: 25px;
+    background: #c3f0ff;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 0 0;
+    color: #2996d5;
+    padding: 5px;
+    border-radius: 100px;
+    line-height: 30px;
+}
+.seopress-option .postbox-container .postbox {
+    margin: 0 20px 18px 0;
+  border: none;
+  box-shadow: none;
+}
+.seopress-option .wrap-seopress-score .wrap-chart {
+  float: left;
+  width: 50%;
+}
+.seopress-option .wrap-seopress-score .wrap-chart .chart {
+  display: inline-block;
+  position: relative;
+}
+.seopress-option .wrap-seopress-score .wrap-chart .chart span {
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 200px;
+}
+.seopress-option .wrap-seopress-score .wrap-info {
+  float: right;
+  width: 50%;
+}
+.seopress-option .wrap-seopress-score .wrap-info span {
+  font-weight: bold;
+}
+.seopress-option .wrap-seopress-score .clearfix {
+  clear:both;
+}
+.seopress-option .wrap-seopress-score .dashicons-yes {
+  color:#27C24C;
+}
+.seopress-option .wrap-seopress-score .dashicons-warning {
+  color:#FF9900;
+}
+.seopress-option .wrap-seopress-score .dashicons-yes,
+.seopress-option .wrap-seopress-score .dashicons-warning {
+  margin-right: 5px;
+}
+.seopress-option .wrap-seopress-score h3 {
+  margin: 20px 0 5px;
+}
+.seopress-option .wrap-scale {
+  display: block;
+    float: right;
+    width: 50%;
+    margin: 15px 0 0 0;
+}
+.seopress-option .wrap-scale span {
+    display: block;
+    border-radius: 4px;
+    height: 6px;
+    width: 60px;
+    margin: 5px 0;
+}
+.seopress-option .wrap-scale .fast {
+  background: #178239;
+}
+.seopress-option .wrap-scale .average {
+  background: #e67700;
+}
+.seopress-option .wrap-scale .slow {
+  background: #c7221f;
+}
+.seopress-option .advice-details {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.seopress-option .advice-details li {
+    display: inline;
+    margin-right: 10px;
+}
+.seopress-option .advice-details li:first-child {
+    font-weight: bold;
+}
+.seopress-option .ps-desc {
+  margin: 0 0 20px 0;
+}
+.seopress-option .ps-desc span {
+  font-weight: bold;
+}
+.seopress-option .seopress-option .wrap-speed-SLOW .ps-desc span,
+.seopress-option .wrap-speed-SLOW .metric-value {
+  color: #c7221f;
+}
+.seopress-option .wrap-speed-FAST .ps-desc span,
+.seopress-option .wrap-speed-FAST .metric-value {
+  color: #178239;
+}
+.seopress-option .metric-desc {
+  font-weight: bold;
+  display: inline-block;
+}
+.seopress-option .metric-value {
+  display: inline-block;
+  font-weight: normal;
+}
+.seopress-option .wrap-dist {
+  display: flex;
+}
+.seopress-option .wrap-dist .ps-fast {
+  display: inline-block;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+.seopress-option .wrap-dist .ps-fast:first-child {
+  background: #178239;
+    border-radius: 4px 0 0 4px;
+}
+.seopress-option .wrap-dist .ps-fast:nth-child(2) {
+  background: #e67700;
+    color: #000;
+}
+.seopress-option .wrap-dist .ps-fast:last-child {
+  background: #c7221f;
+    border-radius: 0 4px 4px 0;
+}
+.seopress-option .wrap-detail-opp li {
+    display: block;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.seopress-option .wrap-detail-opp li .w-60 {
+  width: 60%;
+  word-break: break-all;
+  display:inline-block;
+  padding-right: 10px;
+}
+.seopress-option .wrap-detail-opp li .w-20 {
+  width: 20%;
+  display:inline-block;
+  text-align: right;
+}
+.seopress-option .lab-data ul {
+  margin: 0;
+  padding: 0;
+}
+.seopress-option .lab-data li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 10px;
+}
+.seopress-option .lab-data ul.screens {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.seopress-option .lab-data ul.screens li {
+    display: block;
+    margin: 20px 10px 0 0;
+}
+.seopress-option .lab-data ul.screens span {
+  display: block;
+  margin: 10px 0 0 0;
+}
+.seopress-option .lab-data img {
+  border: 1px solid #eee;
+}
+
+/*Rich Snippets/Data Structure Type*/
+#seopress_pro_cpt .cf,
+#seopress_pro_cpt .tax,
+#seopress_pro_cpt .manual_time_global,
+#seopress_pro_cpt .manual_rating_global {
+    margin: 0 0 0 10px;
+    position: relative;
+    top: -5px;
+}
+#seopress_pro_cpt .dyn {
+  margin: 0 0 10px 0;
+}
+#seopress_pro_cpt .schema_type {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: calc(100% - 2px);
+    margin: 0 0 1em 0;
+    padding: 0.5em 1em;
+    position: relative;
+    left: -12px;
+    background: #f3f4f5;
+}
+#seopress_pro_cpt .schema_type span {
+    text-transform: none;
+    float: right;
+    font-weight: normal;
+}
+#seopress_pro_cpt .schema-steps {
+    border-bottom: 1px solid #DFDFDF;
+    margin: 0px -12px 12px -12px;
+    padding: 0 12px 12px;
+    display: inline-block;
+    width: 100%;
+}
+#seopress_pro_cpt label {
+    display: block;
+    margin: 0px 0 5px;
+}
+#seopress_pro_cpt .inside {
+    padding: 0;
+    margin: 0;
+}
+#seopress_pro_cpt #wrap-faq .faq .inside {
+      padding: 0 12px 12px;
+}
+#seopress_schemas .inside {
+      width: calc(100% - 12px);
+}
+#seopress_schemas #seopress_pro_cpt  input[type="text"], #seopress_schemas #seopress_pro_cpt  input[type="textarea"] {
+    width: 300px;
+    position: relative;
+    top: -2px;
+    left: 10px;
+    margin-right: 15px;
+}
+#seopress-schemas-tabs {
+    padding-left: 20%;
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    min-height: 150px;
+    font-size: 1em;
+    background: none;
+}
+#seopress-schemas-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    bottom: 0;
+    border-right: #DFDFDF solid 1px;
+    background: #F9F9F9;
+    z-index: 1;
+}
+#seopress-schemas-tabs .wrap-schemas-list {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    border: 0 none;
+    z-index: 5;
+    padding: 0 !important;
+    margin: -2px 0 0;
+    background: none;
+}
+#seopress-schemas-tabs .wrap-schemas-list li {
+  margin: 0;
+  padding: 0;
+  float: none;
+  border: none;
+  background: none;
+  border-radius: 0;
+}
+#seopress-schemas-tabs .wrap-schemas-list li a {
+    border-bottom: 1px solid #ededed;
+    font-size: 13px;
+    line-height: 18px;
+    color: #0073aa;
+    padding: 10px;
+    margin: 0;
+    font-weight: normal;
+    border-width: 1px 0;
+    border-radius: 0;
+    background: transparent;
+    display:block;
+    float: none;
+    text-decoration: none;
+}
+#seopress-schemas-tabs .wrap-schemas-list li:hover a,
+#seopress-schemas-tabs .wrap-schemas-list li a:focus,
+#seopress-schemas-tabs .wrap-schemas-list li a:active {
+  background: #fff;
+  box-shadow: none;
+}
+#seopress-schemas-tabs .wrap-schemas-list li.ui-tabs-active a {
+    border-color: #DFDFDF;
+    color: #000;
+    margin-right: -1px;
+    background: #fff;
+}
+#seopress-schemas-tabs .ui-tabs-panel {
+  padding: 0 12px;
+}
+#seopress-schemas-tabs .ui-tabs-panel ul {
+  margin-top: 0;
+}
+#seopress_pro_cpt span.description {
+  margin: 2px 0 5px;
+  color: #666;
+  display: block;
+}
+#seopress_pro_cpt, #seopress_pro_cpt input[type="text"], #seopress_pro_cpt textarea {
+  width: 100%;
+}
+#seopress_pro_cpt select {
+    width: 300px;
+}
+#seopress_pro_cpt .wrap-rich-snippets-articles,
+#seopress_pro_cpt .wrap-rich-snippets-local-business,
+#seopress_pro_cpt .wrap-rich-snippets-faq,
+#seopress_pro_cpt .wrap-rich-snippets-courses,
+#seopress_pro_cpt .wrap-rich-snippets-recipes,
+#seopress_pro_cpt .wrap-rich-snippets-jobs,
+#seopress_pro_cpt .wrap-rich-snippets-videos,
+#seopress_pro_cpt .wrap-rich-snippets-events,
+#seopress_pro_cpt .wrap-rich-snippets-products,
+#seopress_pro_cpt .wrap-rich-snippets-services,
+#seopress_pro_cpt .wrap-rich-snippets-review,
+#seopress_pro_cpt .wrap-rich-snippets-custom {
+  display: none;
+}
+#seopress_pro_cpt #wrap-faq {
+    margin: 20px 0 20px -12px;
+    width: calc(100% + 24px);
+}
+#seopress_pro_cpt #wrap-faq .faq:nth-child(odd){
+  background: #fdfdfd;
+}
+#seopress_pro_cpt #wrap-faq .faq {
+  border-top: 1px solid #eee;
+}
+#seopress_pro_cpt #wrap-faq .faq .accordion-section-title {
+  border: none;
+}
+#seopress_pro_cpt #wrap-faq .faq .ui-accordion-header-active {
+  border-bottom: 1px solid #eee;
+}
+#seopress_pro_cpt #wrap-faq .faq input,
+#seopress_pro_cpt #wrap-faq .faq textarea {
+  width: 100%;
+  display: block;
+}
+#seopress_pro_cpt #wrap-faq .faq:first-child .remove-faq{
+  display: none;
+}
+#seopress_pro_cpt .notice {
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+    border: none;
+}
+#seopress_pro_rich_snippets_type {
+    margin: 0 0 10px 0;
+}
+.seopress-list, #seopress_pro_cpt .box-left ul {
+    background: #F1F1F1;
+    padding: 20px 30px;
+    border-left: 4px solid #FB2139;
+}
+.seopress-list li, #seopress_pro_cpt .box-left li {
+    position: relative;
+    margin: 0 0 15px 0;
+    vertical-align: middle;
+}
+.seopress-list li::before, #seopress_pro_cpt .box-left li::before {
+    font-family: Dashicons;
+    content: "\f147";
+    left: -20px;
+    position: absolute;
+}
+#seopress_pro_cpt ul.wrap-opening-hours,
+#seopress_pro_cpt ul.wrap-opening-hours ul {
+    background: none;
+    padding: 0;
+    border: none;
+}
+#seopress_pro_cpt ul.wrap-opening-hours > li {
+    padding: 0 20px 10px;
+    margin: 0 0 0 -12px;
+    width: calc(100% - 16px);
+}
+#seopress_pro_cpt ul.wrap-opening-hours > li:nth-child(even) {
+    background: #fdfdfd;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+#seopress_pro_cpt ul.wrap-opening-hours li::before {
+    content: none;
+}
+#seopress_pro_cpt ul.wrap-opening-hours li li {
+    margin: 5px 0;
+    display: inline-block;
+    width: 100%;
+}
+#seopress_pro_cpt ul.wrap-opening-hours label {
+    min-width: 250px;
+    margin: 0;
+    font-weight: normal;
+    display: inline-block;
+}
+#seopress_pro_cpt ul.wrap-opening-hours select {
+    width: auto;
+}
+#seopress_pro_cpt ul.wrap-opening-hours span {
+    font-weight: bold;
+    margin: 10px 0;
+    width: 100%;
+}
+#seopress_pro_cpt .sublist {
+    border: none;
+    background: inherit;
+    padding: 0;
+}
+#seopress_pro_cpt .sublist li::before, #seopress_pro_cpt .advice li::before {
+    content: none;
+}
+#seopress_pro_cpt .dashicons-no {
+    color: red;
+}
+#seopress_pro_cpt .advice {
+    display: block;
+    font-style: italic;
+    margin: 5px 0 0 0;
+    border-left: 4px solid #FB2139;
+    padding: 10px 15px;
+    background: #F1F1F1;
+}
+#seopress_pro_cpt .warning {
+    font-weight: bold;
+    font-style: normal;
+}
+.seopress_bot_404, .seopress_bot_403, .seopress_bot_402, .seopress_bot_401, .seopress_bot_400 {
+    color: #D9534F;
+}
+.seopress_bot_200, .seopress_redirection_301 {
+    color: #5CB85C;
+}
+.seopress_redirection_302, .seopress_redirection_307 {
+    color: #5BC0DE;
+}
+.seopress_redirection_default {
+  color: #D9534F;
+}
+.seopress_bot_status, .seopress_redirection_status {
+  font-weight: bold;
+}
+.wrap-toggle-checkboxes {
+    position: absolute;
+    right: 25px;
+    top: 2px;
+    padding-top: 14px;
+}
+.wrap-toggle-checkboxes {
+    position: inherit;
+    margin: 20px 0;
+    display: block;
+}
+.wrap-bot-form {
+    margin: 40px auto 0;
+}
+/*Date Picker Default Styles*/
+.seopress-ui-datepicker {
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.075);
+  min-width: 17em;
+  width: auto !important;
+  z-index: 1000 !important;
+}
+body.wp-admin:not(.rtl) .seopress-ui-datepicker {
+  margin-left: -1px;
+}
+body.wp-admin.rtl .seopress-ui-datepicker {
+  margin-right: -1px;
+}
+.seopress-ui-datepicker * {
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.seopress-ui-datepicker table {
+    font-size: 13px;
+    margin: 0;
+    border: none;
+    border-collapse: collapse;
+}
+.seopress-ui-datepicker .ui-widget-header,
+.seopress-ui-datepicker .ui-datepicker-header {
+    background-image: none;
+    border: none;
+    color: #fff;
+    font-weight: normal;
+}
+.seopress-ui-datepicker .ui-datepicker-header .ui-state-hover {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.seopress-ui-datepicker .ui-datepicker-title {
+    margin: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+.seopress-ui-datepicker .ui-datepicker-prev,
+.seopress-ui-datepicker .ui-datepicker-next {
+    position: relative;
+    top: 0;
+    height: 34px;
+    width: 34px;
+}
+.seopress-ui-datepicker .ui-state-hover.ui-datepicker-prev,
+.seopress-ui-datepicker .ui-state-hover.ui-datepicker-next {
+    border: none;
+}
+.seopress-ui-datepicker .ui-datepicker-prev,
+.seopress-ui-datepicker .ui-datepicker-prev-hover {
+    left: 0;
+}
+.seopress-ui-datepicker .ui-datepicker-next,
+.seopress-ui-datepicker .ui-datepicker-next-hover {
+    right: 0;
+}
+.seopress-ui-datepicker .ui-datepicker-next span,
+.seopress-ui-datepicker .ui-datepicker-prev span {
+    display: none;
+}
+.seopress-ui-datepicker .ui-datepicker-prev {
+    float: left;
+}
+.seopress-ui-datepicker .ui-datepicker-next {
+    float: right;
+}
+.seopress-ui-datepicker .ui-datepicker-prev:before,
+.seopress-ui-datepicker .ui-datepicker-next:before {
+    font: normal 20px/34px 'dashicons';
+    padding-left: 7px;
+    color: #fff;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 34px;
+    height: 34px;
+}
+.seopress-ui-datepicker .ui-datepicker-prev:before {
+    content: '\f341';
+}
+.seopress-ui-datepicker .ui-datepicker-next:before {
+    content: '\f345';
+}
+.seopress-ui-datepicker .ui-datepicker-prev-hover:before,
+.seopress-ui-datepicker .ui-datepicker-next-hover:before {
+    opacity: 0.7;
+}
+.seopress-ui-datepicker select.ui-datepicker-month,
+.seopress-ui-datepicker select.ui-datepicker-year {
+    width: 33%;
+}
+.seopress-ui-datepicker thead {
+    color: #fff;
+    font-weight: 600;
+}
+.seopress-ui-datepicker th {
+    padding: 10px;
+}
+.seopress-ui-datepicker td {
+    padding: 0;
+    border: 1px solid #f4f4f4;
+}
+.seopress-ui-datepicker td.ui-datepicker-other-month {
+    border: transparent;
+}
+.seopress-ui-datepicker tr:first-of-type td {
+  border-top: 1px solid #f0f0f0;
+}
+.seopress-ui-datepicker td.ui-datepicker-week-end {
+    background-color: #f4f4f4;
+    border: 1px solid #f0f0f0;
+}
+.seopress-ui-datepicker td.ui-datepicker-today {
+    background-color: #f0f0c0;
+}
+.seopress-ui-datepicker td.ui-datepicker-current-day {
+    background: #bbdd88;
+}
+.seopress-ui-datepicker td .ui-state-default {
+    background: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    display: block;
+    padding: 5px 10px;
+    font-weight: normal;
+    color: #444;
+}
+.seopress-ui-datepicker td.ui-state-disabled .ui-state-default {
+    opacity: 0.5;
+}
+.seopress-ui-datepicker .ui-widget-header,
+.seopress-ui-datepicker .ui-datepicker-header {
+    background: #00a0d2;
+}
+.seopress-ui-datepicker thead {
+    background: #32373c;
+}
+.seopress-ui-datepicker td .ui-state-hover {
+    background: #0073aa;
+    color: #fff;
+}
+
+/*Local Business*/
+.wrap-opening-hours {
+  list-style: none;
+}
+.wrap-opening-hours .day {
+    min-width: 200px;
+    display: inline-block;
+}
+
+/* Redirections */
+.manage-column.column-seopress_404,
+.manage-column.column-seopress_404_redirect_enable,
+.manage-column.column-seopress_404_redirect_type {
+  width: 60px;
+}

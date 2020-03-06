@@ -1,0 +1,10 @@
+<wpml-config>
+  <admin-texts>
+    <key name="seopress_pro_option_name">
+      <key name="seopress_breadcrumbs_i18n_home"/>
+      <key name="seopress_breadcrumbs_i18n_404"/>
+      <key name="seopress_breadcrumbs_i18n_search"/>
+      <key name="seopress_breadcrumbs_i18n_no_results"/>
+    </key>
+  </admin-texts>
+</wpml-config>
