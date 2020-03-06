@@ -1,16 +1,14 @@
 {
-  "name": "ProperBaseTheme",
+  "name": "ProperNounBaseTheme",
   "version": "0.0.1",
-  "description": "desc",
-  "main": "index.js",
+  "description": "proper noun base theme sass dependencies",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Proper Noun / Adam Hodson",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "babel-core": "^6.26.3",
+  "devDependencies": {    
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
