@@ -11,9 +11,6 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var browserSync = require('browser-sync');
 var gutil = require('gulp-util');
-var babel_core = require('babel-core');
-var babel = require('gulp-babel');
-
 
 
 var AUTOPREFIXER_BROWSERS = [
