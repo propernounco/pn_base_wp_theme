@@ -1,6 +1,5 @@
 <?php 
 
-
 function pn_enqueue_style() {         
         
     wp_enqueue_style('theme-styles', get_template_directory_uri() . '/assets/css/theme-styles.css', array(), null, false);            
@@ -28,7 +27,7 @@ function pn_enqueue_script(){
     
         // wp_enqueue_script('jquery-min', get_template_directory_uri() . '/assets/vendors/jquery/jquery.1.11.3.min.js', array(), null, true);
         
-        wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/dist/js/theme-js.dist.js', '1.0.0', true);
+        wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/dist/js/fortress-lander-js.dist.js', '1.0.0', true);
 
         $php_array = array(
             'upload_url' => admin_url('async-upload.php'),

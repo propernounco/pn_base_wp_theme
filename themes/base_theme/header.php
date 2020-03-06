@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-
+	<?php wp_head(); ?>
 </head>
 <body >
 <div id="top"></div>
@@ -13,8 +13,8 @@
 		<div class="container">
 			
 			<a href="<?php echo get_home_url(); ?>" class="logo">
-				
-				<!-- <img src="<?php echo get_image(get_field('logo_light', 'option'),'logo')['img']; ?>" alt="SFL Partners"> -->
+				LOGO
+				<!-- <img src="<?php echo get_image(get_field('logo', 'option'),'logo')['img']; ?>" alt="SFL Partners"> -->
 			</a> 
 			
 			<nav class="nav">

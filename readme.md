@@ -1,12 +1,24 @@
 # Proper Noun Base WordPress Theme Documentation
 
-## Gulp File Configuration
+## Configuring The Theme
+
+### Starting Configuration
+
+Styles.css update to include theme name
+Add Screenshot.png
+Enable Plugins
+Update Lib/css-js
+Reset permalinks
+Add A Home Page and Update Settings
 
 
-## Assets Directory Configuration
+### Assets File / Directory Configuration
+
+### Gulp File Configuration
+
+### ACF Default Fields Configuration
 
 
-## ACF Default Fields Configuration
 
 
 ## Icons

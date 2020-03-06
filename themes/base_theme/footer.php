@@ -1,27 +1,61 @@
 <div class="footer">
-	<div class="container flex items-center">
+	<div class="container flex">
 		
-		<div class="links links-left">
-			<a href="<?php echo get_home_url(); ?>/about">Our Company</a>	
-			<a href="<?php echo get_home_url(); ?>/our-services">Our Services</a>	
-			<a href="<?php echo get_home_url(); ?>/types-of-claims">Types of Claims</a>	
+		<div class="branding">
+			<a href="<?php echo get_home_url(); ?>" class="">
+					image
+			</a>	
+			<p>
+				Temp
+			</p>
+		</div>
+
+		<div class="links ">
+			<h3>Links One</h3>			
+			
+			<ul>
+				<?php echo page_nav('footer-links-one'); ?>	
+			</ul>
+
+		</div>		
+
+		<div class="links">
+			<h3>Link Two</h3>
+
+			<ul>
+				<?php echo page_nav('footer-links-two'); ?>	
+			</ul>			
+		</div>
+
+		<div class="links">
+			<h3>Link Three</h3>
+			<ul>
+				<?php echo page_nav('footer-links-three'); ?>	
+			</ul>
+		</div>
+
+		<div class="links">
+			<h3>Our Location</h3>
 			
 		</div>
 
-		<a href="<?php echo get_home_url(); ?>" class="logo">
-			<img src="<?php echo get_asset_url('images/safeguard-footer-logo.png'); ?>" alt="Safeguard Public Adjusters">
-		</a>
-
-		<div class="links links-right">
-			<a href="<?php echo get_home_url(); ?>/our-process">Our Process</a>	
-			<a href="<?php echo get_home_url(); ?>/contact">Contact Us</a>	
-			<a href="<?php echo get_home_url(); ?>/start-a-claim">Start A Claim</a>	
-		</div>
-
 	</div>	
+	<div class="bottom container">
+		<div class="divider"></div>
+		<div class="bottom-links">
+			<span>© <?php echo date("Y"); ?> Website Name</span>			
+		</div>
+	</div>
+
+	<a href="tel:<?php echo get_field('phone', 'option'); ?>" class="mobile-call"><span class="text">Click To Call Us Now </span> </a>
 </div>
 
-<?php echo wp_footer(); ?>
+<?php 
+
+	echo wp_footer(); 
+
+
+?>
 
 </body>
 </html>

@@ -1,0 +1,137 @@
+.footer{
+	background:$base_dark;
+	padding: 60px 0;
+	overflow: hidden;
+	position:relative;
+	.branding{
+		@include minmax(25%);
+		margin-right:auto;
+		.logo{
+			height:48px;
+			margin-bottom:18px;
+			display: block;
+			img{
+				width: auto;
+				height: 100%;
+			}
+		}
+		p{
+			@include font-size(1.3);
+			color:$text_light;
+		}
+	}
+	.links{
+		display:block;
+		width:auto;
+		padding:0 0 0 90px;
+		
+		h3{
+			color:$text_light;	
+			font-size:24px;
+			font-weight:normal;
+			letter-spacing: .5px;
+			display: block;
+			margin-bottom:12px;
+		}
+
+		a{
+			color:$text_light;
+			@include font-size(1.4);
+		}
+		address{
+			color:$text_light;
+			@include font-size(1.4);	
+			font-style:normal;
+		}
+	}
+	.bottom-links{
+		text-align:center;
+		display: block;
+		a,span{
+			@include font-size(1.5);
+			color:$text_light;
+			display: inline-block;
+			margin:0 12px;
+		}
+	}
+
+	.mobile-call{
+		position:fixed;
+		bottom:18px;
+		left:18px;
+		right:18px;
+		width:calc(100% - 84px);
+		height:48px;
+		border-radius:3px;
+		background-image:linear-gradient(to bottom, #fff, $base_gray);
+		box-shadow: 0px 2px 6px rgba(#000, .125);
+		z-index: 9999;
+		display: block;
+		font-size:20px;
+		font-weight:bold;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		color:$base_color;
+		text-transform: lowercase;
+		border-bottom:3px solid $base_color;
+		padding:0 24px;
+		visibility: hidden;
+		opacity:0;
+		transition:all .2s ease-in;
+		&.active{
+			visibility: visible;
+			opacity:1;
+			transition:all .2s ease-in;
+		}
+		svg, i{
+			width:auto;
+			display: block;
+			height:18px;
+			stroke:none;
+			fill:$base_color;
+			// margin-right:0;
+		}
+		.text{
+			display: block;
+			// margin-right:auto;
+		}
+	}
+	@include max-breakpoint('m'){
+		.links{
+			margin-bottom:24px;
+			display: block;
+			a{
+				font-size:15px;
+				line-height:20px;
+			}
+		}
+	}
+	@include max-breakpoint('s'){
+		padding: 30px 0;
+		.container{
+			flex-direction: column;
+			.branding, .links{
+				@include minmax(100%);
+				margin:0;
+				padding:0;
+			}
+			.branding{
+				margin-bottom:25px;
+				padding-bottom:15px;
+				border-bottom:1px solid rgba(#fff, .5);
+				p{
+					font-size:14px;
+					line-height:20px;
+				}
+			}
+			.links{
+				margin-bottom:30px;
+				a{
+					display: block;
+					line-height:30px;
+				}
+			}
+		}
+	}
+}
