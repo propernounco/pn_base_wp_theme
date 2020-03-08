@@ -1,4 +1,3 @@
-
 jQuery(function($){
 
 	function getTextWidth(text) { 
@@ -17,6 +16,31 @@ jQuery(function($){
 		return formattedWidth
     } 
 	
+	$('.sub-sub-links').each(function(){
+		$(this).parent().parent().addClass('flex')
+	})
+
+	$('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,        
+        $target = $(target);
+
+        if(target == '#'){
+        	return;
+        }
+
+       $('html, body').stop().animate({
+         'scrollTop': $target.offset().top - 300
+        }, 500, 'swing', function () {
+         // window.location.hash = target;
+        });
+    });
+
+    function check_width_overflow(elem){
+	    return element.scrollWidth > element.clientWidth;
+	}
+
 	$('.modal').iziModal()
 	
 	feather.replace()		      
@@ -124,11 +148,13 @@ jQuery(function($){
 	})
 
 	if($('.testimonials-slider').length > 0){
+		console.log('as')
 		$('.testimonials-slider').slick({
 			dots: true,
 			infinite: true,
 			speed: 600,
 			centerMode: true,
+			arrows:false,
 			autoplay: true,
 			autoplaySpeed: 5000,
 			slidesToShow: 1,

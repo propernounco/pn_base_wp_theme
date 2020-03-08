@@ -88,7 +88,46 @@
   .container-full-xxl { width: auto; }
 }
 
+.large-contain{
+  width:80%;
+  margin:0 auto;
+  // max-width:90%;
+}
 
+.med-contain{
+  width:75%;
+  margin:0 auto;
+  // max-width:90%;
+  @include max-breakpoint('l'){
+    width:100%;
+  }
+  @include max-breakpoint('s'){
+    width:100%;
+  }
+}
+
+.list-contain{
+  width:66%;
+  margin:0 auto;
+  // max-width:90%;
+
+  @include max-breakpoint('m'){
+    width:100%;
+  }
+}
+
+.small-contain{
+  width:660px;
+  margin:0 auto;
+  max-width:90%;
+  @include max-breakpoint('l'){
+    width:100%;
+  }
+  @include max-breakpoint('s'){
+    width:100%;
+    max-width:100%;
+  }
+}
 
 // Grid Settings
 
@@ -185,6 +224,9 @@ $columns: 12;
       grid-template-columns: repeat($i, 1fr);
       > .item{
         display:block;
+        &.flex{
+          display: flex;
+        }
       }
       
     }

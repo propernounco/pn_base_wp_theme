@@ -19,8 +19,6 @@ Add A Home Page and Update Settings
 ### ACF Default Fields Configuration
 
 
-
-
 ## Icons
 
 
@@ -38,15 +36,20 @@ Add A Home Page and Update Settings
 
 ### Mobile Navigation
 
+### CSS Components
+
+### Forms
+Gravity forms classes (half-field, clear-multi)
+
+### Mixins
+
+## Basic UI Components
+
 ### Sliders
 
 ### Modals
 
-### CSS Components
-
-### Forms
-
-### Mixins
+### Accordions
 
 
 ## Page Templates

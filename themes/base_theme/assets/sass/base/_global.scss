@@ -1,4 +1,19 @@
-html, body{
+html{
+	margin:0;
+	padding:0;
+	font-size: 62.5%;
+	@include max-breakpoint('s'){
+		font-size:58%;
+	}
+	@include max-breakpoint('xs'){
+		font-size:54%;
+	}
+	@include max-breakpoint('mobile'){
+		font-size:50%;
+	}
+}
+body{
+	@include font-size(1.5);
 	margin:0;
 	padding:0;
 }
