@@ -1,3 +1,43 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [WP Barebones Base WordPress Theme & Framework Documentation](#wp-barebones-base-wordpress-theme--framework-documentation)
+  - [Configuring The Theme](#configuring-the-theme)
+    - [Installing The Latest Version of WordPress](#installing-the-latest-version-of-wordpress)
+    - [Installing the WP Barebones Files](#installing-the-wp-barebones-files)
+    - [Starting Configuration](#starting-configuration)
+    - [Install Node Modules](#install-node-modules)
+    - [Gulp File Configuration](#gulp-file-configuration)
+    - [Assets File / Directory Configuration](#assets-file--directory-configuration)
+    - [Update lib/css-js.php](#update-libcss-jsphp)
+    - [ACF Default Fields Configuration](#acf-default-fields-configuration)
+  - [Icons](#icons)
+  - [WP Barebones Basic SCSS Framework](#wp-barebones-basic-scss-framework)
+    - [Variables](#variables)
+    - [Mixins](#mixins)
+    - [Utility Classes / Helper Classes](#utility-classes--helper-classes)
+    - [Animations](#animations)
+      - [Animations Triggered By Page Scroll](#animations-triggered-by-page-scroll)
+      - [Animation Delays](#animation-delays)
+    - [Grid System](#grid-system)
+    - [Containers & Breakpoints](#containers--breakpoints)
+    - [Typography](#typography)
+    - [Mobile Navigation](#mobile-navigation)
+    - [CSS Components File](#css-components-file)
+    - [Forms](#forms)
+  - [Basic UI Components](#basic-ui-components)
+    - [Sliders / Carousels](#sliders--carousels)
+    - [Modals](#modals)
+  - [Page Templates](#page-templates)
+  - [Page Partials / Reusable Components](#page-partials--reusable-components)
+  - [Custom Post Types](#custom-post-types)
+  - [Page Specific/Conditional CSS Loading](#page-specificconditional-css-loading)
+  - [WP Theme Functions File](#wp-theme-functions-file)
+  - [WP Util File](#wp-util-file)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # WP Barebones Base WordPress Theme & Framework Documentation
 
 Thanks for checking out my base WordPress which has come to be known as WP Barebones. This has been a work in progress over the past several years, but I think it's become useful enough for me that it would probably be useful to other WordPress website developers. It includes a basic CSS framework that utilizes CSS grid, a variety of custom WP utility functions, it's already setup to use prefix, compile, and minify SASS and JS using Gulp, it comes with a suite of utility plugins, and quite a bit more. You will need to use the command line a bit to get the full benefit of this theme.
