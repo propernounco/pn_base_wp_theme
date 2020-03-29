@@ -321,7 +321,8 @@ The 'contain' property will ensure that the image will fill up the full width an
 If you're unfamiliar with the object-fit property [you can read more on it here](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
 
 
-4. **Visibility & Display Helpers**
+4. **Visibility & Display Helpers**  
+
 There are a number of classes that control an elements visibility and display in various ways.
 
 Display Helpers  
@@ -338,7 +339,8 @@ Show and Hide Helpers
 .show{ display:block; }
 ```
 
-5. **Flex Box Helpers**
+5. **Flex Box Helpers**  
+
 WP Barebones comes with a number of flex helpers that can be applied to elements and containers. Flex elements also work great in conjunction with CSS grid for perfectly balanced elements.
 
 ```
@@ -378,7 +380,8 @@ Example usage of these classes might be something like the code below to create 
 </div>
 ```
 
-6. **Margin Helpers**
+6. **Margin Helpers**  
+
 WP Barebones also comes with margin and padding helpers that can be applied to the top and bottom of any block elements in a template. If you wanted to add helpers for the left and right of an element, simply copy and paste one of the existing mixins and modify the code accordingly.  
 
 You'll see the "space count" variable is defined before the mixins. This is the value that controls how many helper classes will be available. 
