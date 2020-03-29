@@ -30,10 +30,11 @@
 	- [Modals](#modals)
 - [Page Templates](#page-templates)
 - [Page Partials / Reusable Components](#page-partials--reusable-components)
-- [Custom Post Types](#custom-post-types)
-- [Page Specific/Conditional CSS Loading](#page-specificconditional-css-loading)
-- [WP Theme Functions File](#wp-theme-functions-file)
-- [WP Util File](#wp-util-file)
+- [WP Barebones Functional Updates](#wp-barebones-functional-updates)
+	- [Custom Post Types](#custom-post-types)
+	- [Page Specific/Conditional CSS Loading](#page-specificconditional-css-loading)
+	- [WP Theme Functions File](#wp-theme-functions-file)
+	- [WP Util File](#wp-util-file)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1146,9 +1147,29 @@ WP Barebones comes with a few basic page templates already setup and ready to go
 You do not need to use any of these page layouts though if you don't want to. You can find all of the styling for these pages within '/assets/scss/pages/base-pages'
 
 ## Custom Page Partials / Page Components
+In addition to the page templates, WP Barebones also includes a number of template parts or "global components".  These include:
 
+- Base Hero component
+- FAQs Accordion component
+- Testimonials Slider component
 
-## Custom Post Types
+These components can be included inside of any page by including:
+
+```
+<?php echo get_template_part('partials/COMPONENT-NAME'); ?>		
+
+For Example:
+
+<?php echo get_template_part('partials/base-hero'); ?>		
+```
+
+As you develop modular blocks/global components that are to be used across multiple pages, you can include them as template parts to keep your codebase smaller and make it easier to make global changes to your theme.
+
+# WP Barebones Functional Updates
+In addition to all of the CSS & JavaScript helpers and components, WP Barebones also includes a number of functional improvements to make theme development a little bit easier.
+
+## Custom Post Type Creation
+
 
 
 ## Page Specific/Conditional CSS Loading
@@ -1184,9 +1205,9 @@ Localizing the script allows for it to access these variables from your JavaScri
 
 For example, if you were to use store 'php_array.base_url' in a variable called 'base_url' in your main JavaScript file and then log the variable, you would see the result of 'get_home_url()' or your websites root domain.
 
+## WP Utility Functions
 
 ## WP Theme Functions File
 
 
-## WP Util File
 
