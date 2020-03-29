@@ -200,7 +200,7 @@ Feather Icons uses JavaScript to use the name set in the 'data-feather' attribut
 feather.replace()
 ```
 
-## Explaining The Basic SCSS Framework
+## WP Barebones Basic SCSS Framework
 WP Barebones also includes a basic SCSS framework to help facilitate more rapid theme development. The framework includes many of the features that frameworks like Bootstrap might include, however is considerably more lightweight and flexible. 
 
 Here are is a run down on all of the frameworks features.
@@ -272,7 +272,25 @@ Similar to the "fancy_scroller()" mixin, this mixin is also used to modify the b
 
 
 ### Utility Classes / Helper Classes
+There are a number of utlity classes and helper classes that come with WP Barebones.  You can review this file at 'assets/sass/base/helpers'. Here is a breakdown of all of the classes.
 
+**'.responsive-img'**
+On the first line of the helpers file, WP Barebones sets all images to be "responsive" by default in that the img element is set to:
+
+```
+img{
+	max-width:100%;
+	height:auto;
+}
+```
+
+If you choose to remove this styling though and instead use the "responsive-img" class, you can simply apply the class to any image and it will have the same style.
+
+**'.image-cover'**
+This class will set the image to have a minimum width of 100%, a minimum height of 100% and will set the "object-fit" property to cover which will allow the image to maintain it's aspect ratio. This class will allow an image to behave similarly to a background image with a background size set to "cover".
+
+**'.image-contain'**
+This class works similarly to the '.image-cover' class, but instead of 'object-fit:cover' it applies the property 'object-fit:contain'. 
 
 
 ### Animations
@@ -289,12 +307,14 @@ Similar to the "fancy_scroller()" mixin, this mixin is also used to modify the b
 Gravity forms classes (half-field, clear-multi)
 
 
-
 ## Basic UI Components
+
 
 ### Sliders
 
+
 ### Modals
+
 
 ### Accordions
 
@@ -316,5 +336,3 @@ Gravity forms classes (half-field, clear-multi)
 
 ## WP Util File
 
-
-## 
