@@ -1,5 +1,5 @@
 // Basic Components
-.faq-accordion{
+.accordion{
 	background:#fff;
 	box-shadow:0 9px 30px rgba(#000, .06);
 	.accordion-step{
@@ -30,10 +30,7 @@
 		.content{
 			padding:18px 24px;
 			display: none;
-			border-bottom:1px solid #e0e0e0;
-			&.active{
-				display: block;
-			}
+			border-bottom:1px solid #e0e0e0;			
 		}
 		&.active{
 			.title{
@@ -41,54 +38,10 @@
 					transform:rotate(180deg);
 				}
 			}
-		}
-	}
-}
-
-.page-section-links{
-	display: block;
-	width: 100%;
-	display: block;
-	left:0;
-	bottom:0;
-	background:#fff;
-	border-bottom:1px solid #e0e0e0;
-	&.fixed{
-		position:fixed;
-		z-index: 99;
-		border-bottom:0;
-		border-top:1px solid #e0e0e0;
-	}	
-	ul{
-		display: flex;
-		justify-content: center;
-		li{
-			width: auto;
-			padding: 0;			
-			a{
-				font-size:18px;
-				font-weight:500;
-				color:$text_gray;
-				padding: 24px 36px;
+			.content{
 				display: block;
 			}
 		}
-	}	
-	&.bordered{
-		ul{			
-			li{
-				border-right:1px solid #e0e0e0;
-				&:first-child{
-					border-left:1px solid #e0e0e0;
-				}
-				a{
-					&:hover{
-						background:$base_dark;
-						color:#fff;
-					}
-				}
-			}	
-		}		
 	}
 }
 
@@ -307,6 +260,18 @@
 		justify-content: center;
 		padding: 60px 60px;
 	}
+	&.even{
+		.image{
+			max-width:50%;
+			min-width:50%;
+			width:50%;
+		}
+		.split-content{
+			max-width:calc(50% - 120px);
+			min-width:calc(50% - 120px);
+			width:calc(50% - 120px);
+		}
+	}
 	@include max-breakpoint('s'){
 		display: block;
 		.image, .split-content{
@@ -363,22 +328,6 @@
 	box-shadow:0px 12px 30px rgba(#000, .2);
 	display:inline-block;
 	border-radius:6px;
-	.number{
-		font-family: $heading_font;
-		font-style:italic;
-		color:$base_color;
-		font-size:18px;
-		display: flex;
-		align-items:center;
-		&:after{
-			display: block;
-			content:"";
-			height:1px;
-			background:#d0d0d0;
-			width:30px;
-			margin-left:6px;
-		}
-	}
 	.card-title{
 		font-family: $heading_font;
 		@include font-size(2.0);

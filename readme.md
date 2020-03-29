@@ -762,27 +762,316 @@ $breakpoint-xxl:                                ($container-xxl + $container_pad
 ```
 
 ### Typography
+All of the typography settings for WP Barebones can be found in '/assets/scss/base/typography'.  It includes general styling for all of the basic text elements including header elements (h1 - h6), paragraph, link, and span elements. 
 
+There are also a number of typography related helper classes available. 
+
+```
+// Bold and Strong
+b, strong, .strong { font-weight: 700; }
+
+// Italics
+em, .em { font-style: italic; }
+
+.underline{
+	text-decoration: underline;
+}
+
+
+.underline-title{
+	@include font-size(1.8);
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	display: block;
+	padding: 6px 12px;
+	text-align: left;
+	border-bottom:1px solid #e0e0e0;
+	font-family:$body_font;
+	font-weight:bold;
+}
+
+// Font Weights
+.font-100 { font-weight: 100; }
+.font-200 { font-weight: 200; }
+.font-300 { font-weight: 300; }
+.font-400 { font-weight: 400; }
+.font-500 { font-weight: 500; }
+.font-600 { font-weight: 600; }
+.font-700 { font-weight: 700; }
+.font-800 { font-weight: 800; }
+.font-900 { font-weight: 900; }
+
+// Font Styles
+.font-normal { font-style: normal; }
+.font-italic { font-style: italic; }
+
+// Text Modifications
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+// Text Alignments
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+```
+
+You can also use the typography file to define specific typography classes for 'page-title', 'pretitle', 'section-title', and 'subtitle'.  
 
 ### Mobile Navigation
+WP Barebones includes a basic mobile navigation setup that is controlled in the files '/assets/blocks/header' and '/assets/js/core-js'. 
 
-### CSS Components
+You can demo the out-of-the-box mobile navigation on the theme and make modifications to it as necessary. You can also remove it entirely by commenting out the related javascript and scss. 
+
+### CSS Components File
+The components file, '/assets/sass/blocks/components' has a number of utility components included that can be used globally. Some of these components are pure CSS and others utilize a mix of CSS and JavaScript.  
+
+1. **Accordion**  
+
+WP Barebones includes a basic accordion component that can be used to create collapsible content for things like FAQ's, services descriptions, and more. 
+
+```
+<div class="accordion">
+	<div class="accordion-step active">
+		<div class="title">
+			Title Can Go In Here
+		</div>
+		<div class="content">
+			Title Can Go In Here
+		</div>
+	</div>
+
+	<div class="accordion-step">
+		<div class="title">
+			Title Can Go In Here
+		</div>
+		<div class="content">
+			Title Can Go In Here
+		</div>
+	</div>
+
+	<div class="accordion-step">
+		<div class="title">
+			Title Can Go In Here
+		</div>
+		<div class="content">
+			Title Can Go In Here
+		</div>
+	</div>
+</div>
+```
+
+2. **Split Blocks**
+
+WP Barebones includes a "split blocks" component that will allow you to create offset grid layouts. The "split blocks" allow you to float images and content to the left and right of each other where the text will slightly overlay the images. 
+
+If you wanted to float an image to the left with a content block to the right, the code would look like this:
+
+```
+<section class="section">
+	<div class="container">
+		<div class="split-blocks image-left">
+			<div class="block-image">
+				<img src="/assets/images/some-image.jpg" alt="some image">
+			</div>
+			<div class="block-content">
+				<h2>Some Content Goes Here</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio culpa placeat reprehenderit, earum ex fugit, illum, nam possimus soluta delectus dolorum blanditiis. Ab laboriosam neque, quis ex omnis est aspernatur.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+```
+
+2. **Split Sections**
+
+"Split Sections" are similar to "Split Blocks", but they do not have any overlap. The split sections are configured to have a 40/60 split, so that the image will take up 40% of the width of the container and the content would take up 60%. 
+
+If you wanted to float an image to the left with a content block to the right, the code would look like this:
+
+```
+<section class="section">
+	<div class="container">
+		<div class="split-section">
+			<div class="image">
+				<img src="/assets/images/some-image.jpg" alt="some image">
+			</div>
+			<div class="split-content">
+				<h2>Some Content Goes Here</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio culpa placeat reprehenderit, earum ex fugit, illum, nam possimus soluta delectus dolorum blanditiis. Ab laboriosam neque, quis ex omnis est aspernatur.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+```
+
+You can also modify the component so that the image and content blocks are each 50% by adding the class "even" to the "split-section" container element.
+
+3. **Card Elements**
+WP Barebones includes a number of card components that can be utilized.
+
+**Basic Card**
+```
+<div class="card">
+	<h2 class="card-title">Title Here</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, labore, aliquid. Sunt voluptatibus corrupti et corporis excepturi sint autem? Blanditiis dicta, aut esse. Minus nihil nostrum, saepe magni voluptates beatae!
+	</p>
+</div>
+```
+
+**Image Card**
+```
+<div class="image-card">
+	<div class="image">
+		<img src="/assets/images/image.jpg" alt="image">
+	</div>
+	<div class="card-content">
+		<h2 class="card-title">Title Here</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, labore, aliquid. Sunt voluptatibus corrupti et corporis excepturi sint autem? Blanditiis dicta, aut esse. Minus nihil nostrum, saepe magni voluptates beatae!
+		</p>
+	</div>
+</div>
+```
+
+**Horizontal Image Card**
+```
+<div class="horizontal-image-card">
+	<div class="image">
+		<img src="/assets/images/image.jpg" alt="image">
+	</div>
+	<div class="card-content">
+		<h2 class="card-title">Title Here</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, labore, aliquid. Sunt voluptatibus corrupti et corporis excepturi sint autem? Blanditiis dicta, aut esse. Minus nihil nostrum, saepe magni voluptates beatae!
+		</p>
+	</div>
+</div>
+```
 
 ### Forms
-Gravity forms classes (half-field, clear-multi)
+There are some very basic form and input styles that are setup in the file '/assets/sass/base/forms'.  I've left the styling here fairly minimal though so that it's not too complicated to customize the look and feel of your forms as needed.
 
+As WP Barebones is setup to use Gravity Forms, there are also some basic styles included to update the look of the standard gravity forms output. 
+
+You can also modify the layout of a Gravity Forms form by adding a few helper classes directly to the fields through the gravity form settings. 
+
+These classes include: 'half-field' to make a field take up about 50% of the container, and 'clear-multi' which will allow for fields to float in a row using flex box.
 
 ## Basic UI Components
+In addition to the CSS components, there are also a number of JavaScript based components that are integrated into WP Barebones.
 
+### Sliders / Carousels
+WP Barebones includes the Slick.js slider library that makes it easy to include sliders / carousels anywhere in your theme. Here is a basic example of how to include a slick slider:
 
-### Sliders
+```
+<div class="slick-slider">
+  <div><h3>1</h3></div>
+  <div><h3>2</h3></div>
+  <div><h3>3</h3></div>
+  <div><h3>4</h3></div>
+  <div><h3>5</h3></div>
+</div>
 
+<script>
+$('.slick-slider').slick();
+</script>
+```
+
+Slick can be initialized in the PHP file within a script tag, or in your theme's JavaScript file.
+
+There are a number of properties that can be passed to the slick slider in an object. For example:
+
+```
+$('.slick-slider').slick({
+	dots: true,
+  	infinite: true,
+  	speed: 300,
+  	slidesToShow: 1,
+  	centerMode: true,
+  	variableWidth: true
+});
+
+```
+For a full list of all of the different options available, you can read the [full Slick documentation here](https://kenwheeler.github.io/slick/)
+
+**Responsive Sliders**
+Sliders can also be built to be responsive so that the number of slides shown at any given time can change depending on the screensize. 
+
+```
+$('.slick-slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+```
 
 ### Modals
+In addition to Slick.js, WP Barebones also includes a lightweight modal library called [iziModal](http://izimodal.marcelodolza.com/). 
 
+You can [read the full documentation on iziModal here](http://izimodal.marcelodolza.com/), but here is a basic example of how it can be used.
 
-### Accordions
+**Template File**
+```
+<div id="modal" class="modal iziModal">  
+    <div class="modal-content">
+    	Content Here
+    </div>
+</div>
+```
 
+**Initialize The Modal In A JavaScript File**  
+```
+$("#modal").iziModal();
+```
+
+Now the modal can be triggered via data attributes being added to link or button elements, or it can be triggered via a JavaScript event.
+
+**Data Attributes**
+```
+<a href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Modal</a>
+```
+
+**Click Events**
+```
+$(document).on('click', '.trigger-element', function (event) {
+    event.preventDefault();    
+    $('#modal').iziModal('open');
+});
+```
+
+**Timeout Events**
+```
+setTimeout(function(){
+	$('#modal').iziModal('open');
+}, 1000)
+```
 
 ## Page Templates
 
