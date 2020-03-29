@@ -1,7 +1,7 @@
 <?php
 
 
-function pn_get_template_name( $page_id = null ) {
+function wpbb_get_template_name( $page_id = null ) {
     if ( ! $template = get_page_template_slug( $page_id ) )
         return;
     if ( ! $file = locate_template( $template ) )

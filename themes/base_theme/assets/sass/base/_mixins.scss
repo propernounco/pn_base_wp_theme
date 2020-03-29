@@ -1,67 +1,6 @@
 // ==========================================================================
 // Base – Mixins
 // ==========================================================================
-@function strip-unit($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
-  }
-
-  @return $number;
-}
-
-@mixin fancy_scroller() {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  &::-webkit-scrollbar {
-    width: 6px;
-    height:6px;
-      
-  }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: #ddd; 
-  }
-     
-  &::-webkit-scrollbar-thumb {
-    background: #aaa; 
-  }
-}
-
-@mixin hide_scroller() {
-
-  padding-right: 17px;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  &::-webkit-scrollbar {
-    width: 0px;
-    display:none;
-    height:0px;  
-  }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: rgba(#fff, 0); 
-  }
-     
-  &::-webkit-scrollbar-thumb {
-    background: rgba(#fff, 0); 
-  }
-}
-
-@mixin fancy_scroller_small() {
-  &::-webkit-scrollbar {
-    width: 6px;
-    height:3px;  
-  }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: #ddd; 
-  }
-     
-  &::-webkit-scrollbar-thumb {
-    background: #aaa; 
-  }
-}
 
 // Breakpoint sizes
 // Example usage @include breakpoint(x) { ... }; - where x is the device
@@ -127,8 +66,9 @@
 
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
   line-height: (($sizeValue * 10) + 6) + px;
+  font-size: $sizeValue + rem;
+  line-height: ($sizeValue + .8) + rem;
 }
 
 @mixin minmax ($size) {
@@ -137,14 +77,6 @@
   width:$size;
 }
 
-// Background Color with Opacity
-// Example Usage: @include bg-rgba(#111, 50%);
-@mixin background-alpha($color, $alpha) {
-  $opacity: $alpha / 100%;
-  $rgba: rgba($color, $opacity);
-  background: $color;
-  background: rgba($color, $opacity);
-}
 
 // Animations
 // Example Usage @mixin animation(1s);
@@ -153,38 +85,63 @@
   animation-fill-mode: both;
 }
 
-// Arrows
-// Example Usage @mixin arrow(4px, #000, up);
-@mixin arrow ($size: 5px, $color: #333, $direction: right) {
-  position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    border: $size solid transparent;
-    z-index: -1;
-    @if $direction == right {
-      top: 50%;
-      left: 100%;
-      border-left-color: $color;
-      transform: translate3d(0, -50%, 0);
-    }
-    @else if $direction == left {
-      top: 50%;
-      left: 0;
-      border-right-color: $color;
-      transform: translate3d(-100%, -50%, 0);
-    }
-    @else if $direction == down {
-      top: 100%;
-      left: 50%;
-      border-top-color: $color;
-      transform: translate3d(-50%, 0, 0);
-    }
-    @else if $direction == up {
-      top: 0;
-      left: 50%;
-      border-bottom-color: $color;
-      transform: translate3d(-50%, -100%, 0);
-    }
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@mixin fancy_scroller() {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height:6px;      
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ddd; 
+  }
+     
+  &::-webkit-scrollbar-thumb {
+    background: #aaa; 
+  }
+}
+
+@mixin hide_scroller() {
+  padding-right: 17px;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar {
+    width: 0px;
+    display:none;
+    height:0px;  
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: rgba(#fff, 0); 
+  }
+     
+  &::-webkit-scrollbar-thumb {
+    background: rgba(#fff, 0); 
+  }
+}
+
+@mixin fancy_scroller_small() {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height:3px;  
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ddd; 
+  }
+     
+  &::-webkit-scrollbar-thumb {
+    background: #aaa; 
   }
 }
