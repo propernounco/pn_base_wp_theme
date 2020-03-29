@@ -1112,16 +1112,77 @@ setTimeout(function(){
 }, 1000)
 ```
 
-## Page Templates
+## Custom Page Templates
+Including custom template files in your theme is straightforward with WP Barebones. 
 
+It's as easy as creating a new file inside of the '/page-templates' folder with a name like 'template-PAGENAME.php' where page name is a descriptive name for your template.
 
-## Page Partials / Reusable Components
+Within the template file place the following code to get started:
+
+```
+<?php 
+/** Template Name: NAME GOES HERE */  
+get_header(); 
+?>
+<div class="page">
+	
+</div>
+<?php get_footer(); ?>
+``` 
+
+Now you can place all of your custom template code within the "page" div element (or replace this element with one of your choosing).
+
+Now when you open a page within the WordPress CMS you will see the new template available within your "Custom Template" options. 
+
+WP Barebones comes with a few basic page templates already setup and ready to go.  These include:
+
+- Home Page
+- Contact Page
+- FAQs page
+- Blog Index Page
+- Single Post Page
+- General Content Page
+
+You do not need to use any of these page layouts though if you don't want to. You can find all of the styling for these pages within '/assets/scss/pages/base-pages'
+
+## Custom Page Partials / Page Components
 
 
 ## Custom Post Types
 
 
 ## Page Specific/Conditional CSS Loading
+
+There is a block of code below where you enqueue the theme styles that will dynamically load CSS files. 
+
+This code is already setup to find and load css files that are named to match custom post type template names and single post template names for custom post types.  
+
+The template name is the name set at the top of the template files, for example a template named programs would look like this:
+
+```
+/** Template Name: Programs */  
+```
+If you wanted to load a CSS file specifically for this template, you would just create a new file in '/assets/sass' named 'programs.scss' without the leading underscore.
+
+You can also copy and paste this same code block into the script enqueue and follow the same logic if you wanted to conditionally load JavaScript files.
+
+2. **Dynamic Loading Explanation**  
+
+If you're unfamiliar with the concept of dynamically loading CSS files on specific pages, this is a way to keep your CSS file size down and your website loading as quickly as possible.
+
+For example, let's say there are certain elements, components, JS functions, or styles that will only be required on one page, then it doesn't really make sense to add all of that additional code to a "global" CSS or JavaScript file.  
+
+By moving this code to page specific files, you're able to keep the overall size of your CSS and JavaScript files as small as possible without having to make compromises when it comes to your designs or functionality. 
+
+3. **JavaScript Explanations**  
+
+Along with the enqueue script function you'll see inside of 'wpbb_enqueue_script', there's also a '$php_array' that is defined. 
+
+This array is used to a) localize your theme's JS file and b) establish a variety of variables that can be used in your JS file. 
+
+Localizing the script allows for it to access these variables from your JavaScript file as well as make Ajax requests to your theme's functional files. 
+
+For example, if you were to use store 'php_array.base_url' in a variable called 'base_url' in your main JavaScript file and then log the variable, you would see the result of 'get_home_url()' or your websites root domain.
 
 
 ## WP Theme Functions File
