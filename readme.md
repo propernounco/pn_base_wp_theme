@@ -309,14 +309,288 @@ If you choose to remove this styling though and instead use the "responsive-img"
 
 This class will set the image to have a minimum width of 100%, a minimum height of 100% and will set the "object-fit" property to cover which will allow the image to maintain it's aspect ratio. This class will allow an image to behave similarly to a background image with a background size set to "cover".
 
+If you're unfamiliar with the object-fit property [you can read more on it here](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+
+
 3. **'.image-contain'**  
 
 This class works similarly to the '.image-cover' class, but instead of 'object-fit:cover' it applies the property 'object-fit:contain'. 
 
+The 'contain' property will ensure that the image will fill up the full width and height of a container without while keeping the image fully within the container and maintaining the aspect ratio. 
+
+If you're unfamiliar with the object-fit property [you can read more on it here](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+
+
+4. **Visibility & Display Helpers**
+There are a number of classes that control an elements visibility and display in various ways.
+
+Display Helpers  
+```
+.none { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+```
+Show and Hide Helpers
+```
+.opaque{ opacity:0; }
+.hide{ display:none; }
+.show{ display:block; }
+```
+
+5. **Flex Box Helpers**
+WP Barebones comes with a number of flex helpers that can be applied to elements and containers. Flex elements also work great in conjunction with CSS grid for perfectly balanced elements.
+
+```
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-space-around { justify-content: space-around; }
+.flex-space-between { justify-content: space-between; }
+.flex-start { justify-content: flex-start; }
+.flex-center { justify-content: center; }
+.flex-end { justify-content: flex-end; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-eq-col{
+  width:auto;
+  flex-grow:1;
+  max-width:100%;
+}
+```
+
+Example usage of these classes might be something like the code below to create four equal columns.:
+
+```
+<div class="flex flex-items-center flex-center">
+	<div class="item flex-eq-col">
+		1.
+	</div>
+	<div class="item flex-eq-col">
+		2. 
+	</div>
+	<div class="item flex-eq-col">
+		3.
+	</div>
+	<div class="item flex-eq-col">
+		4.
+	</div>
+</div>
+```
+
+6. **Margin Helpers**
+WP Barebones also comes with margin and padding helpers that can be applied to the top and bottom of any block elements in a template. If you wanted to add helpers for the left and right of an element, simply copy and paste one of the existing mixins and modify the code accordingly.  
+
+You'll see the "space count" variable is defined before the mixins. This is the value that controls how many helper classes will be available. 
+
+For example, if you were to change the value to 18, the class topmargin-18 would work, but topmargin-19 would not.
+
+The integers on the classes, i.e. topmargin-'10', are multipled by the 'base height' variable that is set in the 'assets/scss/base/variables' file. In this case, the value is 6px. 
+
+This means that '.topmargin-10' would add a 60px margin to the top of an element.
+
+
+```
+//Margin Helpers
+$spaceCount: 20;
+
+//VERTICAL RHYTHM MARGIN TOP HELPERS (6PX INCREMENTS). Margin Top from 0 - 20 * Base Height
+@mixin vr-topmargin{
+  @for $i from 0 through $spaceCount {    
+    $size: $i;
+      .topmargin-#{$size} {         
+          margin-top: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .topmargin-#{$size}-t {         
+          margin-top: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .topmargin-#{$size}-m {         
+          margin-top: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-topmargin;
+
+@mixin vr-bottommargin {
+  @for $i from 0 through $spaceCount {
+    $size: $i;
+      .bottommargin-#{$size} {         
+          margin-bottom: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .bottommargin-#{$size}-t {         
+          margin-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .bottommargin-#{$size}-m {         
+          margin-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-bottommargin;
+
+@mixin vr-toppad {
+  @for $i from 0 through $spaceCount {
+    $size: $i;
+      .toppad-#{$size} {         
+          padding-top: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .toppad-#{$size}-t {         
+          padding-top: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .toppad-#{$size}-m {         
+          padding-top: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-toppad;
+
+@mixin vr-bottompad {
+  @for $i from 0 through $spaceCount {
+    $size: $i;
+      .bottompad-#{$size} {         
+          padding-bottom: calc(#{$base_height} * #{$size});
+      }
+      @media (max-width:$container-m){
+        .bottompad-#{$size}-t {         
+          padding-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+      @media (max-width:$container-s){
+        .bottompad-#{$size}-m {         
+          padding-bottom: calc(#{$base_height} * #{$size});
+        }
+      }
+  }
+}
+
+@include vr-bottompad;
+```
+
+Here is some example usage of the helper classes being used in a simple text block to space out the text elements:
+
+```
+	<div class="toppad-10 bottompad-10">
+		<div class="text text-center">
+			<h2>This Is A Section Title</h2>
+			<p class="topmargin-2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorem, ad enim magni dolorum quas omnis quisquam quam, neque corrupti similique, reiciendis corporis. Consectetur accusamus, quisquam blanditiis repudiandae iusto velit!
+			</p>
+		</div>
+	</div>
+``` 
+
+You can continue to add in helper classes as your theme requires them here or in theme specific files.
+
 
 ### Animations
+WP Barebones also comes with a number of clean animations that can be applied to just about any element in a theme.
+
+To start, you'll want to add the classes '.animation' and '.opaque' to any element you plan to apply an animation to. 
+
+For example:
+
+```
+	<div class="animation opaque">
+		<h2>Title Goes Here</h2>
+		<p class="topmargin-2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo autem hic odio iure veniam officia, beatae quam atque dignissimos consectetur! Soluta vero distinctio quae atque sequi nostrum, eveniet dolorum, placeat.
+		</p>
+	</div>
+```
+
+There are a then a number of animation options that can be applied depending on the effect you're looking for. Each of the classes describe the effect you will see when applied.
+
+```
+.fade-in { animation-name: fadeIn; }
+
+.fade-in-down { animation-name: fadeInDown; }
+
+.fade-in-down-big { animation-name: fadeInDownBig; }
+
+.fade-in-left { animation-name: fadeInLeft; }
+
+.fade-in-left-big { animation-name: fadeInLeftBig; }
+
+.fade-in-right { animation-name: fadeInRight; }
+
+.fade-in-right-big { animation-name: fadeInRightBig; }
+
+.fade-in-up { animation-name: fadeInUp; }
+
+.fade-in-up-big { animation-name: fadeInUpBig; }
+```
+
+For example:
+
+```
+	<div class="animation opaque fade-in-up-big">
+		<h2>Title Goes Here</h2>
+		<p class="topmargin-2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo autem hic odio iure veniam officia, beatae quam atque dignissimos consectetur! Soluta vero distinctio quae atque sequi nostrum, eveniet dolorum, placeat.
+		</p>
+	</div>
+```
+
+These classes can be used in any of the template files you choose and can also be used in conjunction with any JavaScript functionality you plan to use. 
+
+#### Animations Triggered By Page Scroll
+WP Barebones also includes several helper classes that work in conjunction with Waypoints.js. When these classes are applied, the animations won't be triggered until the elements scroll into the viewport. This is a great way to quickly add in animations to a template that add some interactivity to the site.
+
+These classes are 'fade-in-content', 'fade-in-content-left', 'fade-in-content-right'. For example:
+```
+<div class="fade-in-content animation opaque"></div>
+<div class="fade-in-content-left animation opaque"></div>
+<div class="fade-in-content-right animation opaque"></div>
+
+or
+
+<div class="flex flex-items-center flex-content-center">
+	<div class="item animation opaque fade-in-content-left">
+		Left Info
+	</div>
+	<div class="item animation opaque fade-in-content-right">
+		Right Info
+	</div>
+</div>
+```
+
+#### Animation Delays
+There are also classes that will allow you to delay, or stagger, the animation triggers. This allows you to make the animation of items in a set a bit more fluid. 
+
+For example:
+```
+<div class="flex flex-items-center flex-content-center">
+	<div class="item flex-eq-col animation opaque fade-in-content">
+		Left Info
+	</div>
+	<div class="item flex-eq-col animation opaque fade-in-content animation-delay-1">
+		Left Info
+	</div>
+	<div class="item flex-eq-col animation opaque fade-in-content animation-delay-2">
+		Left Info
+	</div>
+</div>
+```
+
+The helper includes 5 levels of delay, but can be extended to add more.
+
 
 ### Grid System
+
 
 ### Typography
 

@@ -49,6 +49,7 @@ iframe{
 //Flex Box
 .flex { display: flex; }
 .flex-row { flex-direction: row; }
+.flex-items-center{align-items:center;}
 .flex-column { flex-direction: column; }
 .flex-space-around { justify-content: space-around; }
 .flex-space-between { justify-content: space-between; }
@@ -59,20 +60,17 @@ iframe{
 .flex-nowrap { flex-wrap: nowrap; }
 
 .flex-eq-col{
-  width:auto;
+  width: auto;
   flex-grow:1;
   max-width:100%;
-}
-
-.items-center{
-  align-items:center;
+  flex-basis:0;
 }
 
 
 //Margin Helpers
 $spaceCount: 20;
 
-//VERTICAL RHYTHM MARGIN TOP HELPERS (6PX INCREMENTS). Margin Top from 0 - 15 * Base Height
+//VERTICAL RHYTHM MARGIN TOP HELPERS (6PX INCREMENTS). Margin Top from 0 - 20 * Base Height
 @mixin vr-topmargin{
   @for $i from 0 through $spaceCount {    
     $size: $i;
