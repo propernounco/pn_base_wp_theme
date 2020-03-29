@@ -106,16 +106,6 @@
   }
 }
 
-.list-contain{
-  width:66%;
-  margin:0 auto;
-  // max-width:90%;
-
-  @include max-breakpoint('m'){
-    width:100%;
-  }
-}
-
 .small-contain{
   width:660px;
   margin:0 auto;

@@ -16,6 +16,12 @@ $text_dark: #333;
 $heading_font:'Arial';
 $body_font:'Arial';
 
+// Grid Gutters
+$grid-margin:                                   12px !default;
+$grid-margin-m:                                 12px !default;
+$grid-margin-s:									12px !default;
+
+$container_pad: 								90px !default;
 
 //Responsive Grid BP's
 $container:                                     100% !default;
@@ -28,13 +34,6 @@ $container-m:                                   1024px !default;
 $container-l:                                   1120px !default;
 $container-xl:                                  1240px !default;
 $container-xxl:                                 1440px !default;
-
-// Grid Gutters
-$grid-margin:                                   12px !default;
-$grid-margin-m:                                 12px !default;
-$grid-margin-s:									12px !default;
-
-$container_pad: 								90px !default;
 
 // Responsive Breakpoints
 $breakpoint-mobile-s:                           ($container-mobile-s + $container_pad) !default;

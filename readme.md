@@ -13,7 +13,7 @@ If you already have WordPress setup and configured in your local environment or 
 
 First, change to the directory you plan to develop your theme in
 ```
-	cd /dirname
+cd /dirname
 ```
 
 Now download the latest version of WordPress using cURL
@@ -589,13 +589,180 @@ For example:
 </div>
 ```
 
-The helper includes 5 levels of delay, but can be extended to add more.
+The helper includes 5 levels of delay, but can be extended to add more as needed.
 
+```
+.animation-delay-1{
+  animation-delay: .2s;
+}
+.animation-delay-2{
+  animation-delay: .3s;
+}
+.animation-delay-3{
+  animation-delay: .4s;
+}
+.animation-delay-4{
+  animation-delay: .5s;
+}
+.animation-delay-5{
+  animation-delay: .6s;
+}
+```
 
 ### Grid System
+WP Barebones includes an easy to use grid system that has a similar usage to that of the Bootstrap grid stystem. The main difference is that this grid system is built in CSS Grid as opposed to using floats or flex box. 
 
+Basic Grid Example: 
+```
+<div class="grid col-4">
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+</div>
+```
+
+The basic grid settings in 'assets/scss/base/grid' have a base grid gap set by the 'variables' file. 
+
+```
+$grid-margin:                                   12px !default;
+$grid-margin-m:                                 12px !default;
+$grid-margin-s:									12px !default;
+```
+
+If you want to increase the size of the grid gap though, you can use the utility classes 'xl-gap', and 'xxl-gap' to increase the size of the gap:
+```
+<div class="grid col-4 xl-gap">
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+</div>
+
+<div class="grid col-4 xxl-gap">
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+</div>
+```
+
+The grid also has a number of responsive classes that you can use to change up your grid columns as the screen size changes. The responsive classes are built to be mobile first, so the classes utilize a 'min-width' breakpoint. 
+
+So if you wanted a grid that would have 4 columns in desktop, 2 columns all the way down to the mobile breakpoint, and then a single column at the mobile breakpoint, it would look like this:
+
+```
+<div class="grid col-1 col-2-mobile col-4 xxl-gap">
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+
+	<div class="item">
+	Column
+	</div>
+</div>
+```
+
+### Containers & Breakpoints 
+
+**Containers**  
+
+WP Barebones includes a 'container' class that is used the same way as the container class in other CSS frameworks. 
+
+In addition to the main container, there are also classes for 'large-contain', 'med-contain', and 'small contain'. These classes are not meant to be used in place of the 'container' class, but instead inside of the container class to create variation between the width of elements. 
+
+For example, you may want to display a text element that's more condensed than an image block below it. That would look like this:
+
+```
+<section class="section">
+	<div class="container">
+		<div class="text text-center small-contain">
+			<h2>Title Goes Here</h2>
+			<p class="topmargin-2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, perferendis reiciendis magni praesentium facere, fugit error velit. 
+			</p>
+		</div>
+		<div class="image">
+			<img src="/assets/images/image-url.jpg" alt="image name" class="responsive-img">
+		</div>
+	</div>
+</section>
+```
+
+**Breakpoints**  
+
+The responsive breakpoints for your theme are defined in the file '/assets/sass/base/variables'.  As you update the various container sizes, the breakpoints will update along with them. 
+
+```
+$container_pad: 								90px !default;
+
+//Responsive Grid BP's
+$container:                                     100% !default;
+$container-mobile-s:							320px !default;
+$container-mobile:								480px !default;
+$container-xs:									690px !default;
+$container-s:									768px !default;
+$container-dz:									860px !default;
+$container-m:                                   1024px !default;
+$container-l:                                   1120px !default;
+$container-xl:                                  1240px !default;
+$container-xxl:                                 1440px !default;
+
+// Responsive Breakpoints
+$breakpoint-mobile-s:                           ($container-mobile-s + $container_pad) !default;
+$breakpoint-mobile:                             ($container-mobile + $container_pad) !default;
+$breakpoint-xs:                                 ($container-xs + $container_pad) !default;
+$breakpoint-s:                                  ($container-s + $container_pad) !default;
+$breakpoint-m:                                  ($container-m + $container_pad) !default;
+$breakpoint-dz:                                 ($container-dz + $container_pad) !default;
+$breakpoint-l:                                  ($container-l + $container_pad) !default;
+$breakpoint-xl:                                 ($container-xl + $container_pad) !default;
+$breakpoint-xxl:                                ($container-xxl + $container_pad) !default;
+```
 
 ### Typography
+
 
 ### Mobile Navigation
 
