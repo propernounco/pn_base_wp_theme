@@ -140,7 +140,8 @@ Configure the files in the assets directory to match the filenames you've setup 
 
 ### Update lib/css-js.php
 
-**1. Setting Up Style & Script Enqueue**
+1. **Setting Up Style & Script Enqueue**  
+
 WP Barebones comes with a series of functional files that are stored in the 'lib' directory. Each of these files is loaded through the functions.php file, so think of them as extensions of your themes primary functions file. One of these files is used to enqueue the theme's CSS and JavaScript files. 
 
 Start by opening 'lib/css-js.php' and replacing 'theme-styles.css' and 'theme-js.dist.js' with your theme CSS and JS files. 
@@ -158,14 +159,16 @@ If you wanted to load a CSS file specifically for this template, you would just 
 
 You can also copy and paste this same code block into the script enqueue and follow the same logic if you wanted to conditionally load JavaScript files.
 
-**2. Dynamic Loading Explanation**
+2. **Dynamic Loading Explanation**  
+
 If you're unfamiliar with the concept of dynamically loading CSS files on specific pages, this is a way to keep your CSS file size down and your website loading as quickly as possible.
 
 For example, let's say there are certain elements, components, JS functions, or styles that will only be required on one page, then it doesn't really make sense to add all of that additional code to a "global" CSS or JavaScript file.  
 
 By moving this code to page specific files, you're able to keep the overall size of your CSS and JavaScript files as small as possible without having to make compromises when it comes to your designs or functionality. 
 
-**3. JavaScript Explanations**
+3. **JavaScript Explanations**  
+
 Along with the enqueue script function you'll see inside of 'wpbb_enqueue_script', there's also a '$php_array' that is defined. 
 
 This array is used to a) localize your theme's JS file and b) establish a variety of variables that can be used in your JS file. 
@@ -219,7 +222,8 @@ You can set any other variables that you may need to set for use throughout your
 ### Mixins
 In addition to SASS variables, there are also a number of SASS mixins that come with WP Barebones. 
 
-**@include breakpoint()**
+1. **@include breakpoint()**  
+
 The "breakpoint" mixin is used for "mobile-first" development.  These breakpoints will be set as "min-width" media queries.  
 
 If you plan to develop your theme to be "mobile first" you should use this mixin throughout your sass files.
@@ -228,14 +232,16 @@ The function accepts parameters "mobile-s", "mobile", "xs", "s", "dz", "m", "l",
 
 You can view and set the sizes for these parameters in the 'variables' file.
 
-**@include max-breakpoint()**
+2. **@include max-breakpoint()**  
+
 The "max-breakpoint" is the opposite of the "breakpoint" mixin. Instead of a 'min-width' media query, it will set a max-width media query. 
 
 The function accepts parameters "mobile-s", "mobile", "xs", "s", "dz", "m", "l", "xl" and "xxl".
 
 You can view and set the sizes for these parameters in the 'variables' file.
 
-**@include font-size()**
+3. **@include font-size()**  
+
 This mixin is used to create responsive font sizes throughout your theme.
 
 Instead of setting your font sizes in static pixels, i.e 'font-size:18px', this will allow you to set your font size in 'rems' with a pixel fallback.
@@ -246,7 +252,8 @@ To use the mixin, you would use "@include font-size(1.6)" instead of "font-size:
 
 You can then make all of your font sizes smaller as the screensize changes by reducing the global font size from 62.5% as necessary.
 
-**@include minmax()**
+4. **@include minmax()**  
+
 The 'minmax' mixin is used for setting the width, min-width, and max-width of an element. This can be especially useful with flexbox layouts to make sure that elements are not condensed.
 
 To use it you would simply write "@include minmax(300px)" which would ouptut: 
@@ -259,22 +266,26 @@ To use it you would simply write "@include minmax(300px)" which would ouptut:
 }
 ```
 
-**@include animation()**
+5. **@include animation()**  
+
 This mixin is more of a utility mixin that is used in the file 'assets/sass/base/animations'.  We will explain the animation options in a bit more detail below.
 
-**@include fancy_scroller() and @include fancy_scroller_small()**
+6. **@include fancy_scroller() and @include fancy_scroller_small()**  
+
 Sometimes the standard browser scrollbars simply won't cut it.  WP Barebones allows you to override the browsers standard scrollbar with a mode sleek, modern-looking scroll bar. 
 
 You can use the mixin "fancy_scroller()" to updated the scroll bar on the window or a specific div with scrollable overflow content.  You can also use "fancy_scroller_small()" if you'd like to use a smaller scroller.
 
-**@include hide_scroller()**
+7. **@include hide_scroller()**  
+
 Similar to the "fancy_scroller()" mixin, this mixin is also used to modify the browsers native scrollbar. However instead of changing the look and feel of the scroller, it will just remove the scroll bar entirely.
 
 
 ### Utility Classes / Helper Classes
 There are a number of utlity classes and helper classes that come with WP Barebones.  You can review this file at 'assets/sass/base/helpers'. Here is a breakdown of all of the classes.
 
-**'.responsive-img'**
+1. **'.responsive-img'**  
+
 On the first line of the helpers file, WP Barebones sets all images to be "responsive" by default in that the img element is set to:
 
 ```
@@ -286,10 +297,12 @@ img{
 
 If you choose to remove this styling though and instead use the "responsive-img" class, you can simply apply the class to any image and it will have the same style.
 
-**'.image-cover'**
+2. **'.image-cover'**  
+
 This class will set the image to have a minimum width of 100%, a minimum height of 100% and will set the "object-fit" property to cover which will allow the image to maintain it's aspect ratio. This class will allow an image to behave similarly to a background image with a background size set to "cover".
 
-**'.image-contain'**
+3. **'.image-contain'**  
+
 This class works similarly to the '.image-cover' class, but instead of 'object-fit:cover' it applies the property 'object-fit:contain'. 
 
 
