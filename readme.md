@@ -49,16 +49,20 @@ mv pn_base_wp_theme/themes/* ./themes/
 ### Starting Configuration
 Alright, you've got WordPress installed and configured, you've downloaded WP Barebones and placed everything in the correct directories, now it's time to setup the theme with the theme-specific details.
 
-**1. Update The Theme Directory**
+1. **Update The Theme Directory**  
+
 The first thing you'll want to do is change the name of the theme's directory from 'base_theme' to whatever it is you're going to call the theme. 
 
-**2. Update Styles.css With Theme Name**
+2. **Update Styles.css With Theme Name**  
+
 WordPress will pull the name of the theme itself from the styles.css file. You'll find this file in the root of your theme. Just open it in a text editor and update the details you see accordingly. **I don't actually suggest using this file for styling your theme.** 
 
-**3. Add Screenshot.png**
+3. **Add Screenshot.png**  
+
 The 'screenshot.png' file is what will be used for the theme's thumbnail in the WordPress appearance settings. You can upload anything you'd like here, just make sure it's named 'screenshot.png'.
 
-**4. Enable Plugins**
+4. **Enable Plugins**  
+
 WP Barebones comes with a variety of utility plugins that you may find useful in your website build.  These include:
 - Classic Editor
 - Advanced Custom Fields Pro (License Required)
@@ -73,12 +77,14 @@ You will also find some basic media plugins and WP All Import if you need to imp
 
 To enable the plugins just login to the backend of WordPress, click plugins, and activate all of the plugins you plan to use.
 
-**5. Add A Home Page and Update Settings**
+5. **Add A Home Page and Update Settings**  
+
 Next you'll want to click on "Pages" and then click "Add New". Type "Home Page" into the title, select "Home Page" from the custom template dropdown, and then click save.
 
 Now, hover over Settings and click on "Reading".  Now select "A Static Page" for "Your Homepage Displays" settings, and select the home page you just created as the "Homepage".
 
-**6. Reset permalinks**
+6. **Reset permalinks**  
+
 OK the last thing you'll want to do to finish setting up WordPress is to reset the permalinks so you don't get any 404 pages. 
 
 ### Install Node Modules
@@ -114,7 +120,8 @@ npm install
 ### Gulp File Configuration
 Now, open up the gulp file (gulpfile.js) that is located in the root of your theme. 
 
-**1. Update Scripts Settings**
+1. **Update Scripts Settings**  
+
 The gulp file comes configured to use a couple of JavaScript libraries for common website utilities. The basic file includes:
 
 - [iziModal](http://izimodal.marcelodolza.com/) for clean, attractive website modals.
@@ -130,7 +137,8 @@ Util-scripts.js includes a function that will identify the browser and browser v
 
 Core-js.js sets up a variety of core theme functions. These include things like intiializing feather icons, creating interactive navigation dropdowns, handling mobile navigation triggers, and more. You can look through the file itself to get a better idea of what it includes.  You can also feel free to make changes to the file if you feel it's necessary. 
 
-**2. Update Theme JS File**
+2. **Update Theme JS File**  
+
 Theme-js.js is the file you should put all of your theme specific JavaScript in. You should modify the name of this file from Theme-js.js to whatever your theme is called, i.e. 'theme-name-here'-js.js.
 
 **Make sure to update the name of the output file as well from theme-js.dist.js to 'thene-name-here'-js.dist.js**
