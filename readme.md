@@ -886,7 +886,7 @@ If you wanted to float an image to the left with a content block to the right, t
 </section>
 ```
 
-2. **Split Sections**
+3. **Split Sections**
 
 "Split Sections" are similar to "Split Blocks", but they do not have any overlap. The split sections are configured to have a 40/60 split, so that the image will take up 40% of the width of the container and the content would take up 60%. 
 
@@ -912,7 +912,7 @@ If you wanted to float an image to the left with a content block to the right, t
 
 You can also modify the component so that the image and content blocks are each 50% by adding the class "even" to the "split-section" container element.
 
-3. **Card Elements**
+4. **Card Elements**
 WP Barebones includes a number of card components that can be utilized.
 
 **Basic Card**
