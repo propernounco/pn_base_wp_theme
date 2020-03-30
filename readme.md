@@ -32,9 +32,10 @@
 - [Page Partials / Reusable Components](#page-partials--reusable-components)
 - [WP Barebones Functional Updates](#wp-barebones-functional-updates)
 	- [Custom Post Types](#custom-post-types)
+	- [WP Util File](#wp-util-file)
 	- [Page Specific/Conditional CSS Loading](#page-specificconditional-css-loading)
 	- [WP Theme Functions File](#wp-theme-functions-file)
-	- [WP Util File](#wp-util-file)
+	
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
