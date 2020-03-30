@@ -148,15 +148,3 @@ function get_image($image, $size, $class = NULL){
 		'elem' => $elem
 	);
 }
-
-
-function get_svg($filename){
-	$svg_file = file_get_contents(get_asset_url("$filename"));
-
-	$find_string   = '<svg';
-	$position = strpos($svg_file, $find_string);
-
-	$svg_file_new = substr($svg_file, $position);
-
-	echo $svg_file_new;
-}

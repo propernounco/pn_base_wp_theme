@@ -1255,9 +1255,23 @@ get_image($image, 'full')->elem;
 get_image($image, 'full')->img;
 ```
 
+Here's the full array that the function returns:
+
+```
+return array(
+	'alt' => $alt,
+	'title' => $title, 
+	'img' => $thumb,
+	'width' => $width,
+	'height' => $height,
+	'elem' => $elem
+);
+```
 
 
 ## WP Theme Functions File
 
+In addition to the other functional files, there's also an empty functions file that you can include custom theme functions in.  
 
+You can put all of your themes functions in this file, or create additional function files and require them in the file '/lib/functions.php'.
 
