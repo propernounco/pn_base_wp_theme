@@ -1169,7 +1169,11 @@ As you develop modular blocks/global components that are to be used across multi
 In addition to all of the CSS & JavaScript helpers and components, WP Barebones also includes a number of functional improvements to make theme development a little bit easier.
 
 ## Custom Post Type Creation
+Creating new custom post types is something that you'll inevitably need to do when developing a WordPress theme. Instead of including all of that bulky code within the main functions file, there is a file located at '/lib/cpt.php' that's specifically for this.
 
+The file already includes a few common custom post types and custom taxonomies that can be used, modified or removed.
+
+If you're unfamiliar with what a custom post type is, read up: (https://www.smashingmagazine.com/2012/11/complete-guide-custom-post-types/)
 
 
 ## Page Specific/Conditional CSS Loading
@@ -1206,6 +1210,52 @@ Localizing the script allows for it to access these variables from your JavaScri
 For example, if you were to use store 'php_array.base_url' in a variable called 'base_url' in your main JavaScript file and then log the variable, you would see the result of 'get_home_url()' or your websites root domain.
 
 ## WP Utility Functions
+WP Barebones a number of utility functions that simply create a shorthand for bulkier WordPress operations. Some of the functions in this file exist to support other functions, so it's not advised you make any direct modifications to this file. 
+
+If you don't want to load it for whatever reason, you can comment the entire file out in the file 'lib/functions'. 
+
+**Here are some of the useful functions**
+
+1. **page_nav('menu_name')**  
+
+This function can be used to include a menu from the WordPress CMS. To include the menu you just pass the name of the menu as a parameter to the function.
+
+You can build the menus to go up to three levels deep and the function will output all of the links with clean HTML that is easy to style as needed.
+
+```
+<?php page_nav('main_menu'); ?>
+```
+
+2. **get_asset_url($file)**  
+
+WordPress includes a function that outputs a URL relative to your template root, but this can become cumbersome when having to write out the full function name and then the path to the file.
+
+"get_asset_url()" provides a direct path to the asset directory. It also allows you to pass the file path as a parameter to the function as opposed to having to write it out after the function. 
+
+**For example:**
+```
+get_asset_url('images/image-name.png');
+```
+
+
+3. **get_image($imageObject)**  
+
+Getting an image object and converting it to the image in the size that you want it in can require 8-10+ lines of code to return what you're looking for. 
+
+With WP Barebones you can pass an image object to the 'get_image()' function and it will return an array of data. 
+
+**For example this will return an entire image element:**
+```
+//"<img src='image.jpg' alt='alt' title='title' width='1800px' height='420px' >";
+get_image($image, 'full')->elem;
+```
+**This will return an image url that can be used in an element:**
+```
+//path to uploaded file URL for the given size
+get_image($image, 'full')->img;
+```
+
+
 
 ## WP Theme Functions File
 
