@@ -22,10 +22,10 @@ get_header();
 						
 						<?php 
 							if(get_field('post_image')){
-								echo get_image(get_field('post_image'), 'hero')['elem']; 
+								echo wpbb_get_image(get_field('post_image'), 'hero')['elem']; 
 							}
 							else{
-								echo get_image(get_field('post_placeholder_image', 'option'), 'hero')['elem']; 
+								echo wpbb_get_image(get_field('post_placeholder_image', 'option'), 'hero')['elem']; 
 							}									
 						?>
 				
@@ -76,10 +76,10 @@ get_header();
 								<a href="<?php echo get_the_permalink(); ?>" class="post-thumb-image">
 									<?php
 									if(get_field('post_image')){
-										echo get_image(get_field('post_image'), 'hero')['elem']; 
+										echo wpbb_get_image(get_field('post_image'), 'hero')['elem']; 
 									}
 									else{
-										echo get_image(get_field('post_placeholder_image', 'option'), 'hero')['elem']; 
+										echo wpbb_get_image(get_field('post_placeholder_image', 'option'), 'hero')['elem']; 
 									}		
 									?>
 								</a>
@@ -96,7 +96,7 @@ get_header();
 					<div class="item ad-item">
 						<a href="<?php echo get_field('sidebar_ad_link', 'option')['url']; ?>" class="ad-image">
 							<?php 					
-							echo get_image(get_field('sidebar_ad_image', 'option'), 'square')['elem']; ?>
+							echo wpbb_get_image(get_field('sidebar_ad_image', 'option'), 'square')['elem']; ?>
 						</a>
 					</div>
 				</div>

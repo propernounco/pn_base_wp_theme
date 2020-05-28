@@ -83,7 +83,7 @@ gulp.task('scripts', function() {
             './assets/vendors/waypoints/lib/jquery.waypoints.js',                        
             './assets/vendors/slick/slick.js',                   
             './assets/js/core-js.js',                            
-            './assets/js/theme-js.js'                            
+            './assets/js/mynt-js.js'                            
         ])
         // .pipe(sourcemaps.init())
         .pipe(concat('theme-js.dist.js'))

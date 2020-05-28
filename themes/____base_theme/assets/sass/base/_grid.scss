@@ -1,0 +1,429 @@
+// Container
+.container, .container-full {  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//iPhone 5 and smaller devices
+@include max-breakpoint(mobile-s) {
+  .container { width: 90%; }  
+}
+
+@include breakpoint(mobile-s) {
+  .container { width: 90%; }  
+  .container-mobile, .container-full-mobile {    
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// current smart phones
+@include breakpoint(mobile) {
+  .container { width: 90%; }  
+  .container-mobile, .container-full-mobile {    
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+// tablets 
+@include breakpoint(xs) {
+  // .container { width: $container-xs; }  
+  .container { width: 90%; }  
+}
+// tablets and large phones
+@include breakpoint(s) {
+  .container { width: $container-s; }  
+}
+
+// Deadzone
+@include breakpoint(dz) {
+  .container { width: $container-dz; }
+  .container-dz, .container-full-dz {    
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-dz { width: $container-dz; }
+  .container-full-dz { width: auto; }
+}
+
+// Medium Device Container
+@include breakpoint(m) {
+  .container { width: $container-m; }
+  .container-m, .container-full-m {    
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-m { width: $container-m; }
+  .container-full-m { width: auto; }
+}
+
+// Large Device Container
+@include breakpoint(l) {
+  .container { width: $container-l; }
+  .container-l, .container-full-l {    
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-l { width: $container-l; }
+  .container-full-l { width: auto; }
+}
+// Extra Large Device Container
+@include breakpoint(xl) {
+  .container { width: $container-xl; }
+  .container-xl, .container-full-xl {    
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-xl { width: $container-xl; }
+  .container-full-xl { width: auto; }
+}
+// Extra Large Device Container
+@include breakpoint(xxl) {
+  .container { width: $container-xxl; }
+  .container-xxl, .container-full-xxl {    
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-xxl { width: $container-xxl; }
+  .container-full-xxl { width: auto; }
+}
+
+.large-contain{
+  width:80%;
+  margin:0 auto;
+  // max-width:90%;
+}
+
+.med-contain{
+  width:75%;
+  margin:0 auto;
+  // max-width:90%;
+  @include max-breakpoint('l'){
+    width:100%;
+  }
+  @include max-breakpoint('s'){
+    width:100%;
+  }
+}
+
+.small-contain{
+  width:660px;
+  margin:0 auto;
+  max-width:90%;
+  @include max-breakpoint('l'){
+    width:100%;
+  }
+  @include max-breakpoint('s'){
+    width:100%;
+    max-width:100%;
+  }
+}
+
+// Grid Settings
+
+$columns: 12;  
+
+.grid{
+  display:grid;
+  grid-gap:$grid-margin;
+  &.no-gap{
+    grid-gap:0;
+  }
+  &.xl-gap{
+      grid-gap:($grid-margin * 2);
+  }
+
+  &.xxl-gap{
+    grid-gap:($grid-margin * 4);
+  }
+
+  &.grid-mobile{
+    @include max-breakpoint(mobile){
+      display:grid;
+      grid-gap:$grid-margin;
+    }
+    @include breakpoint(mobile){
+      display:block;        
+    }
+  }
+
+  &.grid-xs{
+    @include max-breakpoint(xs){
+      display:grid;
+      grid-gap:$grid-margin;
+    }
+    @include breakpoint(xs){
+      display:block;        
+    }
+  }
+
+  &.grid-s{
+    @include max-breakpoint(s){
+      display:grid;
+      grid-gap:$grid-margin;
+    }
+    @include breakpoint(s){
+      display:block;        
+    }
+  }
+
+  &.grid-m{
+    @include max-breakpoint(m){
+      display:grid;
+      grid-gap:$grid-margin;
+    }
+    @include breakpoint(m){
+      display:block;        
+    }
+  }
+
+  &.grid-l{
+    @include max-breakpoint(l){
+      display:grid;
+      grid-gap:$grid-margin;
+    }
+    @include breakpoint(l){
+      display:block;        
+    }
+  }
+
+  &.grid-xl{
+    @include max-breakpoint(xl){
+      display:grid;
+      grid-gap:$grid-margin;
+    }
+    @include breakpoint(xl){
+      display:block;        
+    }
+  }
+
+  &.grid-xxl{
+    @include max-breakpoint(xxl){
+      display:grid;
+      grid-gap:$grid-margin;
+    }
+    @include breakpoint(xxl){
+      display:block;        
+    }
+  }
+
+  @for $i from 1 through $columns {
+
+    &.col-#{$i}{
+      // width: ($i / $columns) * 100%;      
+      grid-template-columns: repeat($i, 1fr);
+      > .item{
+        display:block;
+        &.flex{
+          display: flex;
+        }
+      }
+      
+    }
+    &.left-#{$i}{
+      // width: ($i / $columns) * 100%;      
+      // grid-template-columns: ((($i / 12) * 100) * 1%) (((1 - ($i / 12)) * 100) * 1%);      
+      grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+
+    }  
+  }
+  
+  @include breakpoint(mobile) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-mobile{
+          // width: ($i / $columns) * 100%;                
+          grid-template-columns: repeat($i, 1fr);
+          
+        }
+
+        &.left-#{$i}-mobile{          
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+          
+        }
+        &.left-12-mobile{
+          grid-auto-flow: column;
+        }
+        &.left-0-mobile{
+          // width: ($i / $columns) * 100%;      
+          display:block;
+          .item{
+            display:block;
+            width:100%;
+          }
+        }
+      }
+  }
+
+  @include breakpoint(xs) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-xs{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: repeat($i, 1fr);          
+        }
+
+        &.left-#{$i}-xs{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+          
+        }
+        &.left-12-xs{
+          grid-auto-flow: column;
+        }
+        &.left-0-xs{
+          // width: ($i / $columns) * 100%;      
+          // display:block;          
+          // .item{
+          //   display:block;
+          //   width:100%;
+          // }
+        }
+      }
+  }
+  
+  @include breakpoint(s) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-s{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: repeat($i, 1fr);
+          
+        }
+
+        &.left-#{$i}-s{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+          
+        }
+        &.left-12-s{
+          grid-auto-flow: column;
+        }
+        &.left-0-s{
+          // width: ($i / $columns) * 100%;      
+          display:block;
+          .item{
+            display:block;
+            width:100%;
+          }
+        }
+      }
+  }
+
+  @include breakpoint(dz) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-dz{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: repeat($i, 1fr);
+          
+        }
+
+        &.left-#{$i}-dz{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr);           
+        }
+        &.left-0-dz{
+          // width: ($i / $columns) * 100%;      
+          // display:block;
+          grid-auto-flow:column;        
+          .item{
+            display:block;
+            width:100%;
+          }
+        }
+      }   
+  }
+
+  @include breakpoint(m) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-m{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: repeat($i, 1fr);
+          
+        }
+
+        &.left-#{$i}-m{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+          
+        }
+        &.left-0-m{
+          // width: ($i / $columns) * 100%;      
+          display:block;
+          .item{
+            display:block;
+            width:100%;
+          }
+        }
+      }   
+  }
+  // Large Device Container
+  @include breakpoint(l) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-l{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: repeat($i, 1fr);
+          
+        }
+
+        &.left-#{$i}-l{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+          
+        }
+        &.left-0-l{
+          // width: ($i / $columns) * 100%;      
+          display:block;
+          .item{
+            display:block;
+            width:100%;
+          }
+        }
+      }
+  }
+  // Extra Large Device Container
+  @include breakpoint(xl) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-xl{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: repeat($i, 1fr);
+          
+        }
+
+        &.left-#{$i}-xl{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+          
+        }
+        &.left-0-xxl{
+          // width: ($i / $columns) * 100%;      
+          display:block;
+          .item{
+            display:block;
+            width:100%;
+          }
+        }
+      }
+  }
+  // Extra Large Device Container
+  @include breakpoint(xxl) {
+      @for $i from 1 through $columns {
+        &.col-#{$i}-xxl{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: repeat($i, 1fr);
+          
+        }
+        &.left-#{$i}-xxl{
+          // width: ($i / $columns) * 100%;      
+          grid-template-columns: ($i * 1fr) ((12 - $i) * 1fr) 
+          
+        }
+        &.left-0-xxl{
+          // width: ($i / $columns) * 100%;      
+          display:block;
+          .item{
+            display:block;
+            width:100%;
+          }
+        }
+      }
+  }
+}

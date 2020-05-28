@@ -78,7 +78,7 @@
 						padding:18px 20px;
 						// height:100%;
 						&.cta-btn{
-							background:$base_color;
+							background:$theme_color;
 							color:#fff;
 							margin-left:18px;
 							// font-weight:bold;
@@ -125,7 +125,7 @@
 						// flex-wrap: wrap;
 						box-shadow:0 3px 6px rgba(0,0,0,.09);
 						margin-top:0px;
-						// border-bottom:3px solid $base_color;
+						// border-bottom:3px solid $theme_color;
 						opacity:0;
 						visibility: hidden;
 						top:120%;										
@@ -345,7 +345,7 @@
 			&.active{
 				background:#fff;
 				svg, i {
-					color:$base_dark;
+					color:$theme_color;
 				}
 			}
 		}

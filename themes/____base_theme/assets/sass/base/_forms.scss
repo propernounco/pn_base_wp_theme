@@ -1,0 +1,277 @@
+//Toggle
+.input, input{
+  outline:0;
+  border:0;
+}
+
+.icon-input{
+  position:relative;
+  z-index: 1;
+  input{
+    position: relative;   
+    z-index: 2;
+    padding-left:42px !important;   
+    @include font-size(1.4);
+  }
+  i, svg{
+    left:12px;
+    top:0;
+    bottom:0;
+    margin:auto;
+    position:absolute;
+    z-index: 3;   
+    stroke:$base_color;
+  }
+}
+
+.sfl-input{
+
+}
+
+.toggle {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 62px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color:$base_color;
+  transition: background-color ease 0.3s;
+  margin:0 auto;
+}
+
+.toggle:before {
+  // content: "on off";
+  content:"";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  font: 10px/28px Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -22px;
+  word-spacing: 37px;
+  color: #fff;
+  text-shadow: -1px -1px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+.toggle:checked {
+  background-color: #ddd;
+}
+
+.toggle:checked:before {
+  left: 32px;
+}
+
+
+//Custom Checkbox
+.container-checkbox {
+    display: flex;
+    align-items:center;
+    position: relative;
+    padding-left: 35px;
+    height: 30px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color:$text_light;
+    text-transform: lowercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #E8EDF0;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+    background-color: #E8EDF0;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+    background-color: #E8EDF0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 2px;
+    width: 8px;
+    height: 16px;
+    border: solid $base_color;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+//
+
+
+
+//Gform Styles
+.gform_fields{
+    margin:0;
+    padding:0;
+    .gfield{
+        margin-bottom:12px;
+        .ginput_container_select{
+            position:relative;
+            .gfield_select{
+                // width:calc(100% - 30px);
+                width:100%;
+                height:42px;
+                appearance:none;
+                background:$base_gray;
+                border:0;                
+                outline:0;
+                padding:0 15px;                            
+                font-size:15px;
+                font-family:$body_font;
+                color:$text_gray;
+            }
+            &:after{
+                content:"";
+                display: block;
+                width:9px;
+                height:9px;
+                // background-color:green;
+                position:absolute;
+                border-style: solid;
+                border-color:$base_color;
+                top:12px;
+                right:24px;                
+                margin:auto auto auto auto;
+                overflow: hidden;         
+                border-width: 2px 2px 0 0;
+                //height: 0.45em;
+                //left: 0.15em;
+                // top: 0.15em;
+                transform: rotate(135deg);
+                vertical-align: top;
+                // width: 0.45em;
+            }
+        }
+        
+    }
+    .gfield.half-field{
+        width:48%;
+        &:nth-child(odd){
+            float:left;
+            clear:none;
+        }
+        &:nth-child(even){
+            float:right;
+            clear:none;
+        }
+
+    }
+    .clear-multi{
+        display: flex;
+        .ginput_container{
+            margin-right:18px;
+            &:last-child{
+                margin-right:0;
+            }
+        }
+    }
+}
+.gform_wrapper{
+    margin:0 !important;
+  }
+  .gform_heading{
+    display: none !important;
+  }
+  .gfield{
+    padding-right:0 !important;
+    &:first-of-type{
+      margin-top:0;
+    }
+  }
+  .gfield_label{
+    font-size:12px !important;
+    text-transform: uppercase;
+    color:#484C59;
+    letter-spacing: 2px;
+    font-family: $body_font;
+  }
+  .ginput_container{
+    input[type="text"]{
+      display: block;
+      width: 100% !important;
+      max-width: 100%;      
+      height: 42px;
+      background:#EFF0F4;
+      padding: 6px 15px !important;
+      font-size:15px !important;
+    }
+    textarea{
+      display: block;
+      width: 100% !important;
+      max-width: 100%;      
+      max-height: 150px;
+      background:#EFF0F4;
+      padding: 6px 15px !important;
+      font-size:15px !important;
+      border:0;
+    }
+  }
+  .gform_footer{
+    text-align:center;
+    padding-bottom: 0 !important;
+  }
+  .gform_button.button{
+    background:$base_color;
+    padding:15px 30px;
+    color:#fff;
+    border-radius:4px;
+    font-size:14px !important;
+    margin:0 auto;
+    text-transform: uppercase;
+    letter-spacing:1px;
+  }
+//

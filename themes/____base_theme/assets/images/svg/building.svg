@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Building</title>
+    <desc>Created with Sketch.</desc>
+    <g id="03.-About-Us" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03.-About" transform="translate(-785.000000, -937.000000)">
+            <g id="Blue-Bar" transform="translate(189.000000, 883.000000)">
+                <g id="Right" transform="translate(572.000000, 25.000000)">
+                    <g id="Group-6" transform="translate(0.000000, 4.000000)">
+                        <g id="Building" transform="translate(24.000000, 25.000000)">
+                            <rect id="Rectangle" fill="#1E14CC" x="25.7142857" y="4.28571429" width="2.14285714" height="4.28571429"></rect>
+                            <rect id="Rectangle" fill="#1E14CC" x="30" y="4.28571429" width="2.14285714" height="4.28571429"></rect>
+                            <rect id="Rectangle" fill="#1E14CC" x="34.2857143" y="4.28571429" width="2.14285714" height="4.28571429"></rect>
+                            <rect id="Rectangle" fill="#1E14CC" x="38.5714286" y="4.28571429" width="2.14285714" height="4.28571429"></rect>
+                            <rect id="Rectangle" fill="#1E14CC" x="25.7142857" y="10.7142857" width="2.14285714" height="4.28571429"></rect>
+                            <rect id="Rectangle" fill="#1E14CC" x="30" y="10.7142857" width="2.14285714" height="4.28571429"></rect>
+                            <rect id="Rectangle" fill="#1E14CC" x="34.2857143" y="10.7142857" width="2.14285714" height="4.28571429"></rect>
+                            <rect id="Rectangle" fill="#1E14CC" x="38.5714286" y="10.7142857" width="2.14285714" height="4.28571429"></rect>
+                            <path d="M17.1428571,45 L6.42857143,45 L6.42857143,34.2857143 L17.1428571,34.2857143 L17.1428571,45 Z M8.57142857,42.8571429 L15,42.8571429 L15,36.4285714 L8.57142857,36.4285714 L8.57142857,42.8571429 Z" id="Shape" fill="#1E14CC" fill-rule="nonzero"></path>
+                            <path d="M38.5714286,45 L27.8571429,45 L27.8571429,32.1428571 L38.5714286,32.1428571 L38.5714286,45 Z M30,42.8571429 L36.4285714,42.8571429 L36.4285714,34.2857143 L30,34.2857143 L30,42.8571429 Z" id="Shape" fill="#1E14CC" fill-rule="nonzero"></path>
+                            <path d="M23.5714286,45 L0,45 L0,21.7714286 L23.5714286,12.3428571 L23.5714286,45 Z M2.14285714,42.8571429 L21.4285714,42.8571429 L21.4285714,15.5142857 L2.14285714,23.2285714 L2.14285714,42.8571429 Z" id="Shape" fill="#392164" fill-rule="nonzero"></path>
+                            <path d="M45,45 L21.4285714,45 L21.4285714,0 L45,0 L45,45 Z M23.5714286,42.8571429 L42.8571429,42.8571429 L42.8571429,2.14285714 L23.5714286,2.14285714 L23.5714286,42.8571429 Z" id="Shape" fill="#392164" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

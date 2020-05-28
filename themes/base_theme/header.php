@@ -14,13 +14,13 @@
 			
 			<a href="<?php echo get_home_url(); ?>" class="logo">
 				LOGO
-				<!-- <img src="<?php echo get_image(get_field('logo', 'option'),'logo')['img']; ?>" alt="SFL Partners"> -->
+				<!-- <img src="<?php echo wpbb_get_image(get_field('logo', 'option'),'logo')['img']; ?>" alt="SFL Partners"> -->
 			</a> 
 			
 			<nav class="nav">
 				
 				<ul>
-					<?php echo page_nav('primary-nav'); ?>	
+					<?php echo wpbb_page_nav('primary-nav'); ?>	
 				</ul>				
 			</nav>
 

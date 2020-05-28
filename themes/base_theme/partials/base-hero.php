@@ -5,7 +5,7 @@ $hero_title_position = get_field('hero_title_position', get_the_id());
 
 <div class="background-image opacity-<?php echo $opacity; ?>">
 	<?php 
-		echo get_image(get_field('hero_image', get_the_id()), 'hero')['elem'];		
+		echo wpbb_get_image(get_field('hero_image', get_the_id()), 'hero')['elem'];		
 	?>		
 </div>
 

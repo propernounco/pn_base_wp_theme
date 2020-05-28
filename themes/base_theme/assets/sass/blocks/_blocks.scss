@@ -7,9 +7,9 @@
 	padding:60px 0 78px;
 	overflow:hidden; 
 	&.light{
-		background-color:$base_gray;
+		background-color:$theme_gray;
 	}
 	&.light-to-white{
-		background-image:linear-gradient(to bottom, $base_gray, $base_gray, #fff);
+		background-image:linear-gradient(to bottom, $theme_gray, $theme_gray, #fff);
 	}
 }

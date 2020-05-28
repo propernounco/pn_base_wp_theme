@@ -186,7 +186,7 @@
     width:48px;
     height:48px;
     &:hover{
-        background:$base_color;
+        background:$theme_color;
         &:before{
             content:url('../images/icons/left-arrow-light.svg');            
         }
@@ -219,7 +219,7 @@
     width:48px;
     height:48px;
     &:hover{
-        background:$base_color;
+        background:$theme_color;
         &:before{
             content:url('../images/icons/right-arrow-light.svg');            
         }
@@ -328,7 +328,7 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    color: $base_color;
+    color: $theme_color;
 
 }
 

@@ -136,13 +136,13 @@
 		}	
 	}
 	&.dark{
-		background-color:$base_dark;
+		background-color:$theme_color;
 	}
 	&.light{
-		background:$base_gray;
+		background:$theme_gray;
 		&:after{
 			z-index: 2;
-			background-image:linear-gradient(rgba($base_gray, .9), rgba($base_gray, 0), rgba($base_gray, 1));			
+			background-image:linear-gradient(rgba($theme_gray, .9), rgba($theme_gray, 0), rgba($theme_gray, 1));			
 			content:'';
 			position:absolute;
 			width: 100%;
@@ -160,7 +160,7 @@
 		}		
 	}
 	&.bottom-gradient{
-		background:$base_color;
+		background:$theme_color;
 		&:after{
 			z-index: 2;
 			background-image:linear-gradient(rgba(#fff, 0), rgba(#fff, .25), rgba(#fff, 1));			

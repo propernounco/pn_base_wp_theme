@@ -63,7 +63,7 @@ curl -L http://wordpress.org/latest.zip > wp.zip
 ```
 Now just unzip the package and move the files back into the root.
 ```
-mv wordpress/* ./
+unzip wp.zip && mv wordpress/* ./
 ```
 You can also remove the zip file and empty directory with
 ```
@@ -80,11 +80,11 @@ git clone https://github.com/propernounco/pn_base_wp_theme.git
 ```
 
 ```
-mv pn_base_wp_theme/plugins/* ./plugins/
+mv pn_base_wp_theme/plugins/* wp-content/plugins/
 ```
 
 ```
-mv pn_base_wp_theme/themes/* ./themes/
+mv pn_base_wp_theme/themes/* wp-content/themes/
 ```
 
 ### Starting Configuration
@@ -126,7 +126,12 @@ Now, hover over Settings and click on "Reading".  Now select "A Static Page" for
 
 6. **Reset permalinks**  
 
-OK the last thing you'll want to do to finish setting up WordPress is to reset the permalinks so you don't get any 404 pages. 
+OK the last thing you'll want to do to finish setting up WordPress is update the permalinks structure to use "post name" and save the new permalink structure so you don't get any 404 pages. To do this you need to:
+
+1. Hover the "Settings" option
+2. Click "Permalinks" option
+3. Select the radio button for "Post Name"
+4. Click "Save Changes"
 
 ### Install Node Modules
 Now that WordPress is configured, you'll want to install all of the dependencies required to compile, compress, and minify your CSS and Javascript files. WP Barebones uses Gulp for this but if you prefer using another compiler you can. To start you'll need to install NodeJS if you haven't already. I suggest installing NVM (Node Version Manager) so that you can use any version of NodeJS you'd like. You can either use cURL or Wget for this:
@@ -649,6 +654,9 @@ The helper includes 5 levels of delay, but can be extended to add more as needed
   animation-delay: .6s;
 }
 ```
+
+#### Bounce 
+Add a bounce to any element by adding the bounce class. 
 
 ### Grid System
 WP Barebones includes an easy to use grid system that has a similar usage to that of the Bootstrap grid stystem. The main difference is that this grid system is built in CSS Grid as opposed to using floats or flex box. 

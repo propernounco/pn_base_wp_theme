@@ -1,0 +1,147 @@
+// ==========================================================================
+// Base – Mixins
+// ==========================================================================
+
+// Breakpoint sizes
+// Example usage @include breakpoint(x) { ... }; - where x is the device
+@mixin breakpoint($bp) {
+  @if $bp == xxl {
+    @media only screen and (min-width: $breakpoint-xxl) { @content ; }
+  }
+  @if $bp == xl {
+    @media only screen and (min-width: $breakpoint-xl) { @content ; }
+  }
+  @else if $bp == l {
+    @media only screen and (min-width: $breakpoint-l) { @content ; }
+  }
+  @else if $bp == m {
+    @media only screen and (min-width: $breakpoint-m) { @content ; }
+  }
+  @else if $bp == dz {
+    @media only screen and (min-width: $breakpoint-dz) { @content ; }
+  }
+  @else if $bp == s {
+    @media only screen and (min-width: $breakpoint-s) { @content ; }
+  }
+  @else if $bp == xs {
+    @media only screen and (min-width: $breakpoint-xs) { @content ; }
+  }
+  @else if $bp == mobile {
+    @media (min-width: $breakpoint-mobile) { @content ; }
+  }
+  @else if $bp == mobile-s {
+    @media (min-width: $breakpoint-mobile-s) { @content ; }
+  }
+}
+
+@mixin max-breakpoint($bp) {
+  @if $bp == xxl {
+    @media only screen and (max-width: $breakpoint-xxl) { @content ; }
+  }
+  @if $bp == xl {
+    @media only screen and (max-width: $breakpoint-xl) { @content ; }
+  }
+  @else if $bp == l {
+    @media only screen and (max-width: $breakpoint-l) { @content ; }
+  }
+  @else if $bp == m {
+    @media only screen and (max-width: $breakpoint-m) { @content ; }
+  }
+  @else if $bp == dz {
+    @media only screen and (max-width: $breakpoint-dz) { @content ; }
+  }
+  @else if $bp == s {
+    @media only screen and (max-width: $breakpoint-s) { @content ; }
+  }
+  @else if $bp == xs {
+    @media only screen and (max-width: $breakpoint-xs) { @content ; }
+  }
+  @else if $bp == mobile {
+    @media (max-width: $breakpoint-mobile) { @content ; }
+  }
+  @else if $bp == mobile-s {
+    @media (max-width: $breakpoint-mobile-s) { @content ; }
+  }
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  line-height: (($sizeValue * 10) + 6) + px;
+  font-size: $sizeValue + rem;
+  line-height: ($sizeValue + .8) + rem;
+}
+
+@mixin minmax ($size) {
+  min-width: $size;
+  max-width: $size;
+  width:$size;
+}
+
+
+// Animations
+// Example Usage @mixin animation(1s);
+@mixin animation($duration: 1s) {
+  animation-duration: $duration;
+  animation-fill-mode: both;
+}
+
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@mixin fancy_scroller() {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height:6px;      
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ddd; 
+  }
+     
+  &::-webkit-scrollbar-thumb {
+    background: #aaa; 
+  }
+}
+
+@mixin hide_scroller() {
+  padding-right: 17px;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar {
+    width: 0px;
+    display:none;
+    height:0px;  
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: rgba(#fff, 0); 
+  }
+     
+  &::-webkit-scrollbar-thumb {
+    background: rgba(#fff, 0); 
+  }
+}
+
+@mixin fancy_scroller_small() {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height:3px;  
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ddd; 
+  }
+     
+  &::-webkit-scrollbar-thumb {
+    background: #aaa; 
+  }
+}

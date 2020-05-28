@@ -14,7 +14,7 @@
 			<h3>Links One</h3>			
 			
 			<ul>
-				<?php echo page_nav('footer-links-one'); ?>	
+				<?php echo wpbb_page_nav('footer-links-one'); ?>	
 			</ul>
 
 		</div>		
@@ -23,14 +23,14 @@
 			<h3>Link Two</h3>
 
 			<ul>
-				<?php echo page_nav('footer-links-two'); ?>	
+				<?php echo wpbb_page_nav('footer-links-two'); ?>	
 			</ul>			
 		</div>
 
 		<div class="links">
 			<h3>Link Three</h3>
 			<ul>
-				<?php echo page_nav('footer-links-three'); ?>	
+				<?php echo wpbb_page_nav('footer-links-three'); ?>	
 			</ul>
 		</div>
 

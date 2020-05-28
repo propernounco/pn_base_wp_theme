@@ -1,0 +1,15 @@
+@import 'header';
+@import 'hero';
+@import 'footer';	
+@import 'components';
+
+.section{
+	padding:60px 0 78px;
+	overflow:hidden; 
+	&.light{
+		background-color:$base_gray;
+	}
+	&.light-to-white{
+		background-image:linear-gradient(to bottom, $base_gray, $base_gray, #fff);
+	}
+}

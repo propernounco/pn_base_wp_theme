@@ -1,5 +1,5 @@
 .footer{
-	background:$base_dark;
+	background:$theme_color;
 	padding: 60px 0;
 	overflow: hidden;
 	position:relative;
@@ -63,7 +63,7 @@
 		width:calc(100% - 84px);
 		height:48px;
 		border-radius:3px;
-		background-image:linear-gradient(to bottom, #fff, $base_gray);
+		background-image:linear-gradient(to bottom, #fff, $theme_gray);
 		box-shadow: 0px 2px 6px rgba(#000, .125);
 		z-index: 9999;
 		display: block;
@@ -72,9 +72,9 @@
 		display: flex;
 		align-items:center;
 		justify-content: center;
-		color:$base_color;
+		color:$theme_color;
 		text-transform: lowercase;
-		border-bottom:3px solid $base_color;
+		border-bottom:3px solid $theme_color;
 		padding:0 24px;
 		visibility: hidden;
 		opacity:0;
@@ -89,7 +89,7 @@
 			display: block;
 			height:18px;
 			stroke:none;
-			fill:$base_color;
+			fill:$theme_color;
 			// margin-right:0;
 		}
 		.text{

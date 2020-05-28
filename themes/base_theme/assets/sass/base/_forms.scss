@@ -20,7 +20,7 @@
     margin:auto;
     position:absolute;
     z-index: 3;   
-    stroke:$base_color;
+    stroke:$theme_color;
   }
 }
 
@@ -41,7 +41,7 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background-color:$base_color;
+  background-color:$theme_color;
   transition: background-color ease 0.3s;
   margin:0 auto;
 }
@@ -143,7 +143,7 @@
     top: 2px;
     width: 8px;
     height: 16px;
-    border: solid $base_color;
+    border: solid $theme_color;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -166,7 +166,7 @@
                 width:100%;
                 height:42px;
                 appearance:none;
-                background:$base_gray;
+                background:$theme_gray;
                 border:0;                
                 outline:0;
                 padding:0 15px;                            
@@ -182,7 +182,7 @@
                 // background-color:green;
                 position:absolute;
                 border-style: solid;
-                border-color:$base_color;
+                border-color:$theme_color;
                 top:12px;
                 right:24px;                
                 margin:auto auto auto auto;
@@ -265,7 +265,7 @@
     padding-bottom: 0 !important;
   }
   .gform_button.button{
-    background:$base_color;
+    background:$theme_color;
     padding:15px 30px;
     color:#fff;
     border-radius:4px;

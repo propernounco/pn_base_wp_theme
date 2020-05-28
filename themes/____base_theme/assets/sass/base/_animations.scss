@@ -1,0 +1,159 @@
+// ==========================================================================
+// Animations – Selective animations from Animate.css - http://daneden.me/animate
+// ==========================================================================
+
+.animation { @include animation(1s); }
+.animation-infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animation-delay-1{
+  animation-delay: .2s;
+}
+.animation-delay-2{
+  animation-delay: .3s;
+}
+.animation-delay-3{
+  animation-delay: .4s;
+}
+.animation-delay-4{
+  animation-delay: .5s;
+}
+.animation-delay-5{
+  animation-delay: .6s;
+}
+
+// Fade In
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in { animation-name: fadeIn; }
+
+// Fade In Down
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-down { animation-name: fadeInDown; }
+
+// Fade In Down Big
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-down-big { animation-name: fadeInDownBig; }
+
+// Fade In Left
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-left { animation-name: fadeInLeft; }
+
+// Fade In Left Big
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-left-big { animation-name: fadeInLeftBig; }
+
+// Fade In Right
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-right { animation-name: fadeInRight; }
+
+// Fade In Right Big
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-right-big { animation-name: fadeInRightBig; }
+
+// Fade In Up
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-up { animation-name: fadeInUp; }
+
+// Fade In Up Big
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-in-up-big { animation-name: fadeInUpBig; }
+
+
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ }
+ 
+ .bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+ }
