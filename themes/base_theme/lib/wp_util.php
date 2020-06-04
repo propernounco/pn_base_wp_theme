@@ -1,12 +1,11 @@
 <?php
 function wpbb_get_svg($filename){
-	$svg_file = file_get_contents(wpbb_get_asset_url("$filename"));
-
+	$contentUrl = dirname(__DIR__) . '/assets/' . $filename;
+	// die();
+	$svg_file = file_get_contents( $contentUrl );
 	$find_string   = '<svg';
 	$position = strpos($svg_file, $find_string);
-
 	$svg_file_new = substr($svg_file, $position);
-
 	echo $svg_file_new;
 }
 

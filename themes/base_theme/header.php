@@ -3,7 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-	<?php wp_head(); ?>
+	<?php 
+	wp_head(); 
+	$secondary = false;					
+	if(wpbb_get_template_name() == 'Our Services' || is_singular('post')){
+		$secondary = true;
+	}
+	if(get_field('header_type') == 'secondary'){
+		$secondary = true;
+	}
+	?>
 </head>
 <body >
 <div id="top"></div>
