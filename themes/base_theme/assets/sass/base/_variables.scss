@@ -3,6 +3,7 @@ $base_height: 6px;
 
 
 //Colors
+// $theme_color:#183B56;
 $theme_color:#183B56;
 $theme_dark: #222027;
 $theme_dark_accent: #3D3B41;
@@ -10,13 +11,25 @@ $theme_gray: #F4F8FB;
 $theme_dark_gray:#5F6267;
 
 $text_light: #aaa;
-$text_gray:#666;
-$text_dark: #333;
+$text_gray:#4E5056;
+$text_dark: #222027;
 
 
 //Fonts
-$heading_font:'Arial';
-$body_font:'Arial';
+$heading_font:'Gilroy', sans-serif;
+$body_font:'Gilroy', sans-serif;
+$italic_font: 'Inria Serif', sans-serif;
+
+// Grid Gutters
+$grid-margin:                                   12px !default;
+$grid-margin-m:                                 12px !default;
+$grid-margin-s:									12px !default;
+
+$container_pad: 								90px !default;
+
+// $pad_small:										30px !default;
+// $pad_medium:									60px !default;
+// $pad_large:										90px !default;
 
 $pad_small:										3.0rem !default;
 $pad_medium:									6.0rem !default;
@@ -26,13 +39,6 @@ $margin_small:										3.0rem !default;
 $margin_medium:									6.0rem !default;
 $margin_large:										9.0rem !default;
 
-
-// Grid Gutters
-$grid-margin:                                   12px !default;
-$grid-margin-m:                                 12px !default;
-$grid-margin-s:									12px !default;
-
-$container_pad: 								90px !default;
 
 //Responsive Grid BP's
 $container:                                     100% !default;

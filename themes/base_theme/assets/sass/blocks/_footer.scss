@@ -4,44 +4,88 @@
 	overflow: hidden;
 	position:relative;
 	.branding{
-		@include minmax(25%);
-		margin-right:auto;
+		@include minmax(20%);
+		margin-right:42px;
 		.logo{
-			height:48px;
+			height:30px;
 			margin-bottom:18px;
 			display: block;
 			img{
 				width: auto;
 				height: 100%;
+				object-fit: contain;
 			}
 		}
 		p{
 			@include font-size(1.3);
-			color:$text_light;
+			color:#fff;
+		}
+		.social{
+			margin:0;
+			padding:0;
+			li{
+				margin:0 15px 0 0;
+				a{
+					color:#fff;
+					svg{
+						width: 18px;
+						height: 18px;
+						fill:#fff;
+						stroke-width:0;
+					}
+					&.only-stroke{
+						svg{
+							fill:none;
+							stroke-width:2px;
+						}
+					}
+				}
+			}
 		}
 	}
+
 	.links{
 		display:block;
 		width:auto;
-		padding:0 0 0 90px;
+		max-width:20%;
+		flex-grow:1;
+		margin:0 auto;
+		padding:0 0 0 30px;
 		
 		h3{
-			color:$text_light;	
-			font-size:24px;
-			font-weight:normal;
+			color:#fff;	
+			font-size:18px;			
+			font-weight:bold;
 			letter-spacing: .5px;
 			display: block;
 			margin-bottom:12px;
 		}
 
+		ul{
+			margin:0;
+			padding:0;
+			li{
+				margin:0 0 9px 0;
+				padding: 2px 0;
+			}
+		}
+
 		a{
-			color:$text_light;
+			color:#fff;
 			@include font-size(1.4);
 		}
-		address{
-			color:$text_light;
+		p{
+			margin:0;
+		}
+		address.address{
+			color:#fff;
 			@include font-size(1.4);	
 			font-style:normal;
+			margin-bottom:18px;
+			display: block;
+		}
+		.body-text{
+			color:#fff;
 		}
 	}
 	.bottom-links{
@@ -95,6 +139,13 @@
 		.text{
 			display: block;
 			// margin-right:auto;
+		}
+	}
+	.bottom{
+		margin-top:24px;
+		display: block;
+		span{
+			color: #fff;
 		}
 	}
 	@include max-breakpoint('m'){

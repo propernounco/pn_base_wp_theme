@@ -49,22 +49,23 @@ function theme_setup() {
     add_theme_support( 'automatic-feed-links' );
 
     /*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
+     * Let WordPress manage the document title.
+     * By adding theme support, we declare that this theme does not use a
+     * hard-coded <title> tag in the document head, and expect WordPress to
+     * provide it for us.
+     */
     add_theme_support( 'title-tag' );
 
     /*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
+     * Enable support for Post Thumbnails on posts and pages.
+     *
+     * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+     */
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 825, 510, true );
     add_image_size( 'featured-post', 550, 365 );
     add_image_size( 'post-main-image', 1080, 700 );
+    add_image_size( 'logo', 9999999999, 42 );
     add_image_size( 'hero', 1880, 999999999 );
     add_image_size( 'square_sm', 600, 600 );
     add_image_size( 'square', 960, 960 );
@@ -75,29 +76,32 @@ function theme_setup() {
     // This theme uses wp_nav_menu() in two locations.
     register_nav_menus( array(
         'primary-nav' => __( 'Primary Navigation', 'bm' ),
-        'top-links'  => __( 'Top Bar Links', 'bm' ),
-        'footer-links' => __( 'Footer Links', 'bm'),
+        'top-links'  => __( 'Top Bar Links', 'bm' ),        
+        'footer-links-one' => __( 'Footer Links One', 'bm'),
+        'footer-links-two' => __( 'Footer Links Two', 'bm'),
+        'footer-links-three' => __( 'Footer Links Three', 'bm'),
     ) );
 
     /*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
+     * Switch default core markup for search form, comment form, and comments
+     * to output valid HTML5.
+     */
     add_theme_support( 'html5', array(
         'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
     ) );
 
     /*
-	 * Enable support for Post Formats.
-	 *
-	 * See: https://codex.wordpress.org/Post_Formats
-	 */
+     * Enable support for Post Formats.
+     *
+     * See: https://codex.wordpress.org/Post_Formats
+     */
     add_theme_support( 'post-formats', array(
         'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
     ) );
 
 }
 endif; // bm_setup
+
 add_action( 'after_setup_theme', 'theme_setup' );
 
 /**
@@ -105,19 +109,3 @@ add_action( 'after_setup_theme', 'theme_setup' );
  * @since 1.0
  */
 
-
-add_filter("gform_init_scripts_footer", "init_scripts");
-function init_scripts() {
-    return true;
-}
-
-
-//Merge JS
-
-add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
-
-show_admin_bar( false );
-
-if( function_exists('acf_add_options_page') ) {    
-    acf_add_options_page();   
-}

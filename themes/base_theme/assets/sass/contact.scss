@@ -1,0 +1,110 @@
+//contact page
+.contact{
+	.drop-line-small{
+		display: none;
+	}
+
+	.first-section{
+		.title-contain{
+			width: 66%;
+			margin:0 auto 0 0;
+			.page-title{
+				display: block;
+				width: 75%;
+				margin-bottom:30px;
+			}
+		}
+	}
+
+	.map-section{
+		.location-map-container{
+			height:690px;
+		}
+	}
+	.form-section{		
+		display: flex;
+		justify-content: space-between;
+		.form-block{
+			@include minmax(66.6666%);			
+
+			.gform_wrapper{
+				ul{
+					li.gfield{
+						margin:0;
+						margin-bottom:18px;
+						div.ginput_container_radio, div.ginput_container_checkbox{
+							ul{
+								display: flex;
+								flex-wrap: wrap;
+								align-items:center;
+								li{
+									margin-right:18px;
+									font-size:16px;
+									input{
+										margin-top:0;
+									}
+								}
+							}
+						}
+					}	
+				}		
+				textarea{
+					min-height: 300px;
+				}		
+			}
+			.gform_footer{
+				margin-top:0;
+				padding-top:0;				
+				text-align: center;
+				input[type="submit"]{
+					position: relative;
+					z-index: 6;
+					// top:-66px;
+					text-transform: lowercase;
+					font-weight:bold;
+					margin-right:0;
+				}
+			}
+		}
+		.sidebar{
+			@include minmax(25%);
+			.office{
+				display: block;
+				margin-bottom:30px;
+				h3{
+					font-weight:bold;
+					text-transform: lowercase;
+					font-size:20px;
+					line-height:24px;					
+				}
+				.address-info{
+					margin-top:18px;
+					display: block;
+					.address{
+						font-size:16px;
+						line-height:20px;
+						margin-bottom:12px;
+						display: block;
+						overflow: hidden;
+					}
+					.phone-number{
+						margin-bottom:12px;
+						display: block;
+						overflow: hidden;
+					}
+
+					.direction-links{
+						display: flex;
+						align-items:center;						
+						a{
+							text-decoration: underline;
+							color:$text_gray;
+							margin-right:18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

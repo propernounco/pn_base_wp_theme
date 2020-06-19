@@ -1,4 +1,28 @@
 <?php
+
+add_filter("gform_tabindex", create_function("", "return false;"));
+
+add_filter("gform_init_scripts_footer", "init_scripts");
+function init_scripts() {
+    return true;
+}
+
+
+add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
+show_admin_bar( false );
+
+if( function_exists('acf_add_options_page') ) {    
+    acf_add_options_page();   
+}
+
+add_filter( 'excerpt_length', function($length) {
+    return 30;
+} );
+
+
+
+
 function wpbb_get_svg($filename){
 	$contentUrl = dirname(__DIR__) . '/assets/' . $filename;
 	// die();
@@ -314,4 +338,9 @@ function wpbb_footer_social_links_block(){
 	}
 
 	return $linkBlock;
+}
+
+function wpbb_include_leaflet(){
+	print "<script src='".wpbb_get_asset_url('vendors/leaflet/leaflet.js')."'></script>";
+	print "<link rel='stylesheet' href='".wpbb_get_asset_url('vendors/leaflet/leaflet.css')."' />";
 }

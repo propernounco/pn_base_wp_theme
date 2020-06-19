@@ -1,5 +1,28 @@
 jQuery(function($){
+	
 
+	var headerScrolled = new Waypoint({
+	  element: $('#header-trigger'),
+	  handler: function(direction) {		  
+	    if(direction == 'down'){		    			    	
+	    	$('.header').addClass('scrolled')			
+	    }		
+	    if(direction == 'up'){		    	
+	    	$('.header').removeClass('scrolled')	  		
+	    }		   		    
+	  },
+	  offset: '-6%'
+	})
+	
+	$('.accordion .accordion-step .title').on('click', function(e){
+		e.preventDefault();
+		$('.accordion-step .content').slideUp();
+		$(this).parent().find('.content').slideDown()
+		$('.accordion-step .content').removeClass('active')
+		$('.accordion-step').removeClass('active')
+		$(this).parent().addClass('active')
+	})
+	
 	function getTextWidth(text) { 
   
         inputText = text; 
@@ -26,7 +49,7 @@ jQuery(function($){
         var target = this.hash,        
         $target = $(target);
 
-        if(target == '#'){
+        if(target == '#' || target == '#none'){
         	return;
         }
 

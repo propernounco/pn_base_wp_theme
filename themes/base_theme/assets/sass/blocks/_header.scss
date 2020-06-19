@@ -4,7 +4,7 @@
 	// overflow: hidden;
 	position:fixed;
 	top:0;
-	background:#fff;
+	background:rgba(#fff, 0);
 	width:100%;
 	z-index: 999999;
 	left:0;
@@ -15,6 +15,7 @@
 		width: 48px;
 		height: 48px;		
 		align-items:center;
+		margin-left:auto;
 		justify-content: center;
 		svg{
 			font-size:36px;
@@ -32,13 +33,16 @@
 			align-items:center;
 		}
 		.logo{
-			height:42px;
+			height:30px;
 			width: auto;
 			margin-left:0;
-			margin-right:auto;
+			margin-right:42px;
 			display: none;
-			&.active{
+			&.logo-light{
 				display: block;
+			}
+			&.logo-dark{
+				display: none;
 			}
 			img{
 				height:100%;
@@ -49,10 +53,11 @@
 		.nav{
 			width:auto;
 			display: block;
-			margin-left:auto;
+			margin-left:0px;
 			display: block;
 			height:100%;
 			margin-right:0;
+			flex-grow:1;
 			.mobile-nav-logo{
 				display: none;
 			}
@@ -62,25 +67,31 @@
 				padding:0;
 				display: flex;
 				align-items:center;
+				width: 100%;
 				li{
 					display: block;
 					// overflow: hidden;
 					margin:0;
-					position:relative;	
+					// position:relative;	
 					background:rgba(#fff,0);	
-
+					&:last-child{
+						margin-left:auto;
+					}
 					a{
 						display: block;
-						color:#000;
+						color:#fff;
 						font-size:15px;
 						letter-spacing: .5px;
+						font-weight: 500;
 						line-height:15px;
 						padding:18px 20px;
 						// height:100%;
 						&.cta-btn{
-							background:$theme_color;
-							color:#fff;
-							margin-left:18px;
+							background:#fff;
+							color:$theme_color;
+							text-transform: lowercase;
+							font-weight:bold;
+							margin-left:auto;
 							// font-weight:bold;
 							padding:12px 18px;
 							// margin-left:6px;
@@ -120,6 +131,8 @@
 						left:0;
 						width: auto;
 						background:#fff;
+						width: 88%;
+						padding:18px 6%;
 						// display: block;
 						display: block;
 						// flex-wrap: wrap;
@@ -179,21 +192,28 @@
 								// width: auto;
 								float:left;
 								display: block;
-								white-space: nowrap;								
+								white-space: nowrap;
+								margin:0 12px;								
 								padding-bottom:20px;
-								
+								width:calc(33.333% - 24px);
 								> a {
 									color:$text_gray;
 									font-weight: bold;
-									font-size:15px;
+									font-size:16px;
 									white-space: nowrap;
+									padding-bottom:6px;
+									margin-bottom:18px;
+									border-bottom:1px solid #d9d9d9;
 									&:hover{
 										&:before{
 											display: none;
 										}
 									}
 								}
-
+								@include max-breakpoint('mobile'){
+									width: 100%;
+									margin:0;
+								}
 
 							}
 
@@ -203,16 +223,22 @@
 								white-space: nowrap;
 								// max-width: 320px;								
 								li{
+									@include minmax(100%);
 									box-shadow:0 3px 9px rgba(#000, .0);									
+									display: block;
 									a{
 										box-shadow:0 3px 9px rgba(#000, .0);	
-										color:$text_dark;		
-										white-space: nowrap;
-										padding-top:9px;
-										padding-bottom:9px;
+										color:$text_dark;												
+										white-space: wrap;
+										padding-top:5px;
+										padding-bottom:5px;
+										margin-bottom:3px;
 										display: block;					
 									}								
-								}								
+								}	
+								@include max-breakpoint('mobile'){
+									padding-top:12px;
+								}							
 							}
 						}
 					}
@@ -226,20 +252,36 @@
 	&.secondary{
 		background:#fff;
 		position:relative;
-		box-shadow:0 2px 4px rgba(#000, .06);
-		.logo{
-			&.light{
+		// box-shadow:0 2px 4px rgba(#000, .06);
+	
+		.main{
+			.logo{
+				height:36px;
+				width: auto;
+				margin-left:0;
+				margin-right:42px;
 				display: none;
-			}
-			&.dark{
-				display: block;
+				&.logo-light{
+					display: none;
+				}
+				&.logo-dark{
+					display: block;
+				}
+				img{
+					height:100%;
+					width: auto;			
+				}
 			}
 		}
 		.nav{
 			ul{
 				li{
 					a{
-						color:$text_gray;
+						color:$text_dark;
+						&.cta-btn{
+							background:$theme_color;
+							color:#fff;
+						}
 					}
 					&.active.children{
 						&:not(:last-child){
@@ -251,7 +293,7 @@
 								// font-weight:500;
 								background:#fff;
 								transition:all .2s ease-in;
-								box-shadow:0 -2px 4px rgba(#000, .09);
+								// box-shadow:0 -2px 4px rgba(#000, .09);
 							}
 						}						
 					}	
@@ -280,10 +322,10 @@
 		animation: headerScroll 1s ease;
 		animation-fill-mode: forwards;
 		.logo{
-			&.light{
+			&.logo-light{
 				display: none;
 			}
-			&.dark{
+			&.logo-dark{
 				display: block;
 			}
 		}
@@ -297,6 +339,11 @@
 					a{			
 						padding: 0 18px;			
 						color:$text_gray;
+						&.cta-btn{
+							background:$theme_color;
+							color:#fff;
+						}
+
 					}
 					
 					&:not(:last-child){
@@ -337,6 +384,23 @@
 			}
 		}
 	}
+	@include max-breakpoint('l'){
+		.main{
+			.logo{
+				height: 26px;
+				margin-right:24px;
+			}
+			.nav{
+				 ul{
+				 	 li{
+				 	 	a.cta-btn{
+				 	 		padding: 10px 14px;
+				 	 	}
+				 	 }
+				 }
+			}
+		}
+	}
 	@include max-breakpoint('m'){
 		.mobile-nav-trigger{
 			display: flex;
@@ -356,14 +420,13 @@
 				width: auto;
 			}
 			.logo{
-				height:42px;
+				height:26px;
 			}
 			.nav{
-				visibility: hidden;
-				
-				bottom:-100%;
+				visibility: hidden;				
+				left:-100%;
 				// bottom:0;
-				height:calc(100% - (78px + 25px));
+				height:calc(100% - 66px);
 				// height:calc(100% - 48px);
 				position:fixed;
 				transition:all .25s ease-in;
@@ -377,6 +440,7 @@
 				justify-content: center;
 				align-items: center;
 				opacity:0;
+				top:69px;
 				border-top:1px solid #e0e0e0;
 				.mobile-nav-logo{
 					display: block;
@@ -456,7 +520,7 @@
 									padding-left:24px;
 								}
 								.sub-sub-links{
-									display: none;
+									// display: none;
 								}
 							}							
 							// &.active{
@@ -468,7 +532,8 @@
 				&.active{
 					visibility: visible;
 					opacity:1;
-					bottom:0%;
+					left:0%;
+					top:66px;
 					transition:all .2s ease-in;
 				}
 			}
@@ -481,7 +546,7 @@
 				}
 			}
 			.nav{
-				height:calc(100% - (66px + 25px));
+				height:calc(100% - 66px);
 				ul{
 					li{
 						height: auto;
@@ -530,6 +595,34 @@
 				}
 			}
 		}
+	}
+	@include max-breakpoint('mobile'){
 
+		.main{
+			 .logo.logo-light{
+			 	height: 26px;
+			 }
+			 .nav ul{
+			 	overflow-y: scroll;
+			 }
+		}
+		&.header.scrolled{
+			.nav{
+				ul {
+					li:not(:last-child) {
+						a{
+							padding:12px;
+						}
+					}
+				}
+			}
+		}
+		&.secondary {
+			.main{				
+				.logo.logo-light, .logo.logo-dark{
+				 	height: 26px;
+				 }	
+			}			
+		}
 	}
 }

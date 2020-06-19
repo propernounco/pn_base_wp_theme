@@ -1,0 +1,131 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+.header.secondary{
+	background:$theme_gray;
+}
+.about{
+	.first-section{
+		background:$theme_gray;
+		padding-bottom:0;
+		position:relative;
+		z-index: 1;
+		&:before{
+			z-index: 2;
+			width: 100%;
+			height: 180px;
+			background:#fff;
+			content:"";
+			left:0;
+			position:absolute;
+			bottom:0;
+		}
+		.container{
+			position: relative;
+			z-index: 9;
+		}
+		.small-contain{
+			padding:$pad_large 0 0;
+		}
+		h1{
+			color:$theme_color;
+		}
+
+		.split-image{
+			display: block;
+			// overflow: hidden;
+			max-height: 540px;
+			display:block;
+			width:840px;
+			max-width: 100%;
+			margin:$margin_large auto 0;
+			position:relative;
+			z-index: 1;
+			padding-bottom:$pad_large;
+			&:before{
+				position:absolute;
+				width:180px;
+				height: 200px;
+				display: block;
+				content:'';
+				z-index:2;
+				left:-42px;
+				top:-42px;
+				padding: 2.25em 1.6875em;
+			  	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 3px, transparent 3px, transparent 100%);
+			  	background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 3px, transparent 3px, transparent 100%);
+			  	background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 3px, transparent 3px, transparent 100%);
+			  	background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 3px, transparent 3px, transparent 100%);
+			  	background-size: 15px 15px;
+			}
+			img, video{
+				width:100%;
+				height: 100%;
+				object-fit: cover;
+				position:relative;
+				z-index: 3;				
+				box-shadow:0 9px 24px rgba(#000, .15);
+			}			
+
+		}
+	
+		@include max-breakpoint('mobile'){
+			.split-image{
+				max-height: 360px;
+			}
+			padding-top:0;
+		}
+	}
+	.about-clients-section{
+		position:relative;
+		.background-image{
+			position:relative;
+			width:100%;
+			display: block;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		.text{
+			position:absolute;
+			top:0;
+			bottom:0;
+			margin:auto;
+			left:0;
+			right:0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+		}
+		@include max-breakpoint('xl'){
+			.micro-contain{
+				width:540px;
+				margin:0 auto;
+			}
+		}
+
+		@include max-breakpoint('dz'){
+			.micro-contain{
+				width:60%;
+				margin:0 auto;
+				.section-title-medium{
+					font-size:30px;
+					line-height:36px;
+				}
+			}
+		}
+
+		@include max-breakpoint('mobile'){
+			.background-image{
+				display: none;
+			}			
+		}
+	}
+	.callout-numbers-section{
+		@include max-breakpoint('mobile'){
+			padding: 0;
+		}
+	}
+}
