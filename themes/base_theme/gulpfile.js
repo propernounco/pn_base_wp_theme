@@ -2,7 +2,8 @@ var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
+// var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var del = require('del');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
@@ -76,6 +77,8 @@ gulp.task('styles', function() {
 // Scripts task
 gulp.task('scripts', function() {
     return gulp.src([            
+            './node_modules/mmenu-light/dist/mmenu-light.js',                        
+            './node_modules/mmenu-light/dist/mmenu-light.polyfills.js',                        
             // './assets/vendors/jquery/jquery.1.11.3.min.js',                        
             './assets/js/util-scripts.js', 
             './assets/vendors/izmodal/js/izmodal.min.js', 
@@ -83,10 +86,10 @@ gulp.task('scripts', function() {
             './assets/vendors/waypoints/lib/jquery.waypoints.js',                        
             './assets/vendors/slick/slick.js',                   
             './assets/js/core-js.js',                            
-            './assets/js/mynt-js.js'                            
+            './assets/js/marchman-js.js'                            
         ])
         // .pipe(sourcemaps.init())
-        .pipe(concat('theme-js.dist.js'))
+        .pipe(concat('marchman-js.dist.js'))
         .pipe(uglify())
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest('./assets/dist/js/'))

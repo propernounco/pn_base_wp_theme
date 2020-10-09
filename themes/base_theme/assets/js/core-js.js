@@ -290,5 +290,112 @@ jQuery(function($){
 	})
 	
 
+	$('.wpbb-file-upload .file-upload-field').on('change', function(e){
+
+		var appendFacility = $(this).hasClass('append-facility-images')
+
+        e.preventDefault()
+        if(this.files.length > 0){
+        	
+        	var parentBlock = $(this).parent()
+        	$(parentBlock).find('.clear-upload-input').addClass('active')
+        	if($(this)[0].hasAttribute('multiple')){        		
+        		var nameString = '';
+        		parentBlock.find('.input-filename-text').text('')
+				$(this.files).each(function(){			
+
+					if(this.name.includes('jpg') || this.name.includes('png')){
+						var reader = new FileReader();
+	
+					    reader.onload = function(e) {
+
+					      var previewImg = '<img class="img-preview" src="'+e.target.result+'">';						  
+						  parentBlock.find('.input-filename-text').append(previewImg)		
+
+						  
+					    }
+					    
+					    reader.readAsDataURL(this); // convert to base64 string
+					}					
+					else{
+						$(parentBlock).find('.input-filename-text').text(this.name)	
+					}
+					
+				    
+					
+				})
+				// $(this).parent().find('.input-filename-text').text(nameString)		
+        	}
+        	else{              	 	
+        	 	if(this.files[0].name.includes('jpg') || this.files[0].name.includes('png')){
+					var reader = new FileReader();
+	
+				    reader.onload = function(e) {
+
+				    	console.log(e.target.result)
+
+				      var previewImg = '<img class="img-preview" src="'+e.target.result+'">';
+					  parentBlock.find('.input-filename-text').text('')	
+					  parentBlock.find('.input-filename-text').append(previewImg)		
+
+					  	
+				    }
+				    
+				    reader.readAsDataURL(this.files[0]); // convert to base64 string
+        	 	}	
+        	 	else{
+        	 		$(parentBlock).find('.input-filename-text').text(this.files[0].name)		
+        	 	}	
+            	
+        	}
+                
+        }
+        else{
+            $(this).parent().find('.clear-upload-input').removeClass('active')
+            $(this).parent().find('.input-filename-text').text('Drag & Drop Your File To Upload')
+        }
+    })
+
+    $('.clear-upload-input').on('click', function(e){
+        e.preventDefault();
+        $(this).parent().find('.file-upload-field').val('')
+        $(this).parent().find('.file-upload-field').trigger('change')
+    })
+
+
+	$('.image-upload').on('change', function(){
+
+		var imgInput = $(this)
+
+		var imageFormData = new FormData();
+		imageFormData.append( "image", $(this)[0].files[0]);
+
+		imageFormData.append('action', 'wpbb_upload_image');
+	    // imageFormData.append('async-upload', $imgFile[0].files[0]);
+	    imageFormData.append('name', $(this)[0].files[0].name);
+	    imageFormData.append('_wpnonce', php_array.nonce);
+
+		$.ajax({
+            url: php_array.admin_ajax,
+            type: 'POST',		
+            processData: false,
+			contentType: false,			      
+            data:imageFormData,
+            beforeSend: function(){
+            
+            },
+            success: function(data){    
+				console.log(data)
+            },
+            error: function(data){
+                
+                $('.listing-continue').prop('disabled', false)
+            }
+        })
+
+	})
+	
+
+
 })
 

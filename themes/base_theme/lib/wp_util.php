@@ -344,3 +344,67 @@ function wpbb_include_leaflet(){
 	print "<script src='".wpbb_get_asset_url('vendors/leaflet/leaflet.js')."'></script>";
 	print "<link rel='stylesheet' href='".wpbb_get_asset_url('vendors/leaflet/leaflet.css')."' />";
 }
+
+function mma_process_img_upload($uploadData){
+	$filename = end(explode('/', $uploadData['file']));
+
+	$attachment = array(
+	    'post_mime_type' => $uploadData['type'],
+	    'post_title' => sanitize_file_name( $filename ),
+	    'post_content' => '',
+	    'post_status' => 'inherit'
+	  );
+
+	  $attach_id = wp_insert_attachment( $attachment, $uploadData['file'] );    
+	  // $imageIdArr[] = $attach_id; 
+
+	  $attach_data = wp_generate_attachment_metadata( $attach_id, $uploadData['file'] );
+	  $meta = wp_update_attachment_metadata( $attach_id, $attach_data );
+	  return $attach_id;
+}
+
+
+add_action('wp_ajax_wpbb_upload_image', 'wpbb_upload_image');
+add_action('wp_ajax_nopriv_wpbb_upload_image', 'wpbb_upload_image');
+
+
+function wpbb_upload_image() {    
+
+	$file = $_FILES['image'];
+
+	$upload = wp_handle_upload($file, array('test_form' => FALSE));		
+			
+	$upload_id = mma_process_img_upload($upload);
+
+	if($upload_id){
+		echo $upload_id;
+		wp_die();
+	}
+
+	echo 0;
+	wp_die();
+    // require_once( ABSPATH . 'wp-admin/includes/admin.php' );
+    // $file_return = wp_handle_upload( $file, array('test_form' => false ) );
+    // if( isset( $file_return['error'] ) || isset( $file_return['upload_error_handler'] ) ) {
+    //     return false;
+    // } else {
+    //     $filename = $file_return['file'];
+    //     $attachment = array(
+    //         'post_mime_type' => $file_return['type'],
+    //         'post_title' => preg_replace( '/\.[^.]+$/', '', basename( $filename ) ),
+    //         'post_content' => '',
+    //         'post_status' => 'inherit',
+    //         'guid' => $file_return['url']
+    //     );
+    //     $attachment_id = wp_insert_attachment( $attachment, $file_return['url'] );
+    //     require_once(ABSPATH . 'wp-admin/includes/image.php');
+    //     $attachment_data = wp_generate_attachment_metadata( $attachment_id, $filename );
+    //     wp_update_attachment_metadata( $attachment_id, $attachment_data );
+    //     if( 0 < intval( $attachment_id ) ) {
+    //       echo $attachment_id;
+    //       wp_die();
+    //     }
+    // }
+    // echo false;
+    // wp_die();
+}

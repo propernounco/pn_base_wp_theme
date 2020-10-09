@@ -124,52 +124,74 @@ function checkAncientBrowser(){
 	}		
 }
 
+
+document.addEventListener(
+    "DOMContentLoaded", () => {
+        const menu = new MmenuLight(
+            document.querySelector( "#site-nav" ),
+            "(max-width: 1024px)"
+        );
+
+        const navigator = menu.navigation();
+        const drawer = menu.offcanvas();
+
+        document.querySelector( 'a[href="#site-nav"]' )
+            .addEventListener( 'click', ( evnt ) => {
+                evnt.preventDefault();
+                drawer.open();
+            });
+
+
+        var ancientBrowser = checkAncientBrowser()
+
+		//var ancientBrowser = false;
+
+		if(ancientBrowser){
+
+			var body = document.getElementsByTagName('body')[0]	
+
+			body.classList.add(ancientBrowser)
+			var grid = document.getElementsByClassName('grid')
+			for(var a = 0; a < grid.length; a++){
+				grid[a].classList.add(ancientBrowser)
+			}		
+		}
+
+		var bgBlocks = document.getElementsByClassName('bg-block')
+		if(bgBlocks.length > 0){
+			for(var b = 0; b < bgBlocks.length; b++){		
+				if(bgBlocks[b].hasAttribute('data-bg-img')){
+					var bg = bgBlocks[b].getAttribute('data-bg-img')			
+					bgBlocks[b].setAttribute('style', 'background-image: url("'+ bg +'")');
+				}		
+			}	
+		}
+
+		if(document.getElementById('mobile-toggle-menu')){
+			var mobile_toggle = document.getElementById('mobile-toggle-menu');
+
+			mobile_toggle.onclick = function() {
+			  mobile_toggle.classList.toggle('on');
+			}
+		}
+
+		var toggle_contain = document.querySelectorAll('.toggle-switch')
+
+		if(toggle_contain){	
+			for(var tc = 0; tc < toggle_contain.length; tc++){		
+				toggle_contain[tc].addEventListener('click', function(e){ //say this is an anchor
+			         //do something
+			        e.preventDefault();
+			        this.classList.toggle('on');	        
+			    })
+			}
+		}    
+    }
+);
+
 window.onload = function(){
 
-	var ancientBrowser = checkAncientBrowser()
-
-	//var ancientBrowser = false;
-
-	if(ancientBrowser){
-
-		var body = document.getElementsByTagName('body')[0]	
-
-		body.classList.add(ancientBrowser)
-		var grid = document.getElementsByClassName('grid')
-		for(var a = 0; a < grid.length; a++){
-			grid[a].classList.add(ancientBrowser)
-		}		
-	}
-
-	var bgBlocks = document.getElementsByClassName('bg-block')
-	if(bgBlocks.length > 0){
-		for(var b = 0; b < bgBlocks.length; b++){		
-			if(bgBlocks[b].hasAttribute('data-bg-img')){
-				var bg = bgBlocks[b].getAttribute('data-bg-img')			
-				bgBlocks[b].setAttribute('style', 'background-image: url("'+ bg +'")');
-			}		
-		}	
-	}
-
-	if(document.getElementById('mobile-toggle-menu')){
-		var mobile_toggle = document.getElementById('mobile-toggle-menu');
-
-		mobile_toggle.onclick = function() {
-		  mobile_toggle.classList.toggle('on');
-		}
-	}
-
-	var toggle_contain = document.querySelectorAll('.toggle-switch')
-
-	if(toggle_contain){	
-		for(var tc = 0; tc < toggle_contain.length; tc++){		
-			toggle_contain[tc].addEventListener('click', function(e){ //say this is an anchor
-		         //do something
-		        e.preventDefault();
-		        this.classList.toggle('on');	        
-		    })
-		}
-	}
+	
 
 }
 
